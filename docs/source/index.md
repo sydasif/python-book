@@ -14,4 +14,5 @@ This is test project.
 :maxdepth: 2
 
 ch-01/Intro
+ch-02/element-of-python
 ```
