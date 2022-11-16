@@ -15,4 +15,6 @@ This is test project.
 
 ch-01/Intro
 ch-02/variable
+ch-02/numbers
+ch-02/operator
 ```
