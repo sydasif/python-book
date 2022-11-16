@@ -1,10 +1,10 @@
 # Introduction to Network Automation
 
-There is a sagnaficnt change in the networking industry which is driving the networking engineers and organizations to adopt the concepts and idea of network programmability and automation. To cater the need of organizational competitiveness, it is highly recomaned for networking professionals to learn the scripting languages and protocols as required new skillsets.
+There is a significant change in the networking industry which is driving networking engineers and organizations to adopt the concepts and ideas of network programmability and automation. To cater for the need for organizational competitiveness, it is highly recommended that networking professionals learn the scripting languages and protocols as required new skill sets.
 
 ## Introduction to Python
 
-Python is a modern and a powerful programming language that was developed by Guido van Rossum (Rivers & Koedinger, 2017). Python is a programming language that resembles Java. The language is, however, cleaner and easier to read than Java. Python has become a scripting language for choice for Network Engineering tasks.
+Python is a modern and powerful programming language that was developed by Guido van Rossum (Rivers & Koedinger, 2017). Python is a programming language that resembles Java. The language is, however, cleaner and easier to read than Java. Python has become a scripting language for choice for Network Engineering tasks.
 
 ## Examples where Python Scripting is used for Network Automation
 
@@ -16,27 +16,27 @@ As python scripting is a handy tool for network automation, typical manual tasks
 - Configuration management
 - Troubleshooting
 
-We need automation in networking to create a more efficient networking environment, improved network uptime and prevent mistakes. Network Automation is helping to solve:
+We need automation in networking to create a more efficient networking environment, improve network uptime and prevent mistakes. Network Automation is helping to solve the following:
 
 - Mistakes due to human error in configuring the devices
 - Repetitive tasks such as changing device logging credentials or time-based ACLs
 - Allows to reproduce and dispose of logs which may cause devices to crash
-- Deliver bug free code on time
+- Deliver bug-free code on time
 
 ## Automation Tools and Languages
 
 Python is the main topic which can be used for network automation, but it’s frequently used with other network automation software tools for automating network monitoring, configurations and maintenance activities.
 
-Some of such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
+Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
 
-Ansible is an open source software that helps to automate software configuration, management and application deployment. It can be used to configure routers, switches and various types of servers.
+Ansible is open-source software that helps to automate software configuration, management and application deployment. It can configure routers, switches and various types of servers.
 
-Similarly, another open source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, numerous Unix-like systems, and have its own declarative language too for system configuration description.
+Similarly, another open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its own declarative language too for system configuration description.
 
-Chef is another tool for configuration management, written in Ruby and Erlang. Its build on a DevOps model and can help in building reliable scalable systems.
+Chef is another tool for configuration management, written in Ruby and Erlang. It's built on a DevOps model and can help in building reliable scalable systems.
 
-A Python-based open source configuration management software, SatlStack, serves as a remote execution engine. As it uses the "Infrastructure as Code" methodology for deployment and cloud management, it is a competitive tool and can be used in replacement of Puppet, Ansible, and Chef.
+A Python-based open-source configuration management software, SatlStack, serves as a remote execution engine. As it uses the "Infrastructure as Code" methodology for deployment and cloud management, it is a competitive tool and can be used in the replacement of Puppet, Ansible, and Chef.
 
-## What is Scripting ?
+## What is Scripting?
 
-Any programming language that supports a script is known as scripting language. It helps programmers in order to write programs for a distinct environment to automate the execution of a number of tasks which could otherwise be executed manually by a human operator, one-by-one.
+Any programming language that supports a script is known as a scripting language. It helps programmers in order to write programs for a distinct environment to automate the execution of a number of tasks which could otherwise be executed manually by a human operator, one by one.
