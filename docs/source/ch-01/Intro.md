@@ -1,8 +1,8 @@
 # Introduction to Python
 
-Python is a modern and powerful programming language that was developed by Guido van Rossum (Rivers & Koedinger, 2017). Python is a programming language that resembles Java. The language is, however, cleaner and easier to read than Java. Python has become a scripting language for choice for Network Engineering tasks.
+Python is a modern and powerful programming language that was developed by Guido van Rossum. Python is a programming language that resembles Java. The language is, however, cleaner and easier to read than Java. Python has become a scripting language choice for Network Engineering tasks.
 
-## Examples where Python Scripting is used for Network Automation
+## Python Scripting Examples
 
 As python scripting is a handy tool for network automation, typical manual tasks that can be automated are:
 
