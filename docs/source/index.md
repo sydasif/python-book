@@ -13,8 +13,9 @@ This is test project.
 :caption: 'Contents:'
 :maxdepth: 2
 
-ch-01/Intro
+ch-01/intro
 ch-02/variable
 ch-02/numbers
 ch-02/operator
+ch-02/string
 ```
