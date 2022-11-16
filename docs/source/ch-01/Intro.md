@@ -1,8 +1,4 @@
-# Introduction to Network Automation
-
-There is a significant change in the networking industry which is driving networking engineers and organizations to adopt the concepts and ideas of network programmability and automation. To cater for the need for organizational competitiveness, it is highly recommended that networking professionals learn the scripting languages and protocols, as required for a new skill set.
-
-## Introduction to Python
+# Introduction to Python
 
 Python is a modern and powerful programming language that was developed by Guido van Rossum (Rivers & Koedinger, 2017). Python is a programming language that resembles Java. The language is, however, cleaner and easier to read than Java. Python has become a scripting language for choice for Network Engineering tasks.
 
