@@ -1,6 +1,6 @@
 # Introduction to Network Automation
 
-There is a significant change in the networking industry which is driving networking engineers and organizations to adopt the concepts and ideas of network programmability and automation. To cater for the need for organizational competitiveness, it is highly recommended that networking professionals learn the scripting languages and protocols as required new skill sets.
+There is a significant change in the networking industry which is driving networking engineers and organizations to adopt the concepts and ideas of network programmability and automation. To cater for the need for organizational competitiveness, it is highly recommended that networking professionals learn the scripting languages and protocols, as required for a new skill set.
 
 ## Introduction to Python
 
@@ -25,7 +25,7 @@ We need automation in networking to create a more efficient networking environme
 
 ## Automation Tools and Languages
 
-Python is the main topic which can be used for network automation, but it’s frequently used with other network automation software tools for automating network monitoring, configurations and maintenance activities.
+Python is used for network automation, but it’s frequently used with other network automation software tools for automating network monitoring, configurations and maintenance activities.
 
 Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
 
