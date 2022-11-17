@@ -13,4 +13,6 @@ variable
 string
 number
 operator
+data_structure
+list
 ```
