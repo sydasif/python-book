@@ -39,4 +39,4 @@ A Python-based open-source configuration management software, SatlStack, serves 
 
 Any programming language that supports a script is known as a scripting language. It helps programmers in order to write programs for a distinct environment to automate the execution of a number of tasks which could otherwise be executed manually by a human operator, one by one.
 
-See more on information on [website](https://docs.python.org/3.10/tutorial/appetite.html)
+See more information on [website](https://docs.python.org/3.10/tutorial/appetite.html)
