@@ -16,4 +16,6 @@ operator
 data_structure
 list
 set
+tuple
+dictionary
 ```
