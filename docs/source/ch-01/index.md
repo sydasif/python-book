@@ -7,6 +7,7 @@ Python language was developed by Guido van Rossum. Python has become a scripting
 ```{toctree}
 :maxdepth: 1
 
+intro
 example
 tool
 ```
