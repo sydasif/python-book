@@ -48,5 +48,5 @@ Any programming language that supports a script is known as a scripting language
 
 01_intro
 02_venv
-03_error
+03_syntax
 ```
