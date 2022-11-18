@@ -37,6 +37,68 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 If you need to install Python, you may as well download the most recent stable version. This is the one with the highest number that isn't marked as an alpha or beta release. Please see the [Python downloads page](https://www.python.org/downloads/) for the most up to date versions of Python. They are available via the yellow download buttons on that page.
 
+## Getting Started Python
+
+Python is an interpreted programming language, this means as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+
+The way to run a python file is like this on the command line:
+
+```console
+~$ python hello_world.py
+```
+
+Where "hello_world.py" is the name of your python file.
+
+Let's write our first Python file, called hello_world.py, which can be done in any text editor.
+
+```py
+print("Hello, World!")
+```
+
+Save your file, open your command line, navigate to the directory where you saved your file, and run.
+
+```console
+C:\Users>python hello_world.py
+```
+
+The output should read:
+
+```console
+Hello, World!
+```
+
+## Python Command Line
+
+In python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.
+
+Type the following on the Windows, Mac or Linux command line:
+
+```console
+C:\Users\Your Name>python
+```
+
+From there you can write any python, including our hello world example from earlier in the tutorial:
+
+```py
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+```
+
+Which will write "Hello, World!" in the command line:
+
+```py
+C:\Users\Your Name>python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Hello, World!
+```
+
+Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:
+
+`exit()`
+
 ## [What is pip?](https://pypi.org/project/pip/)
 
 Pip is the package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
