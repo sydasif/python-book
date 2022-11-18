@@ -22,7 +22,8 @@ Python is a clear and powerful object-oriented programming language, comparable 
 
 ## [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download)
 
-Before you start, you will need Python on your computer.
+Before you start, you will need Python on your computer. Many operating systems, including macOS and Linux, come with
+Python preinstalled. The version of Python that comes with your operating system is called the system Python.
 
 Check whether you already have an up to date version of Python installed by entering python in a command line window. If you see a response from a Python interpreter it will include a version number in its initial display.
 
@@ -210,6 +211,7 @@ The built-in function help() invokes the online help system in the interactive i
 A shell prompt will display documentation on the `sys` module, in a style similar to the manual pages shown by the `Unix/Linux` man command.
 
 ```{seealso}
-- [PythonIDE](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments)
-- [PythonEditor](https://wiki.python.org/moin/PythonEditors)
+- [How to Install Python on Windows](https://realpython.com/installing-python/#how-to-install-python-on-windows)
+- [How to Install Python on Linux](https://realpython.com/installing-python/#how-to-install-python-on-linux)
+- [How to Install Python on macOS](https://realpython.com/installing-python/#how-to-install-python-on-macos)
 ```
