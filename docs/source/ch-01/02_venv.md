@@ -2,9 +2,8 @@
 
 A Python virtual environment is an environment where you can install 3rd party packages for testing without affecting the system Python installation. There are several different ways to create Python virtual environments. We will focus on the following two methods:
 
-• The built-in venv module
-
-• The virtualenv package
+- The built-in venv module
+- The virtualenv package
 
 ## [Python’s venv Library](https://docs.python.org/3/library/venv.html)
 
@@ -26,9 +25,9 @@ You can now install new packages and they will install in your virtual environme
 
 The virtualenv package was the original method for creating Python virtual environments. The actual virtualenv package is better than venv in the following ways:
 
-• It’s faster  
-• Can create virtual environments for multiple Python versions
-• Can be upgraded via pip
+- It’s faster  
+- Can create virtual environments for multiple Python versions
+- Can be upgraded via pip
 
 You can install virtualenv by using pip:
 
@@ -67,5 +66,6 @@ This will not work in virtual environment using Python’s _venv_ module.
 Activating, deactivating and freezing, works exactly as virtual environment using Python’s _venv_ module.
 
 ```{seealso}
-[Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+- [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+- [Set Up a Local Programming Environment on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20-04)
 ```

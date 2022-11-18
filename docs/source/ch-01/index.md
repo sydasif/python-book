@@ -1,4 +1,4 @@
-# 1. Introduction to Python
+# 1. Python and Network Automation
 
 Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and application development in many areas on most platforms.
 
@@ -40,7 +40,7 @@ A Python-based open-source configuration management software, SatlStack, serves 
 Any programming language that supports a script is known as a scripting language. It helps programmers in order to write programs for a distinct environment to automate the execution of a number of tasks which could otherwise be executed manually by a human operator, one by one.
 
 ```{seealso}
-More information on [website](https://docs.python.org/3.10/tutorial/appetite.html)
+- [Python Learning for Network Engineers(120+ Videos)](https://www.youtube.com/playlist?list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
 ```
 
 ```{toctree}
