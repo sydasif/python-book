@@ -32,7 +32,8 @@ release = '1.0'
 # ones.
 extensions = [
     #"myst_parser",
-    "myst_nb"
+    "myst_nb",
+    "sphinx.ext.autosectionlabel"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
