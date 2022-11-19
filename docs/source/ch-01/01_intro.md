@@ -1,4 +1,20 @@
-# Python Scripting Examples
+# Why learn Programming
+
+- If software eats everything, are network engineers on the menu?
+- An essential skill for network engineers to enhance his capabilities.
+- Programming to simplify or aotumate tasks.
+- As network engineer, knowing a programming language can come in handy.
+
+![pic](/docs/source/images/programming.PNG)
+
+## Programming in Networks
+
+- Manages network more efficiently
+- Network automation
+- Software define networking
+- Vendors heading towars software based operations
+
+## Scripting Examples
 
 As python scripting is a handy tool for network automation, typical manual tasks that can be automated are:
 
@@ -14,6 +30,18 @@ We need automation in networking to create a more efficient networking environme
 - Repetitive tasks such as changing device logging credentials or time-based ACLs
 - Allows to reproduce and dispose of logs which may cause devices to crash
 - Deliver bug-free code on time
+
+## Orchestration vs Automation
+
+### Automation
+
+- Well specified task run on its own
+
+### Orchestration
+
+- Automating a lot of thing at once
+- Multiple tasks to execute a workflow
+- Automation is the first step towards orchetration
 
 ## Automation Tools and Languages
 
