@@ -6,6 +6,8 @@ Variables in Python mainly refer to the storage location. These variables can be
 
 Lists in Python are sequences of ordered elements that are mutable. Sets, on the other hand, are Python collection of unordered elements that are immutable. Tuples are also Python elements that describe immutable objects but uses parenthesis.
 
+There are several very useful data types used in Python Scripting namely String, Numbers, Lists, Sets, Tuples and Dictionaries. All these elements of Python programming work together in meeting the needs of different programmers in the programming work. These elements help in creating effective Python programs used in several applications.
+
 ```{toctree}
 :maxdepth: 1
 
@@ -13,7 +15,6 @@ Lists in Python are sequences of ordered elements that are mutable. Sets, on the
 02_string
 03_number
 04_operator
-data_type
 list
 set
 tuple
