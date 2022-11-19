@@ -53,7 +53,7 @@ exclude_patterns = []
 html_theme = "sphinx_book_theme"
 ...
 
-html_logo = "../../data-type.PNG"
+html_logo = "../../programming.PNG"
 html_title = "Python for Network Automation"
 
 # Add any paths that contain custom static files (such as style sheets) here,
