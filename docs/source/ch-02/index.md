@@ -15,8 +15,8 @@ There are several very useful data types used in Python Scripting namely String,
 02_string
 03_number
 04_operator
-list
-set
-tuple
-dictionary
+05_list
+06_set
+07_tuple
+08_dictionary
 ```
