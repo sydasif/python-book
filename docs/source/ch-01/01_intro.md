@@ -5,8 +5,6 @@
 - Programming to simplify or aotumate tasks.
 - As network engineer, knowing a programming language can come in handy.
 
-![pic](/docs/source/images/programming.PNG)
-
 ## Programming in Networks
 
 - Manages network more efficiently
