@@ -8,6 +8,23 @@ Lists in Python are sequences of ordered elements that are mutable. Sets, on the
 
 There are several very useful data types used in Python Scripting namely String, Numbers, Lists, Sets, Tuples and Dictionaries. All these elements of Python programming work together in meeting the needs of different programmers in the programming work. These elements help in creating effective Python programs used in several applications.
 
+A python data type is a set/group of values with similar characteristics. Data types can belong to one of the groups shown below:
+
+- Collections
+  - Sequences
+    1. String
+    2. List
+    3. Tuple
+  - Mapping
+    1. Dictionary
+  - Set
+- Numbers
+  - Integer
+    1. Boolean Value
+  - Float
+  - Complex
+- None
+
 ```{toctree}
 :maxdepth: 1
 
