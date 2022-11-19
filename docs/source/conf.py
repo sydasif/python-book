@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Python for Network Engineers'
+project = 'Python for Network Automation'
 copyright = '2022, Syed Asif'
 author = 'Syed Asif'
 
@@ -55,7 +55,7 @@ html_theme = "sphinx_book_theme"
 ...
 
 html_logo = "../../programming.PNG"
-html_title = "Python for Network Automation"
+html_title = "Network Automation"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
