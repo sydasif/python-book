@@ -1,4 +1,4 @@
-# 3. Sequence and Collections
+# 3. Collections and Sequence
 
 This chapter focuses on Collections and Sequences which is used to group multiple values together – like a list of numbers, or a dictionary which can be used to store and retrieve key-value pairs.
 
