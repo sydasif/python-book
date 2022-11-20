@@ -6,8 +6,8 @@ Python is a clear and powerful object-oriented programming language, comparable 
 
 - Uses an elegant syntax, making the programs you write easier to read.
 - Is an easy-to-use language that makes it simple to get your program working.
-- Python ideal for prototype development and other ad-hoc programming tasks.
-- Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, reading and modifying files.
+- Python is ideal for prototype development and other ad-hoc programming tasks.
+- Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, and reading and modifying files.
 - Python's interactive mode makes it easy to test short snippets of code.
 - Runs anywhere, including Mac OS X, Windows, Linux, and Unix.
 - Is free software in two senses. It doesn't cost anything to download or use Python.
@@ -25,7 +25,7 @@ Python is a clear and powerful object-oriented programming language, comparable 
 Before you start, you will need Python on your computer. Many operating systems, including macOS and Linux, come with
 Python preinstalled. The version of Python that comes with your operating system is called the system Python.
 
-Check whether you already have an up to date version of Python installed by entering python in a command line window.
+Check whether you already have an up-to-date version of Python installed by entering python in a command line window.
 
 If you see a response from a Python interpreter it will include a version number in its initial display.
 
@@ -36,7 +36,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-If you need to install Python, you may as well download the most recent stable version. This is the one with the highest number that isn't marked as an alpha or beta release. Please see the [Python downloads page](https://www.python.org/downloads/) for the most up to date versions of Python. They are available via the yellow download buttons on that page.
+If you need to install Python, you may as well download the most recent stable version. This is the one with the highest number that isn't marked as an alpha or beta release. Please see the [Python downloads page](https://www.python.org/downloads/) for the most up-to-date versions of Python. They are available via the yellow download buttons on that page.
 
 ## Getting Started with Python
 

@@ -1,16 +1,16 @@
 # Why learn Programming
 
 - If software eats everything, are network engineers on the menu?
-- An essential skill for network engineers to enhance his capabilities.
-- Programming to simplify or aotumate tasks.
-- As network engineer, knowing a programming language can come in handy.
+- An essential skill for network engineers to enhance their capabilities.
+- Programming to simplify or automate tasks.
+- As a network engineer, knowing a programming language can come in handy.
 
 ## Programming in Networks
 
 - Manages network more efficiently
 - Network automation
 - Software define networking
-- Vendors heading towars software based operations
+- Vendors heading towards software-based operations
 
 ## Scripting Examples
 
@@ -33,13 +33,13 @@ We need automation in networking to create a more efficient networking environme
 
 ### Automation
 
-- Well specified task run on its own
+- Well-specified task run on its own
 
 ### Orchestration
 
-- Automating a lot of thing at once
+- Automating a lot of things at once
 - Multiple tasks to execute a workflow
-- Automation is the first step towards orchetration
+- Automation is the first step towards orchestration
 
 ## Automation Tools and Languages
 
@@ -49,7 +49,7 @@ Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed belo
 
 Ansible is open-source software that helps to automate software configuration, management and application deployment. It can configure routers, switches and various types of servers.
 
-Similarly, another open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its own declarative language too for system configuration description.
+Similarly, another open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its declarative language too for system configuration description.
 
 Chef is another tool for configuration management, written in Ruby and Erlang. It's built on a DevOps model and can help in building reliable scalable systems.
 
@@ -57,7 +57,7 @@ A Python-based open-source configuration management software, SatlStack, serves 
 
 ## What is Scripting?
 
-Any programming language that supports a script is known as a scripting language. It helps programmers in order to write programs for a distinct environment to automate the execution of a number of tasks which could otherwise be executed manually by a human operator, one by one.
+Any programming language that supports a script is known as a scripting language. It helps programmers to write programs for a distinct environment to automate the execution of several tasks which could otherwise be executed manually by a human operator, one by one.
 
 ```{seealso}
 - [Python Learning for Network Engineers(120+ Videos)](https://www.youtube.com/playlist?list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
