@@ -13,7 +13,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> help('print')
 ```
 
-Out put as below:
+Output as below:
 
 ```console
 Help on built-in function print in module builtins:
@@ -59,7 +59,7 @@ or summary contain a given string such as "spam", type "modules spam".
 help> 
 ```
 
-The help function has the following syntax to check module.
+The help function has the following syntax to check the module.
 
 `help> telnetlib` help utility output as below:
 
@@ -96,9 +96,9 @@ The python `dir()` method returns the list of valid attributes of the passed obj
 
 ### dir() syntax
 
-The syntax of `dir()` method is `dir('object')`.
+The syntax of the `dir()` method is `dir('object')`.
 
-- **object** can be an empty/filled tuples, list, set, dictionary etc or any user-defined object.
+- **object** can be an empty/filled tuple, list, set, dictionary etc or any user-defined object.
 
 ```shell
 [$] <> python3
