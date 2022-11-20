@@ -19,4 +19,5 @@ Python collection, unlike a sequence, does not have a deterministic ordering. In
 01_collection
 02_sequence
 03_list
+04_tuple
 ```
