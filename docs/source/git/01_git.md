@@ -58,7 +58,7 @@ $ git init
 Initialized empty Git repository in ~/my-repo/.git/
 ```
 
-Let's add an empty file - `script.py` in this local git folder - `my-repo`.
+Let's add an empty file `script.py` in this local git folder `my-repo`.
 
 ```console
 [$] <> ~/my-repo (main)
@@ -184,8 +184,8 @@ $ git fetch origin
 
 It doesn’t do any file transferring. It just checks if there are any changes available or not.
 
-```[Note]
-In the current case it's optional to do git fetch because git clone will automatically update all metadata. But for later usage fetch will be very useful.
+```{Note}
+In the current case it's optional to do `git fetch` because git clone will automatically update all metadata. But for later usage fetch will be very useful.
 ```
 
 ## Git Branch
@@ -379,3 +379,18 @@ git config --global credential.helper store
 ```
 
 Copy your token to notepad and use it for authentication on GitHub.
+
+## Some Useful Commands
+
+```console
+[$] git config --list             # check git setting
+[$] git config --global --list    # check global setting
+[$] git show                      # to check the details a commit
+[$] git rm                        # delete a tracked file
+[$] git mv                        # rename a tracked file
+[$] git diff --staged             # diff between staging and last commit
+[$] git merge <branch name>       # merge branch
+[$] git branch -d <branch name>   # delete branch
+[$] git branch                    # list all branches
+[$] git branch -a                 # list all branches
+```
