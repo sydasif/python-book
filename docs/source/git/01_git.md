@@ -2,23 +2,23 @@
 
 ## Fundamentals of Git
 
-Git has maintains a file systems also known as git structures or trees as below:
+Git has maintained a file system also known as git structures or trees as below:
 
 - Working directory / local workspace
 
 Starting with the working area, the working area is where the files that are not handled by git, it is the place where all the untracked files are kept.
 
-- Staging area / index
+- Staging area/index
 
-Staging area has files that are add by git add command, going to be part of the next commit.
+A staging area has files that are added by the git add command, going to be part of the next commit.
 
 - Local repository
 
-The repository contains all the project and store all committed items.
+The repository contains all the projects and stores all committed items.
 
 - Remote repository
 
-The remote repository contains your copy of local repo on a server.
+The remote repository contains your copy of the local repo on a server.
 
 ## Staging and Committing
 
@@ -88,7 +88,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ### git add
 
-Out of all the untracked files, we can pick which file we want to commit. This is called staging. Use `git add <fileName>` Command to stage a file:
+Out of all the untracked files, we can pick which file we want to commit. This is called staging. Use the `git add <fileName>` Command to stage a file:
 
 Below we've added `script.py` to the stage and then used git status to check its status.
 
@@ -111,7 +111,7 @@ Changes to be committed:
 
 After all necessary files have been added to a staging area, you can commit changes. Staging is a collection of files that will be added to the next commit. To commit the file to our local repository using  `git commit -m "commit message"`
 
-Below we've committed the `script.py` file with a commit message. Then we've used git status to see if our commit is successful or not.
+Below we've committed the `script.py` file with a commit message. Then we used git status to see if our commit is successful or not.
 
 ```console
 [$] <> ~/my-repo (main)
@@ -121,11 +121,11 @@ $ git commit -m "first commit"
  create mode 100644 script.py
 ```
 
-So far, we've committed the above file in our local repository only. Now it's time to push this file to remote repo.
+So far, we've committed the above file to our local repository only. Now it's time to push this file to the remote repo.
 
 ## Synchronizing local repository with GitHub
 
-As we have create a repo on GitHub in the {ref}`Pre-requisite` section. Now it's time to use it, get the link to your remote branch ready.
+As we have created a repo on GitHub in the {ref}`Pre-requisite` section. Now it's time to use it, get the link to your remote branch ready.
 
 ### git remote
 
@@ -154,7 +154,7 @@ branch 'main' set up to track 'origin/main'.
 
 ## Cloning a GitHub repository
 
-To work locally or Someone else wants to take your changes, add their changes on top of it and push those changes on the remote git repo we have to clon the repo.
+To work locally or if Someone else wants to take your changes, add their changes on top of it and push those changes on the remote git repo we have to clone the repo.
 
 ### git clone
 
@@ -185,7 +185,7 @@ $ git fetch origin
 It doesn’t do any file transferring. It just checks if there are any changes available or not.
 
 ```{Note}
-In the current case it's optional to do `git fetch` because git clone will automatically update all metadata. But for later usage fetch will be very useful.
+In the current case, it's optional to do `git fetch` because the git clone will automatically update all metadata. But for later usage fetch will be very useful.
 ```
 
 ## Git Branch
@@ -263,7 +263,7 @@ After this, our code will be added to the respective remote branch.
 
 Many times you are working on the same file on which someone else is also working.
 
-In such a case, before pushing our copy we need to get the latest copy of the same file. Add our changes to it and then push, to avoid any conflicts.
+In such a case, we need to get the latest copy of the same file before pushing our copy. Add our changes to it and then push, to avoid any conflicts.
 
 ```console
 [$] <> ~/Desktop/my-repo (first-branch)
@@ -299,7 +299,7 @@ Git has the option to specify which file or directories to ignore. To do this, y
 
 There are many ways to see commit history:
 
-Most basic one, shows all the commits from end to start, with all the info related to commits.
+The most basic one, shows all the commits from end to start, with all the info related to commits.
 
 ```console
 [$] <> ~
@@ -319,7 +319,7 @@ To see the stat of the commits:
 git log --stat
 ```
 
-## Check out and Detached Head
+## Check out and Detach Head
 
 Git checkout changes your working directory to match a specific commit and your git’s head is in a detached head state, the Git repository is reverted and your work is temporarily lost means going back to the past.
 
@@ -349,9 +349,9 @@ To add a key you have to copy it. For example, you can display a key with a `cat
 cat ~/.ssh/id_rsa.pub
 ```
 
-After copying, go to GitHub, in the upper right-hand corner click on the picture of your pro-ﬁle and select `Settings` in the drop-down list. In list on the left, select `SSH and GPG keys`. Then press `New SSH key` and in, `Title` field write key name (for example “my_laptop”) and in field `Key` insert the content that was copied from file `~/. ssh/id_rsa.pub`.
+After copying, go to GitHub, in the upper right-hand corner click on the picture of your pro-ﬁle and select `Settings` in the drop-down list. In the list on the left, select `SSH and GPG keys`. Then press `New SSH key` and in, the `Title` field write the key name (for example “my_laptop”) and in the field `Key` insert the content that was copied from file `~/. ssh/id_rsa.pub`.
 
-To check if everything has been successful working, try executing the command `ssh -T git@Github.com`.
+To check if everything is working successfully, try executing the command `ssh -T git@Github.com`.
 
 The output should be as follows:
 
@@ -366,7 +366,7 @@ Open your browser and go to your GitHub account and generate the token as below:
 
 `Settings` -->> `Developer settings` -->> `Personal access tokens` -->> `Generate new token` -->> `Add note` -->> `Set Expiration` -->> `Add Scope and generate token`.
 
-Add token to your configuration with the below command:
+Add a token to your configuration with the below command:
 
 ```console
 git config credential.helper store
@@ -385,7 +385,7 @@ Copy your token to notepad and use it for authentication on GitHub.
 ```console
 [$] git config --list             # check git setting
 [$] git config --global --list    # check global setting
-[$] git show                      # to check the details a commit
+[$] git show                      # to check the details of a commit
 [$] git rm                        # delete a tracked file
 [$] git mv                        # rename a tracked file
 [$] git diff --staged             # diff between staging and last commit
