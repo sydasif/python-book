@@ -1,4 +1,28 @@
-# Working with Git & Basic
+# Git and GitHub
+
+Git is a distributed version control system (VCS) that maintains a history of changes to files for reference and rolls back a change. It is a software for tracking changes in any set of files, usually used for coordinating work among programmers who are collaborating on the same source code, and widely used, released under GNU GPL v2 license.
+
+It's decentralized in nature, helping the larger team to work together. Every developer has their own copy of the repository on their machine, they can locally work without the internet on their machine and commit their changes.
+
+Once their work is done they can publish their changes on a remote git repository and share them with other developers.
+
+You can also do a hands-on exercise(using GitHub) to practice git along with this chapter as well.
+
+Git can:
+
+- track changes n file
+- store multiple versions of the same file
+- record who made changes and when
+
+## Pre-requisite
+
+- [Install Git](https://git-scm.com/downloads)
+- [Create an Account on GitHub](https://wikihow.com/Create-an-Account-on-GitHub)
+- [Create a repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+
+## What is GitHub?
+
+GitHub on the other hand the web-based cloud offering of Git. These services use Git in the background to offer a cloud / online repository to store your code securely so that it’s accessible to everyone, no matter where they are and they can collectivity contribute to the same source code. GitHub also has private repositories, the main use of GitHub is to place code for various projects.
 
 ## Fundamentals of Git
 
@@ -123,7 +147,7 @@ $ git commit -m "first commit"
 
 So far, we've committed the above file to our local repository only. Now it's time to push this file to the remote repo.
 
-## Synchronizing local repository with GitHub
+## Synchronizing local repository
 
 As we have created a repo on GitHub in the {ref}`Pre-requisite` section. Now it's time to use it, get the link to your remote branch ready.
 
@@ -152,7 +176,7 @@ To github.com:sydasif/my-repo.git
 branch 'main' set up to track 'origin/main'.
 ```
 
-## Cloning a GitHub repository
+## Cloning a remote repository
 
 To work locally or if Someone else wants to take your changes, add their changes on top of it and push those changes on the remote git repo we have to clone the repo.
 
@@ -277,13 +301,11 @@ Already up to date.
 
 In such a case, you need to raise a PR, go through the code review process and then merge your changes on the destination branch.
 
-To Create PR:
+```{seealso}
+To Create PR: [Creating a pull request](https://docs.github.com/en/enterprise-cloud@latest/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-[Creating a pull request](https://docs.github.com/en/enterprise-cloud@latest/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-
-After Review Merge PR:
-
-[Merging a pull request](https://docs.github.com/en/enterprise-cloud@latest/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
+After Review Merge PR: [Merging a pull request](https://docs.github.com/en/enterprise-cloud@latest/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
+```
 
 ## Additional Features
 
