@@ -1,10 +1,8 @@
-# help() & dir() function in Python
+# help() & dir() function
 
 ## help() function
 
-The Python help function is used to display the documentation of modules, functions, classes, keywords, etc.
-
-The help function has the following syntax:
+The Python `help()` function is used to display the documentation of modules, functions, classes, keywords, etc. The help function has the following syntax:
 
 ```shell
 [$] <> python3
@@ -30,7 +28,7 @@ print(...)
 
 ```
 
-If the help function is passed without an argument, then the interactive help utility starts up on the console.
+If the `help()` function is passed without an argument, then the interactive help utility starts up on the console.
 
 ```shell
 [$] <> python3
@@ -39,7 +37,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> help()
 ```
 
-> Output of `help()`
+Output as below:
 
 ```console
 Welcome to Python 3.8's help utility!
@@ -59,7 +57,7 @@ or summary contain a given string such as "spam", type "modules spam".
 help> 
 ```
 
-The help function has the following syntax to check the module.
+The `help()` function has the following syntax to check the module.
 
 `help> telnetlib` help utility output as below:
 
@@ -92,7 +90,7 @@ DESCRIPTION
 
 ## dir() method
 
-The python `dir()` method returns the list of valid attributes of the passed object as below:
+The Python `dir()` method returns the list of valid attributes of the passed object as below:
 
 ### dir() syntax
 
@@ -122,8 +120,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 The `pydoc` module automatically generates documentation from Python modules. The documentation can be presented as pages of text on the console, served to a web browser, or saved to HTML files.
 
-The built-in function `help()` invokes the online help system in the interactive interpreter, which uses pydoc to generate its documentation as text on the console. The same text documentation can also be viewed from outside the Python interpreter by running pydoc as a script at the operating system’s command prompt. For example, running
+The built-in function `help()` invokes the online help system in the interactive interpreter, which uses `pydoc` to generate its documentation as text on the console. The same text documentation can also be viewed from outside the Python interpreter by running pydoc as a script at the operating system’s command prompt. For example, running
 
 `pydoc sys`
 
-A shell prompt will display documentation on the `sys` module, in a style similar to the manual pages shown by the `Unix/Linux` man command.
+A shell prompt will display documentation on the `sys` module, in a style similar to the manual pages shown by the Unix/Linux man command.
