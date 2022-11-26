@@ -1,4 +1,4 @@
-# 2. Basic of Python
+# Basic of Python
 
 This chapter focuses on the basic fundamentals of the Python programming language that are needed to write a program or a script. Python has different data types, sets, strings, lists and dicts that are important in programming. Lists store sequences of objects in an order and iterate over the list.
 
@@ -26,7 +26,7 @@ A python data type is a set/group of values with similar characteristics. Data t
 - None
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 
 01_variable
 02_string

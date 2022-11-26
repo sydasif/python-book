@@ -11,8 +11,8 @@ This is a test project.
 ```
 
 ```{toctree}
-:caption: 'Contents:'
-:maxdepth: 2
+:caption: 'Table of Contents:'
+:maxdepth: 1
 
 ch-01/index
 ch-02/index

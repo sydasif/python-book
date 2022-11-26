@@ -1,4 +1,4 @@
-# 3. Collections and Sequence
+# Collections and Sequence
 
 This chapter focuses on Collections and Sequences which is used to group multiple values together – like a list of numbers, or a dictionary which can be used to store and retrieve key-value pairs.
 
@@ -14,7 +14,7 @@ Python collection, unlike a sequence, does not have a deterministic ordering. In
 - Set
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 
 01_collection
 02_sequence
