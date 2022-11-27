@@ -10,4 +10,5 @@ statement that are executed and repeated, until a certain condition is meet. Pyt
 :maxdepth: 2
 
 01_for-loop
+02_while-loop
 ```
