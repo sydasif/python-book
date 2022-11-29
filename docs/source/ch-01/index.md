@@ -10,7 +10,7 @@ Python is an easy-to-learn, powerful programming language. It has efficient high
 01_intro
 02_install
 03_syntax
-04_help
+04_introspection
 05_pip
 06_venv
 ```
