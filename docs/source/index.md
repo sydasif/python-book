@@ -14,7 +14,7 @@ This is a test project.
 :caption: 'Table of Contents:'
 :maxdepth: 1
 
-ch-01/index
+01_introduction/index
 ch-02/index
 ch-03/index
 ch-04/index
