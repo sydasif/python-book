@@ -1,16 +1,21 @@
-# Why learn Programming
+# Why learn Programming?
 
-- If software eats everything, are network engineers on the menu?
-- An essential skill for network engineers to enhance their capabilities.
+Network engineering is fundamentally changing, as a network engineer, there has never been a better time for you to learn programming to automate networks and write code. In the late 90’s – 2010, a network engineer typed in the same CLI commands hundreds/thousands, of times to configure and troubleshoot network devices.
+
+We have sighted improvements from network vendors, but also in the open source tooling that is available to use for automating the network. For example, there are now network devices APIs and community-supported Python libraries, and freely available open-source tools that give you and every other network engineer access to a growing environment to jump-start your network automation journey.
+
+This means that you have to write less code than you would have in the past, and less code means faster development and fewer bugs, so we definitely think learning the basics of any programming language is valuable.
+
+- An essential skill to enhance their capabilities.
 - Programming to simplify or automate tasks.
-- As a network engineer, knowing a programming language can come in handy.
-
-## Programming in Networks
-
-- Manages network more efficiently
-- Network automation
+- Knowing a programming language can come in handy.
+- Manages network more efficiently.
 - Software define networking
 - Vendors heading towards software-based operations
+
+## What is Scripting?
+
+Any programming language that supports a script is known as a scripting language. It helps programmers to write programs for a distinct environment to automate the execution of several tasks which could otherwise be executed manually by a human operator, one by one.
 
 ## Scripting Examples
 
@@ -29,7 +34,7 @@ We need automation in networking to create a more efficient networking environme
 - Allows to reproduce and dispose of logs which may cause devices to crash
 - Deliver bug-free code on time
 
-## Orchestration vs Automation
+## Automation and Orchestration
 
 ### Automation
 
@@ -52,7 +57,3 @@ Python is used for network automation, but it’s frequently used with other net
 - Chef is another tool for configuration management, written in Ruby and Erlang. It's built on a DevOps model and can help in building reliable scalable systems.
 
 - A Python-based open-source configuration management software, SatlStack, serves as a remote execution engine. As it uses the "Infrastructure as Code" methodology for deployment and cloud management, it is a competitive tool and can be used in the replacement of Puppet, Ansible, and Chef.
-
-## What is Scripting?
-
-Any programming language that supports a script is known as a scripting language. It helps programmers to write programs for a distinct environment to automate the execution of several tasks which could otherwise be executed manually by a human operator, one by one.
