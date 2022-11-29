@@ -6,11 +6,13 @@ We have sighted improvements from network vendors, but also in the open source t
 
 This means that you have to write less code than you would have in the past, and less code means faster development and fewer bugs, so we definitely think learning the basics of any programming language is valuable.
 
-- An essential skill to enhance their capabilities.
+Some key skills to why learn to program?
+
+- An essential skillfulness to enhance proficiencies.
 - Programming to simplify or automate tasks.
 - Knowing a programming language can come in handy.
 - Manages network more efficiently.
-- Software define networking
+- Software defines networking 
 - Vendors heading towards software-based operations
 
 ## What is Scripting?
@@ -27,12 +29,7 @@ As python scripting is a handy tool for network automation, typical manual tasks
 - Configuration management
 - Troubleshooting
 
-We need automation in networking to create a more efficient networking environment, improve network uptime and prevent mistakes. Network Automation is helping to solve the following:
-
-- Mistakes due to human error in configuring the devices
-- Repetitive tasks such as changing device logging credentials or time-based ACLs
-- Allows to reproduce and dispose of logs which may cause devices to crash
-- Deliver bug-free code on time
+We need automation in networking to create a more efficient networking environment, improve network uptime and prevent mistakes.
 
 ## Automation and Orchestration
 
@@ -52,7 +49,7 @@ Python is used for network automation, but it’s frequently used with other net
 
 - Ansible is open-source software that helps to automate software configuration, management and application deployment. It can configure routers, switches and various types of servers.
 
-- Similarly, another open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its declarative language too for system configuration description.
+- Similarly, the open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its declarative language too for system configuration description.
 
 - Chef is another tool for configuration management, written in Ruby and Erlang. It's built on a DevOps model and can help in building reliable scalable systems.
 
