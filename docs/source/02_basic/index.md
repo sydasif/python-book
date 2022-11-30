@@ -6,9 +6,9 @@ Variables in Python mainly refer to the storage location. These variables can be
 
 Lists in Python are sequences of ordered elements that are mutable. Sets, on the other hand, are Python collections of unordered elements that are immutable. Tuples are also Python elements that describe immutable objects but use parenthesis.
 
-There are several very useful data types used in Python Scripting namely Strings, Numbers, Lists, Sets, Tuples and Dictionaries. All these elements of Python programming work together in meeting the needs of different programmers in the programming work. These elements help in creating effective Python programs used in several applications.
+All these elements of Python programming work together in meeting the needs of different programmers in the programming work. These elements help in creating effective Python programs used in several applications.
 
-A python data type is a set/group of values with similar characteristics. Data types can belong to one of the groups shown below:
+Python data type is a group of values, that belong to one of the groups shown below:
 
 - Collections
   - Sequences
@@ -24,6 +24,8 @@ A python data type is a set/group of values with similar characteristics. Data t
   - Float
   - Complex
 - None
+
+In this chapter, we discuss variables, strings, numbers, boolean values and operators.
 
 ```{toctree}
 :maxdepth: 2
