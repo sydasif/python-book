@@ -32,7 +32,6 @@ A python data type is a set/group of values with similar characteristics. Data t
 02_string
 03_number
 04_operator
-05_list
 06_set
 08_dictionary
 ```
