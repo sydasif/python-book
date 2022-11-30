@@ -17,10 +17,9 @@ Python collection, unlike a sequence, does not have a deterministic ordering. In
 :maxdepth: 2
 
 01_collection
-02_sequence
-03_list
-04_tuple
-05_string
-06_dict
-07_set
+02_list
+03_tuple
+04_string
+05_dict
+06_set
 ```
