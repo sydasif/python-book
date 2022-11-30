@@ -11,5 +11,4 @@ statement that are executed and repeated, until a certain condition is meet. Pyt
 
 01_for-loop
 02_while-loop
-03_input
 ```
