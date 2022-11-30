@@ -34,6 +34,5 @@ In this chapter, we discuss variables, strings, numbers, boolean values and oper
 02_string
 03_number
 04_operator
-06_set
 08_dictionary
 ```
