@@ -15,10 +15,10 @@ This is a test project.
 :maxdepth: 1
 
 01_introduction/index
-ch-02/index
-ch-03/index
-ch-04/index
-ch-05/index
-ch-06/index
-ch-07/index
+02_basic/index
+03_collection/index
+04_condition/index
+05_loop/index
+06_function/index
+07_error/index
 ```
