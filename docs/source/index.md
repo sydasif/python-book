@@ -12,7 +12,7 @@ This is a test project.
 
 ```{toctree}
 :caption: 'Table of Contents:'
-:maxdepth: 1
+:maxdepth: 2
 
 01_introduction/index
 02_basic/index
