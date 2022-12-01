@@ -20,7 +20,7 @@ Python is a clear and powerful object-oriented programming language, comparable 
 - The language supports raising and catching exceptions, resulting in cleaner error handling.
 - Python contains advanced programming features such as generators and list comprehensions.
 
-## [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download)
+## [Downloading Python](https://www.python.org/downloads/)
 
 Before you start, you will need Python on your computer. Many operating systems, including macOS and Linux, come with Python preinstalled. The version of Python that comes with your operating system is called the system Python. Check whether you already have an up-to-date version of Python installed by entering python in a command line window.
 
@@ -33,9 +33,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-If you need to install Python, you may as well download the most recent stable version. This is the one with the highest number that isn't marked as an alpha or beta release. Please see the [Python downloads page](https://www.python.org/downloads/) for the most up-to-date versions of Python. They are available via the yellow download buttons on that page.
+If you need to install Python, you may as well download the most recent stable version. This is the one with the highest number that isn't marked as an alpha or beta release. Please see the [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download) for the most up-to-date versions of Python and other operating systems. They are available via the yellow download buttons on that page.
 
-## Getting Started with Python
+## [Getting Started with Python](https://www.python.org/about/gettingstarted/)
 
 Python is an interpreted programming language, this means as a developer you write Python `.py` files in a text editor and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:
 
@@ -92,11 +92,13 @@ Hello, World!
 
 Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:
 
-```shell
+```console
 [$] <> exit()
+```
 
-or 
+or
 
+```console
 [$] <> quit()
 ```
 
@@ -104,4 +106,5 @@ or
 - [How to Install Python on Windows](https://realpython.com/installing-python/#how-to-install-python-on-windows)
 - [How to Install Python on Linux](https://realpython.com/installing-python/#how-to-install-python-on-linux)
 - [How to Install Python on macOS](https://realpython.com/installing-python/#how-to-install-python-on-macos)
+- [See more information about Python](https://www.python.org/about/gettingstarted/)
 ```
