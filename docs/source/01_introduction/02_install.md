@@ -35,7 +35,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 If you need to install Python, you may as well download the most recent stable version. This is the one with the highest number that isn't marked as an alpha or beta release. Please see the [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download) for the most up-to-date versions of Python and other operating systems. They are available via the yellow download buttons on that page.
 
-## [Getting Started with Python](https://www.python.org/about/gettingstarted/)
+## Getting Started with Python
 
 Python is an interpreted programming language, this means as a developer you write Python `.py` files in a text editor and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:
 
