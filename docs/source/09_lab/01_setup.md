@@ -17,7 +17,7 @@ We start with some basic knowledge about how to set up GNS3, download Cisco imag
 - Download the Network Automation appliance from GNS3 marketplace.
 - Create the simple topology as the figure below in GSN3.
 
-![lab](../images/network_automation.png)
+![lab](../images/lab-pic.png)
 
 - **Network Automation docker container**
 
@@ -51,10 +51,10 @@ iface eth1 inet static
 
 - **Router Configuration**
 
-Now configure the router in the same subnet as the container network address.
+Now configure the router `R1` in the same subnet as the container network address.
 
 ```console
-conf t
+conf ter
 hostname R1
 int fa0/0
 ip address 192.168.10.11 255.255.255.0
@@ -62,10 +62,21 @@ no shut
 end
 ```
 
-We need to enable a password for the telnet connection to the router:
+Configure the router `R2`
 
 ```console
-conf t
+conf ter
+hostname R2
+int fa0/1
+ip address 192.168.10.12 255.255.255.0
+no shut
+end
+```
+
+We need to enable a password for the telnet connection:
+
+```console
+conf ter
 enable password cisco
 username admin password cisco
 line vty 0 4
