@@ -49,9 +49,9 @@ iface eth1 inet static
 #iface eth1 inet dhcp
 ```
 
-Now configure the router in the same subnet as the container network address.
-
 - **Router Configuration**
+
+Now configure the router in the same subnet as the container network address.
 
 ```console
 conf t
