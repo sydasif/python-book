@@ -126,3 +126,43 @@ Create a new file if it does not exist:
 ```py
 f = open("myfile.txt", "w")
 ```
+
+## File and context manager
+
+The best way to open a file in Python is to use Python’s special `with` statement is known as a context manager. In this example, you want to open a file, and then the `with` statement, automatically closes the file.
+
+```py
+with open('my_file.txt') as f:
+    data = f.read()
+    print(data)
+```
+
+```console
+Hello! Welcome to the text file.
+This file is for testing purposes only.
+```
+
+## Python’s for loop
+
+We can iterate over a file using Python’s `for` loop, this is actually one of the recommended methods for reading a file.
+
+```py
+with open('my_file') as f:
+    for line in f:
+        print(line)
+```
+
+```console
+Hello! Welcome to the text file.
+
+This file is for testing purposes only.
+```
+
+An alternative way to loop over the lines in a file.
+
+```py
+with open('my_file') as f:
+    lines = f.readlines()
+    for line in lines:
+        print(line)
+```
