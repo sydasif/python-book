@@ -22,4 +22,5 @@ This is a test project.
 06_file-handling/index
 07_error/index
 08_function/index
+09_lab/index
 ```
