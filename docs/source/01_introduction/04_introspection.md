@@ -14,8 +14,6 @@ When you are working with code, it can be useful to check and see what type it i
 
 The Python `dir()` method returns the list of valid attributes of the passed object as below:
 
-### dir() syntax
-
 The syntax of the `dir()` method is `dir('object')`.
 
 - **object** can be an empty/filled tuple, list, set, dictionary etc or any user-defined object.
