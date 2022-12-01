@@ -19,6 +19,7 @@ This is a test project.
 03_collection/index
 04_condition/index
 05_loop/index
-06_function/index
+06_file-handling/index
 07_error/index
+08_function/index
 ```
