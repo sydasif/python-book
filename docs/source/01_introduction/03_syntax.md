@@ -52,13 +52,19 @@ The number of spaces is up to you, the most common use is four, but it has to be
 # Example 2 spces
 if 5 > 2:
   print("Five is greater than two!")
+```
+
+```console
+Five is greater than two!
+```
+
+```py
 # Example 4 spces
 if 5 > 2:
     print("Five is greater than two!") 
 ```
 
 ```console
-Five is greater than two!
 Five is greater than two!
 ```
 
