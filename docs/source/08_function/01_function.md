@@ -84,6 +84,10 @@ add = my_function(3)
 print(add)
 ```
 
+```console
+8
+```
+
 ## Default Arguments
 
 Default arguments are a way to make your function callable with less arguments, whereas required arguments are ones that you have to pass in to the function for the function to execute a task.
