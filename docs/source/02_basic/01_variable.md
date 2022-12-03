@@ -11,13 +11,19 @@ Python has no command for declaring a variable. A variable is created at the mom
 
 ```py
 vlan_num = 5
-ip_addr = "10.1.1.1"
 print(vlan_num)
-print(ip_addr)
 ```
 
 ```console
 5
+```
+
+```py
+ip_addr = "10.1.1.1"
+print(ip_addr)
+```
+
+```console
 10.1.1.1
 ```
 
@@ -25,13 +31,19 @@ You can get the data type of a variable with the `type()` function.
 
 ```py
 vlan_num = 5
-ip_addr = "10.1.1.1"
 print(type(vlan_num))
-print(type(ip_addr))
 ```
 
 ```console
 <class 'int'>
+```
+
+```py
+ip_addr = "10.1.1.1"
+print(ip_addr)
+```
+
+```console
 <class 'str'>
 ```
 
@@ -44,7 +56,7 @@ hostName = "Router-01"
 print(hostName)
 ```
 
-```py
+```console
 Router-01
 ```
 
@@ -53,13 +65,18 @@ String variables can be declared either by using single `''` or double quotes `"
 ```py
 hostName = "Router-01"
 print(hostName)
+```
 
+```console
+Router-01
+```
+
+```py
 hostName = 'Router-01'
 print(hostName)
 ```
 
 ```console
-Router-01
 Router-01
 ```
 
@@ -92,10 +109,9 @@ Type casting is a method used to change the variable  value into a different dat
 In this example, we shall take an integer literal assigned to a variable. Then we shall typecast this integer to float using `float()` function.
 
 ```py
-#integer
+# integer
 num = 100
-
-#float
+# float
 num_float = float(num)
 print(num_float)
 print(type(num_float))
@@ -109,10 +125,9 @@ print(type(num_float))
 In the following code, we shall initialize a variable with float value. then, we typecast this float to integer using `int()`.
 
 ```py
-#float
+# float
 num = 99.9
-
-#integer
+# integer
 num_int = int(num)
 print(num_int)
 print(type(num_int))
@@ -123,7 +138,7 @@ print(type(num_int))
 <class 'int'>
 ```
 
-In this example, we shall use `int()` and `float()` to typecast a string literal to integer and float
+In this example, we shall use `int()` and `float()` to typecast a string literal to integer and float.
 
 ```py
 #string
@@ -155,7 +170,6 @@ Please note that, if you have decimal point in the string, you cannot typecast t
 s = '132.564'
 # Typecast to integer
 n = int(float(s))
-print(n)
 ```
 ````
 
