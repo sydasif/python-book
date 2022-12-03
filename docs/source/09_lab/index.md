@@ -6,4 +6,5 @@ One of the best ways to learn about a topic is to practice what you study, valid
 :maxdepth: 2
 
 01_setup
+02_telnetlib
 ```
