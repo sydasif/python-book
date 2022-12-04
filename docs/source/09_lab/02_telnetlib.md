@@ -137,6 +137,6 @@ FastEthernet0/1            unassigned      YES NVRAM  administratively down down
 R1>exit
 ```
 
-```{Note}
+```{epigraph}
 [getpass](https://docs.python.org/3/library/getpass.html) module allows you to request a password without displaying input characters.
 ```
