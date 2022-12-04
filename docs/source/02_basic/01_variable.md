@@ -93,6 +93,18 @@ my_variable_name = "Ali"
 Remember that variable names are case-sensitive.
 ```
 
+## The print() Function
+
+The `print()` function displays the string/variable inside the parentheses on the screen. The line `print('Hello world!')` means “Print out the text in the string 'Hello world!'.”  A value that is passed to a function call is an argument.
+
+```py
+print("Hello, World!")
+```
+
+```console
+Hello, World!
+```
+
 ## Type Casting in Python
 
 Type casting is a method used to change the variable  value into a different data type to match the operation required to be performed by the programer. In python, this feature can be accomplished by using built-in functions like `int()`, `str()`, `float()`, etc.
@@ -163,15 +175,3 @@ s = '132.564'
 n = int(float(s))
 ```
 ````
-
-## `print()` Function
-
-The `print()` function displays the string/variable inside the parentheses on the screen. The line `print('Hello world!')` means “Print out the text in the string 'Hello world!'.”  A value that is passed to a function call is an argument.
-
-```py
-print("Hello, World!")
-```
-
-```console
-Hello, World!
-```

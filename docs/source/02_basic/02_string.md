@@ -36,6 +36,18 @@ print(len(motd_ban))
 Don't use the word 'welcome' in any type of banner on a network device.
 ```
 
+## The len() Function
+
+We can pass the `len()` function a string value (or a variable containing a string), and the function evaluates to the integer value of the number of characters in that string.
+
+```py
+len('hello')
+```
+
+```console
+5
+```
+
 ## User input in Python
 
 In Python, if we need to interact with users, either to get data input or to provide some sort of result. Asking the user to provide some type of input, Python provides us with built-in `input()` functions to take the input from the keyboard.
