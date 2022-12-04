@@ -62,6 +62,26 @@ Zero
 
 ## if else and input()
 
+In the code below we can mixed the `if` condition with `input()` function:
+
+```py
+user = input("Enter your Username: ")
+if user == 'admin':
+    password = input("Entef your Password: ")
+    if password == 'cisco':
+        print("Access granted...")
+    else:
+        print("Incorrect Password!!!")    
+else:
+    print("Incorrect Username!!!")
+```
+
+```console
+Enter your Username: admin
+Entef your Password: abc
+Incorrect Password!!!
+```
+
 ## if-else and logical operators
 
 In case of `AND`, if both the operands are `True` then condition becomes `True`. If any of the operators is `False` then the condition evaluations to `False`.
