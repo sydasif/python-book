@@ -32,9 +32,9 @@ b = 5
 
 Three double or three single quotes may be used for a multi-line comment.
 
-## Python Indentation
+## [Indentation](https://peps.python.org/pep-0008/#indentation)
 
-Indentation refers to the spaces at the beginning of a code line. Whereas in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
+Indentation refers to the spaces/tabs at the beginning of a code line. Whereas in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 
 ```py
 # Example
@@ -46,7 +46,11 @@ if 5 > 2:
 Five is greater than two!
 ```
 
-The number of spaces is up to you, the most common use is four, but it has to be at least one.
+The number of spaces is up to you, but it has to be at least one.
+
+```{Note}
+Use 4 spaces per indentation level -- PEP 8
+```
 
 ```py
 # Example 2 spces
@@ -68,7 +72,7 @@ if 5 > 2:
 Five is greater than two!
 ```
 
-You have to use the same number of spaces in the same block of code, otherwise, Python will give you an error.
+You have to use the same number of spaces or tab in the same block of code, otherwise, Python will give you an error.
 
 ```py
 # Indentation error
@@ -99,6 +103,12 @@ print("Five is greater than two!")
     ^
 IndentationError: expected an indented block after 'if' statement on line 3
 ```
+
+## [Tabs or Spaces?](https://peps.python.org/pep-0008/#tabs-or-spaces)
+
+- Spaces are the preferred indentation method.
+- Tabs should be used solely to remain consistent with code that is already indented with tabs.
+- Python disallows mixing tabs and spaces for indentation.
 
 ## Error in Python
 

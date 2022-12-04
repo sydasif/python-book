@@ -1,6 +1,6 @@
-# If-else statement
+# if-else Statement
 
-If-else statement is a conditional statement in programming. If the statement is proved to be `True`, then a given set of programming statements are executed. If the statement is proved to be `False`, then another set of programming statements or none of the programming statements are executed.
+`if` - `else` statement is a conditional statement in programming. If the statement is proved to be `True`, then a given set of code block (statement) are executed. If the statement is proved to be `False`, then another set of code block or none of the statement are executed.
 
 - An 'if statement' is written by using the `if` keyword.
 - The `elif` keyword in Python, "if the previous conditions were not true, then try this condition".
@@ -59,6 +59,8 @@ else:
 ```console
 Zero
 ```
+
+## if else and input()
 
 ## if-else and logical operators
 

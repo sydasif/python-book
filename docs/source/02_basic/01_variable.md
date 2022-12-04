@@ -10,12 +10,12 @@ A variable is a storage location with a name and a value in Python, variables ar
 Python has no command for declaring a variable. A variable is created at the moment you first assign a value to it.
 
 ```py
-vlan_num = 5
-print(vlan_num)
+hostname = "localhost"
+print(hostname)
 ```
 
 ```console
-5
+localhost
 ```
 
 ```py
@@ -28,15 +28,6 @@ print(ip_addr)
 ```
 
 You can get the data type of a variable with the `type()` function.
-
-```py
-vlan_num = 5
-print(type(vlan_num))
-```
-
-```console
-<class 'int'>
-```
 
 ```py
 ip_addr = "10.1.1.1"

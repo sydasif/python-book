@@ -14,6 +14,12 @@ print(my_str)
 Network Automation is a fun
 ```
 
+```{epigraph}
+In Python, single-quoted strings and double-quoted strings are the same. This PEP does not make a recommendation for this. Pick a rule and stick to it. When a string contains single or double quote characters, however, use the other one to avoid backslashes in the string. It improves readability.
+
+-- PEP 8, *[String Quotes](https://peps.python.org/pep-0008/#string-quotes)*
+```
+
 The Python program code below demonstrates a Python function to print the length of the character.
 
 ```py
@@ -37,13 +43,11 @@ In Python, if we need to interact with users, either to get data input or to pro
 This function first takes the input from the user, converts it into a string and store in a variable. It does not evaluate the expression, it just returns the complete statement as String. When the input function is called it stops the program and waits for the user’s input. When the user presses enter, the program resumes and returns what the user has typed.
 
 ```py
-name = input("What is your name: ")
-print(name)
+user = input("Enter your username: ")
+print(user)
 ```
 
-Output
-
 ```console
->>> What is your name: Ali
-Ali
+>>> Enter your username: admin
+admin
 ```
