@@ -8,7 +8,29 @@ In programing, the ability to examine classes, functions and keywords to know wh
 
 ## type() Function
 
-When you are working with code, it can be useful to check and see what type it is. Is the code a string, an integer or some kind of object? This is especially true when you are working with code that you have never used before. This is where using the `type()` function can be valuable.
+When you are working with code, it can be useful to check and see what type it is. Is the code a string, an integer or some kind of object? This is especially useful when you are working with code that you have never used before.
+
+This is where using the `type()` function can be valuable.
+
+```py
+
+a = 10
+b = 10.5
+c = True
+d = 1 + 5j
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+```
+
+```console
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'complex'>
+```
 
 ## dir() method
 
@@ -47,8 +69,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> help('print')
 ```
 
-Output as below:
-
 ```console
 Help on built-in function print in module builtins:
 
@@ -73,8 +93,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> help()
 ```
 
-Output as below:
-
 ```console
 Welcome to Python 3.8's help utility!
 
@@ -95,9 +113,8 @@ help>
 
 The `help()` function has the following syntax to check the module.
 
-`help> telnetlib` help utility output as below:
-
 ```console
+help> telnetlib
 Help on module telnetlib:
 
 NAME
