@@ -22,7 +22,7 @@ Use an SSH client to connect your remote server to a network device, the most po
 
 ## SSH Configuration
 
-To authenticate an SSH connection, we need to set up RSA public/private key pair. We will configure SSH on our {ref}`Network Automation Lab`, so that we can access it from any other device. NetworkAutomation-1 will be used as an SSH client.
+To authenticate an SSH connection, we need to set up RSA public/private key pair. We will configure SSH on our {ref}`Network Automation Lab` so that we can access it from any other device. NetworkAutomation-1 will be used as an SSH client.
 
 The name of the RSA keypair will be the `hostname` and `domain` name of the router:
 
@@ -113,7 +113,7 @@ R1>
 
 #### Example of for loop
 
-In this python script we use `for` loop to create loopback interface on `R1`.
+In this python script, we use the `for` loop and `range()` functions to create a loopback interface on `R1`.
 
 ```py
 import paramiko
@@ -170,9 +170,9 @@ R1#
 ### Done ###
 ```
 
-#### Connecting to multiple device
+#### Connecting to multiple devices
 
-In this python script we use `for` loop to connect multiple device.
+In this python script, we use the `for` loop to connect multiple devices.
 
 ```py
 import paramiko
@@ -230,4 +230,44 @@ Loopback0                  1.1.1.0         YES manual up                    up
 Loopback1                  1.1.1.1         YES manual up                    up
 R2#
 ### Done ###
+```
+
+In this python script, we use the `for` loop and `list` to connect multiple devices.
+
+```py
+import paramiko
+import time
+
+username = 'admin'  # username
+password = 'cisco'  # password
+
+devices =['192.168.10.11', '192.168.10.12']
+
+for device in devices:
+    print ('\n #### Connecting to the device ' + device + '####\n' )
+    client = paramiko.SSHClient()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    
+    client.connect(device,port=22,
+                    username=username,
+                    password=password,
+                    look_for_keys=False,
+                    allow_agent=False
+                )
+
+    ssh_client = client.invoke_shell()
+
+    ssh_client.send('config t\n')
+    for num in range (2,5):
+        ssh_client.send('int lo ' + str(num) + '\n')
+        ssh_client.send('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')  
+
+    time.sleep(1)
+    ssh_client.send('do term length 0\n')
+    ssh_client.send('do show ip int brief\n')
+    time.sleep(3)
+    output = ssh_client.recv(65000)
+    print (output.decode('ascii'))
+
+    client.close()
 ```
