@@ -1,6 +1,6 @@
 # For loops
 
-A `for` loop is used in where the user wants to continuously repeat the execution of a given block of code or statements for a known number of times. A `for` loop is used for iterating over a collection (that is either a list, a tuple, a dictionary, a set, or a string). For instance, a `for` loop in Python, is used to run over a specific number of times until a certain condition is reached.
+A `for` loop is used in which the user wants to continuously repeat the execution of a given block of code or statements a known number of times. A `for` loop is used for iterating over a collection (that is either a list, a tuple, a dictionary, a set, or a string). For instance, a `for` loop in Python, is used to run over a specific number of times until a certain condition is reached.
 
 ```py
 ip_list = ["192.168.10.10", "192.168.10.11", "192.168.10.12"]
@@ -16,7 +16,7 @@ for ip in ip_list:
 
 ## range() Function
 
-The `range()` function returns a sequence of numbers, starting from `0` (default) , and increments by `1` (default), and stops before a specified number.
+The `range()` function returns a sequence of numbers, starting from `0` (default), increments by `1` (default), and stops before a specified number.
 
 ```console
 range(start, stop, step)
