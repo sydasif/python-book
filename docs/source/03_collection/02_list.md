@@ -66,11 +66,6 @@ We can add, remove or sort for items in a list.
 
 ```py
 fruit_list = ['apple', 'mango', 'carrot', 'banana']
-print('I have', len(fruit_list), 'fruits to buy.')
-```
-
-```console
-I have 4 fruits to buy.
 ```
 
 ```py
