@@ -1,8 +1,8 @@
 # Python Strings
 
-Python strings are referred to as a sequence of characters/letters that are either literal constants or some kind of variable are surrounded by either single quotation marks, or double quotation marks.
+Python strings are referred to as a sequence of characters/letters that are either literal constants or some kind of variable surrounded by either single quotation marks, or double quotation marks.
 
-The program code below demonstrates the printing the string.
+The program code below demonstrates the printing of string.
 
 ```py
 #  variable 'my_str' is a string
@@ -38,7 +38,7 @@ Don't use the word 'welcome' in any type of banner on a network device.
 
 ## The len() Function
 
-We can pass the `len()` function a string value (or a variable containing a string), and the function evaluates to the integer value of the number of characters in that string.
+You can pass the `len()` function to a string value (or a variable containing a string), and the function evaluates to the integer value of the number of characters in that string.
 
 ```py
 len('hello')
@@ -50,9 +50,9 @@ len('hello')
 
 ## User input in Python
 
-In Python, if we need to interact with users, either to get data input or to provide some sort of result. Asking the user to provide some type of input, Python provides us with built-in `input()` functions to take the input from the keyboard.
+In Python, if you need to interact with users, either to get data input or to provide some sort of result. Asking the user to provide some type of input, Python provides us with built-in `input()` functions to take the input from the keyboard.
 
-This function first takes the input from the user, converts it into a string and store in a variable. It does not evaluate the expression, it just returns the complete statement as String. When the input function is called it stops the program and waits for the user’s input. When the user presses enter, the program resumes and returns what the user has typed.
+This function first takes the input from the user, converts it into a string and stores it in a variable. It does not evaluate the expression; it just returns the complete statement as String. When the input function is called it stops the program and waits for the user’s input. When the user presses enter, the program resumes and returns what the user has typed.
 
 ```py
 user = input("Enter your username: ")

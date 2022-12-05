@@ -2,7 +2,7 @@
 
 Operators in Python are used to perform operations on variables and values.
 
-Python divides the operators in the following groups:
+Python divides the operators into the following groups:
 
 - Arithmetic operators
 - Assignment operators
@@ -51,7 +51,7 @@ print(5 % 3) # reminder
 
 ## Assignment Operators
 
-Assignment operators are used to assign values to variables.
+Assignment operators are used to assigning values to variables.
 
 | Syntax      | Example     | Same as |
 | ----------- | ----------- | ------- |
@@ -84,7 +84,7 @@ print(x)
 
 ## Comparison operators
 
-Comparison operators are used to comparing two or more variables. There are seven main comparison operators in Python. These operators include:
+Comparison operators are used to compare two or more variables. There are `7` main comparison operators in Python. These operators include:
 
 | Syntax      | Description | Example |
 | ----------- | ----------- | ------- |
@@ -126,7 +126,7 @@ Line 6 - a is either less than or equal to b
 
 ## Logical operators
 
-Python has three main logical operators. These include:
+Python has `3` main logical operators. These include:
 
 - logical `and`
 - logical `or` and logical `not`
@@ -159,7 +159,7 @@ True
 
 ## Identity Operators
 
-Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
+Identity operators are used to compare the objects, not if they are equal, but if they are the same object, with the same memory location.
 
 | Syntax      | Description | Example |
 | ----------- | ----------- | ------- |
@@ -168,7 +168,7 @@ Identity operators are used to compare the objects, not if they are equal, but i
 
 ## Membership Operators
 
-Membership operators are used to test if a sequence is presented in an object.
+Membership operators are used to testing if a sequence is presented in an object.
 
 | Syntax      | Description | Example |
 | ----------- | ----------- | ------- |

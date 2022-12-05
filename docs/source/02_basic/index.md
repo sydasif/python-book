@@ -1,6 +1,6 @@
 # Basic of Python
 
-This chapter focuses on the basic fundamentals of the Python programming language that are needed to write a program or a script. Python has different data types, sets, strings, lists and dicts that are important in programming. Lists store sequences of objects in an order and iterate over the list.
+This chapter focuses on the basic fundamentals of the Python programming language that are needed to write a program or a script. Python has different data types, sets, strings, lists and dictionaries that are important in programming. Lists store sequences of objects in an order and iterate over the list.
 
 Variables in Python mainly refer to the storage location. These variables can be assigned one or more values. Python also has several data types including numeric data types. There are also a set of characters called strings that are contained in Python.
 
@@ -8,7 +8,7 @@ Lists in Python are sequences of ordered elements that are mutable. Sets, on the
 
 All these elements of Python programming work together in meeting the needs of different programmers in the programming work. These elements help in creating effective Python programs used in several applications.
 
-Python data type is a group of values, that belong to one of the groups shown below:
+Python data type is a group of values that belong to one of the groups shown below:
 
 - Collections
   - Sequences
@@ -25,7 +25,7 @@ Python data type is a group of values, that belong to one of the groups shown be
   - Complex
 - None
 
-In this chapter, we discuss variables, strings, numbers, boolean values and operators.
+In this chapter, we discuss variables, strings, numbers, Boolean values and operators.
 
 ```{toctree}
 :maxdepth: 2

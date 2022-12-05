@@ -1,9 +1,9 @@
 # Python Variables
 
-A variable is a storage location with a name and a value in Python, variables are names that can be assigned a value and then used to refer to that value in your code. Variables are fundamental to programming for two reasons:
+A variable is a storage location with a name and a value in Python, variables are names that can be assigned to a value and then used to refer to that value in your code. Variables are fundamental to programming for two reasons:
 
-- variables keep values accessible
-- variables give values context
+- Variables keep values accessible
+- Variables give values perception
 
 ## Creating Variables
 
@@ -40,7 +40,7 @@ print(ip_addr)
 
 ## Assignment Statements
 
-An operator is a symbol, that performs an operation on one or more values. Values are assigned to a variable using a special symbol called the assignment operator `=`. The `=` operator takes the value to the right of the operator and assigns it to the name on the left.
+An operator is a symbol that operates on one or more values. Values are assigned to a variable using a special symbol called the assignment operator `=`. The `=` operator takes the value to the right of the operator and assigns it to the name on the left.
 
 ```py
 hostName = "Router-01"
@@ -51,7 +51,7 @@ print(hostName)
 Router-01
 ```
 
-String variables can be declared either by using single `''` or double quotes `""`.
+String variables can be declared either by using single `' '` or double quotes `" "`.
 
 ```py
 hostName = "Router-01"
@@ -107,9 +107,9 @@ Hello, World!
 
 ## Type Casting in Python
 
-Type casting is a method used to change the variable  value into a different data type to match the operation required to be performed by the programer. In python, this feature can be accomplished by using built-in functions like `int()`, `str()`, `float()`, etc.
+Type casting is a method used to change the variable value into a different data type to match the operation required to be performed by the programmer. In python, this feature can be accomplished by using built-in functions like `int()`, `str()`, `float()`, etc.
 
-In this example, we shall take an integer literal assigned to a variable. Then we shall typecast this integer to float using `float()` function.
+In this example, you will take an integer literal assigned to a variable. Then typecast this integer to float using the `float()` function.
 
 ```py
 # integer
@@ -125,7 +125,7 @@ print(type(num_float))
 <class 'float'>
 ```
 
-In the following code, we shall initialize a variable with float value. then, we typecast this float to integer using `int()`.
+In the following code, you set a variable with a float value. Then typecast this float to an integer using `int()`.
 
 ```py
 # float
@@ -141,7 +141,7 @@ print(type(num_int))
 <class 'int'>
 ```
 
-In this example, we shall use `int()` and `float()` to typecast a string literal to integer and float.
+In this example, you will use `int()` and `float()` to typecast a string literal to integer and float.
 
 ```py
 #string
@@ -166,7 +166,7 @@ print(type(f))
 ```
 
 ````{margin}
-Please note that, if you have decimal point in the string, you cannot typecast that directly to an integer. You should first typecast string to float and then that to integer. Following is a quick code snippet for the same.
+Please note that, if you have decimal point in the string, you cannot typecast that directly to an integer. You should first typecast string to float and then to an integer. Following is a quick code snippet for the same.
 
 ```py
 # String
