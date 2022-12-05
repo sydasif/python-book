@@ -23,9 +23,8 @@ range(start, stop, step)
 ```
 
 ```py
-x = range(3, 6)x = range(3, 6)
-# increment by 2 instead of 1
-x = range(3, 20, 2) 
+x = range(3, 6)
+x = range(3, 20, 2)  # increment by 2
 ```
 
 To loop through a specified number of times, the `range()` function returns a sequence of numbers, `for` loop is used to determine the number of iterations in advance.
