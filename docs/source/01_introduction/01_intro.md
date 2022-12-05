@@ -1,18 +1,18 @@
 # Why learn Programming?
 
-Network engineering is fundamentally changing, as a network engineer, there has never been a better time for you to learn programming to automate networks and write code. In the late 90’s – 2010, a network engineer typed in the same CLI commands hundreds/thousands, of times to configure and troubleshoot network devices.
+Network engineering is changing, as a network engineer, there has never been a better time for you to learn programming to automate networks and write code. In the late 90’s – 2010, a network engineer typed in the same CLI commands hundreds/thousands, of times to configure and troubleshoot network devices.
 
-We have sighted improvements from network vendors, but also in the open source tooling that is available to use for automating the network. For example, there are now network devices APIs and community-supported Python libraries, and freely available open-source tools that give you and every other network engineer access to a growing environment to jump-start your network automation journey.
+We have seen improvements from network vendors, but also in the open source tooling that is available to use for automating the network. For example, there are now network devices APIs and community-supported Python libraries, and freely available open-source tools that give you and every other network engineer access to a growing environment to startup your network automation journey.
 
-This means that you have to write less code than you would have in the past, and less code means faster development and fewer bugs, so we definitely think learning the basics of any programming language is valuable.
+This means that you have to write less code than you would have in the past, and less code means faster development and fewer bugs, so networkers think learning the basics of any programming language is valuable.
 
 Some key skills to why learn to program?
 
-- An essential skillfulness to enhance proficiencies.
+- An essential ability to improve proficiencies.
 - Programming to simplify or automate tasks.
 - Knowing a programming language can come in handy.
 - Manages network more efficiently.
-- Software defines networking 
+- Software defines networking
 - Vendors heading towards software-based operations
 
 ## What is Scripting?
@@ -21,7 +21,7 @@ Any programming language that supports a script is known as a scripting language
 
 ## Scripting Examples
 
-As python scripting is a handy tool for network automation, typical manual tasks that can be automated are:
+As scripting is a useful tool for network automation, typical manual tasks can be automated.
 
 - Configuring switches
 - Configuring routers
@@ -29,7 +29,7 @@ As python scripting is a handy tool for network automation, typical manual tasks
 - Configuration management
 - Troubleshooting
 
-We need automation in networking to create a more efficient networking environment, improve network uptime and prevent mistakes.
+You need automation in networking to create a more efficient networking environment, improve network uptime and prevent mistakes.
 
 ## Automation and Orchestration
 
@@ -45,9 +45,9 @@ We need automation in networking to create a more efficient networking environme
 
 ## Automation Tools and Languages
 
-Python is used for network automation, but it’s frequently used with other network automation software tools for automating network monitoring, configurations and maintenance activities. Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
+Python is used for network automation, but it’s frequently used with other network automation tools for automating network monitoring, configurations and maintenance activities. Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
 
-- Ansible is open-source software that helps to automate software configuration, management and application deployment. It can configure routers, switches and various types of servers.
+- Ansible is open-source software that helps to automate software configuration, management and application deployment. It can configure routers, switches and different types of servers.
 
 - Similarly, the open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its declarative language too for system configuration description.
 

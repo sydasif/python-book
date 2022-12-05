@@ -1,22 +1,22 @@
 # Python Syntax
 
-As we learned previously in {ref}`Getting Started with Python`, Python syntax can be executed by writing directly in the Command Line, or by creating a Python file, using the `.py` file extension, and running it in the Command Line.
+As you learned previously in {ref}`Getting Started with Python`, Python syntax can be executed by writing directly in the command line, or by creating a Python file, using the `.py` file extension, and running it in the command line.
 
 Key syntax points:
 
 - Python was designed for readability and is similar to the English language reading.
 - Python relies on indentation, using whitespace, to define a block of code, such as loops, functions and classes.
 - Blank lines are ignored in Python code when executing the program.
-- Variables are created when assigning a value, dynamically typed, has no command to declare a variable.
+- Variables are created when assigning a value, dynamically typed, which means has no command to declare a variable.
 
 ## Comments in Python
 
 When writing code you often need to leave a comment, for example, to describe features of the code. Comments in Python can be one-line:
 
 ```py
-# An important comment
+# Important comment
 a = 6
-b = 5 # A much needed comment
+b = 5 # A much-needed comment
 ```
 
 One-line comments start with a `#` sign. Note that the comment can be in-line where the code itself is or in a separate line. If it is necessary to write several lines of comments in order to not put the `#` sign before each line, we can make a multi-line comment:
@@ -34,7 +34,7 @@ Three double or three single quotes may be used for a multi-line comment.
 
 ## [Indentation](https://peps.python.org/pep-0008/#indentation)
 
-Indentation refers to the spaces/tabs at the beginning of a code line. Whereas in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
+Indentation refers to the spaces/tabs at the beginning of a code line. While in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 
 ```py
 # Example
@@ -53,7 +53,7 @@ Use 4 spaces per indentation level -- PEP 8
 ```
 
 ```py
-# Example 2 spces
+# Example of 2 spaces
 if 5 > 2:
   print("Five is greater than two!")
 ```
@@ -63,7 +63,7 @@ Five is greater than two!
 ```
 
 ```py
-# Example 4 spces
+# Example of 4 spaces
 if 5 > 2:
     print("Five is greater than two!") 
 ```
@@ -72,7 +72,7 @@ if 5 > 2:
 Five is greater than two!
 ```
 
-You have to use the same number of spaces or tab in the same block of code, otherwise, Python will give you an error.
+You have to use the same number of spaces or tabs in the same block of code, otherwise, Python will give you an error.
 
 ```py
 # Indentation error
@@ -88,7 +88,7 @@ if 5 > 2:
 IndentationError: unexpected indent
 ```
 
-Python will also give you an error if you skip the indentation:
+Python also gives you an error if you skip the indentation:
 
 ```py
 # Indentation error
@@ -112,7 +112,7 @@ IndentationError: expected an indented block after 'if' statement on line 3
 
 ## Error in Python
 
-Everybody makes mistakes, especially while programming, as we see `IndentationError:` in the above code. Mistakes in programs are called errors. You’ll experience two main types of errors, syntax errors and runtime errors.
+Everybody makes mistakes, especially while programming, as you see `IndentationError:` in the above code. Mistakes in programs are called errors. You’ll experience two main types of errors, syntax errors and runtime errors.
 
 ## Syntax Errors
 
@@ -130,11 +130,11 @@ print("Hello, World)
 SyntaxError: unterminated string literal (detected at line 2)
 ```
 
-The code won’t run! IDLE displays an alert box with the above message. IDLE highlights the line containing `print("Hello, World)` in red to help you quickly find the line of code with the syntax error.
+The code won’t run! `IDLE` displays an alert box with the above message. `IDLE` highlights the line containing `print("Hello, World)` in red to help you quickly find the line of code with the syntax error.
 
 ## Runtime Errors
 
-IDLE catches syntax errors before a program starts running. In contrast, runtime errors only occur while a program is running. To generate a runtime error, remove both quotation marks and save them as the `hello_world.py` file.
+`IDLE` catches syntax errors before a program starts running. In variance, runtime errors only occur while a program is running. To generate a runtime error, remove both quotation marks and save them as the `hello_world.py` file.
 
 ```py
 print(Hello, World)
@@ -148,4 +148,4 @@ Cell In [3], line 1
 NameError: name 'Hello' is not defined
 ```
 
-Whenever an error occurs, Python stops executing the program and displays several lines of text called a traceback. The traceback shows useful information as above about the error.
+Whenever an error occurs, Python stops executing the program and displays several lines of text called a `Traceback`. The `Traceback` shows useful information about the error.

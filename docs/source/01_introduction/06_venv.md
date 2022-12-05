@@ -1,19 +1,19 @@
 # Python Virtual Environments
 
-A Python virtual environment is an environment where you can install 3rd party packages for testing without affecting the system Python installation. There are several different ways to create Python virtual environments. We will focus on the following two methods:
+A Python virtual environment is a setting where you can install 3rd party packages for testing without affecting the system Python installation. There are several different ways to create Python virtual environments. We will focus on the following two methods:
 
 - The built-in `venv` module
 - The `virtualenv` package
 
 ## [Python’s venv Library](https://docs.python.org/3/library/venv.html)
 
-To use `venv`, you can run Python using the `-m` flag. The `-m` flag tells Python to run the specified module that follows `-m`. Open up a `cmd.exe` on Windows or a terminal on Mac or Linux. Then type the following:
+To use `venv` module, you can run Python using the `-m` flag. The `-m` flag tells Python to run the specified module that follows by `-m`. Open up a `cmd.exe` on Windows or a terminal on Mac or Linux. Then type the following:
 
 ```console
 [$] <> python -m venv test
 ```
 
-This will create a folder named 'test' in whatever directory that you are open to in your terminal session. To activate the virtual environment, you will need to change directories into the test folder and run this on Linux/Mac:
+This will create a folder named *test* in whatever directory that you are open to in your terminal session. To activate the virtual environment, you will need to change directories into the test folder and run this on Linux/MacOS:
 
 ```console
 [$] <> source bin/activate 
@@ -23,11 +23,11 @@ You can now install new packages and they will install in your virtual environme
 
 ## [The virtualenv Package](https://pypi.org/project/virtualenv/)
 
-The `virtualenv` package was the original method for creating Python virtual environments. The `virtualenv` package is better than venv in the following ways:
+The `virtualenv` package was the original method for creating Python virtual environments. The `virtualenv` package is better than `venv` library in the following ways:
 
 - It’s faster  
 - Can create virtual environments for multiple versions
-- Can be upgraded via pip
+- Can be upgraded via `pip`
 
 You can install `virtualenv` by using `pip`:
 
@@ -43,7 +43,7 @@ Once installed, you can create a virtual environment using your terminal or `cmd
 
 ### Pin Your Dependencies
 
-To make your virtual environments reproducible, you may need its contents. To do this is by create `requirements.txt` file while your virtual environment is active.
+To make your virtual environments reproducible, you may need its contents. To do this is by creating `requirements.txt` file while your virtual environment is active.
 
 ```console
 [$] <> python -m pip freeze > requirements.txt

@@ -1,14 +1,14 @@
 # Introspection in Python
 
-In programing, the ability to examine classes, functions and keywords to know what they are, what they do and what they know. Python provides several functions and utilities for code introspection. Python provides lots of tools that allow you to learn about itself. There are several built-in functions that you can use to learn about the code, that you are working with as below:
+In programming, the ability to examine classes, functions and keywords to know what they are, what they can do and what they know. Python provides several functions and utilities for code self-examination. Python provides lots of tools that allow you to learn about it. There are several built-in functions that you can use to learn about the code, as below:
 
-- The type() function
-- The dir() function
-- The help() function
+- The `type()` function
+- The `dir()` function
+- The `help()` function
 
 ## type() Function
 
-When you are working with code, it can be useful to check and see what type it is. Is the code a string, an integer or some kind of object? This is especially useful when you are working with code that you have never used before.
+When you are working with code, it can be useful to check and see what data type it is. Is the code a string, an integer or some kind of object? This is especially useful when you are working with code that you have never used before.
 
 This is where using the `type()` function can be valuable.
 
@@ -147,6 +147,8 @@ The `pydoc` module automatically generates documentation from Python modules. Th
 
 The built-in function `help()` invokes the online help system in the interactive interpreter, which uses `pydoc` to generate its documentation as text on the console. The same text documentation can also be viewed from outside the Python interpreter by running pydoc as a script at the operating system’s command prompt. For example, running
 
-`pydoc sys`
+```console
+pydoc sys
+```
 
 A shell prompt will display documentation on the `sys` module, in a style similar to the manual pages shown by the Unix/Linux man command.
