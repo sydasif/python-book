@@ -110,3 +110,124 @@ FastEthernet0/0            192.168.10.11   YES NVRAM  up                    up
 FastEthernet0/1            unassigned      YES NVRAM  administratively down down
 R1>
 ```
+
+#### Example of for loop
+
+In this python script we use `for` loop to create loopback interface on `R1`.
+
+```py
+import paramiko
+import time
+
+client = paramiko.SSHClient()
+client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+client.connect('192.168.10.11',
+                username='admin',
+                password='cisco',
+                look_for_keys=False,
+                allow_agent=False
+            )
+
+ssh_client = client.invoke_shell()
+print('=====>>  Creating loop back <<=====')
+ssh_client.send("enable\n")
+ssh_client.send("cisco\n")
+ssh_client.send("conf ter\n")
+for num in range (0,2):
+    ssh_client.send('int lo ' + str(num) + '\n')
+    ssh_client.send('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
+time.sleep(1)
+ssh_client.send('end\n')
+ssh_client.send('show ip int brief\n')
+time.sleep(3)
+output = ssh_client.recv(65000)
+print(output.decode('ascii'))
+client.close()
+print("### Done ###")
+```
+
+```console
+root@NetworkAutomation-1:~# python3 02_for_loop_paramiko.py
+=====>>  Creating loop back <<=====
+
+R1>enable
+Password:
+R1#conf ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int lo 0
+R1(config-if)#ip address 1.1.1.0 255.255.255.255
+R1(config-if)#int lo 1
+R1(config-if)#ip address 1.1.1.1 255.255.255.255
+R1(config-if)#end
+R1#show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.10.11   YES NVRAM  up                    up
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down
+Loopback0                  1.1.1.0         YES manual up                    up
+Loopback1                  1.1.1.1         YES manual up                    up
+R1#
+### Done ###
+```
+
+#### Connecting to multiple device
+
+In this python script we use `for` loop to connect multiple device.
+
+```py
+import paramiko
+import time
+
+client = paramiko.SSHClient()
+client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+for device in range(11,13):
+    ip = "192.168.10." + str(device)
+    print ('\n##### Connecting to the device ' + ip +' #####')
+
+    client.connect(ip,
+                  username='admin',
+                   password='cisco',
+                   look_for_keys=False,
+                   allow_agent=False
+               )
+
+    ssh_client = client.invoke_shell()
+    ssh_client.send("enable\n")
+    ssh_client.send("cisco\n")
+    ssh_client.send('show ip int brief\n')
+    time.sleep(3)
+    output = ssh_client.recv(65000)
+    print(output.decode('ascii'))
+    client.close()
+print("### Done ###")
+```
+
+```console
+root@NetworkAutomation-1:~# python3 03_for_loop_paramiko.py
+
+##### Connecting to the device 192.168.10.11 #####
+
+R1>enable
+Password:
+R1#show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.10.11   YES NVRAM  up                    up
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down
+Loopback0                  1.1.1.0         YES manual up                    up
+Loopback1                  1.1.1.1         YES manual up                    up
+R1#
+
+##### Connecting to the device 192.168.10.12 #####
+
+R2>enable
+Password:
+R2#show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES NVRAM  administratively down down
+FastEthernet0/1            192.168.10.12   YES NVRAM  up                    up
+Loopback0                  1.1.1.0         YES manual up                    up
+Loopback1                  1.1.1.1         YES manual up                    up
+R2#
+### Done ###
+```
