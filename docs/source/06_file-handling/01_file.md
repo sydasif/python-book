@@ -144,7 +144,7 @@ This file is for testing purposes only.
 
 ## Python’s for loop
 
-We can iterate over a file using Python’s `for` loop, this is actually one of the recommended methods for reading a file.
+You can iterate over a file using Python’s `for` loop, this is actually one of the recommended methods for reading a file.
 
 ```py
 with open('my_file') as f:
@@ -165,4 +165,56 @@ with open('my_file') as f:
     lines = f.readlines()
     for line in lines:
         print(line)
+```
+
+### Working with files - network example
+
+In this code you can iterate over a file of your device ip list to configure multiple device. The filename is `device_ip` with IP address of network devices, as below:
+
+```console
+192.168.10.10
+192.168.10.11
+192.168.10.12
+```
+
+Python code:
+
+```py
+with open('device_ip') as f:
+    for ip in f:
+        print(ip)
+```
+
+```console
+192.168.10.10
+
+192.168.10.11
+
+192.168.10.12
+```
+
+For example, you have a configuration file in the same directory from where you the Python code. The filename is `device_config` with configuration, like this:
+
+```cosole
+conf ter
+int lo 10
+ip add 10.10.10.10 255.255.255.255
+exit
+```
+
+```py
+cmd_list = open('device_config')
+for ip in cmd_list:
+    print(ip)
+cmd_list.close()
+```
+
+```console
+conf ter
+
+int lo 10
+
+ip add 10.10.10.10 255.255.255.255
+
+exit
 ```
