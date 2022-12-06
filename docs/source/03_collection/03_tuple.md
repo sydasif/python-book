@@ -1,8 +1,6 @@
 # Tuple in Python
 
-A tuple is a list of items enclosed in parenthesis, a tuple is said to be immutable (can't be changed) and more
-efficient. A tuple is data structures that help in the organization of data in python. Since lists do the same organization as a tuple, it can be hard to differentiate between the two. The main difference, however, is that once
-tuple have been created, they are hard to change. The main difference between tuples and lists is that, tuples are immutable while lists aren’t.
+A tuple is a list of items enclosed in parenthesis, is to be immutable (can't be changed) and more efficient. A tuple is a data structure that helps in the organization of data in Python. Since lists do the same purpose as a tuple, it can be hard to differentiate between the two. The main difference, however, is that once tuples have been created, they are hard to change. The main difference between tuples and lists is that tuples are immutable while lists aren’t.
 
 ```py
 animal = ("dog", "lion", "leopard", "cat", "bear")
@@ -15,12 +13,10 @@ print(animal)
 
 ## Creating Tuples
 
-You can create tuples in different ways, as above one of the simplest methods to create a tuple is to have a sequence of values separated by commas. Those values could be integers, lists, dictionaries, or any other object.
-
-However, parentheses by themselves do not make a tuple:
+You can create tuples in different ways, as above one of the simplest methods to create a tuple is to have a sequence of values separated by commas. Those values could be integers, lists, dictionaries, or any other object, however; parentheses by themselves do not make a tuple:
 
 ```py
-# this is integer
+# this is an integer
 num_tup = (3)
 print(type(num_tup))
 ```
@@ -39,7 +35,7 @@ print(type(a_tuple))
 <class 'tuple'>
 ```
 
-Only using a commas might be ambiguous, always use parentheses to make it explicit.
+Only using a comma might be confusing, always use parentheses to make it explicit.
 
 ```py
 # Note the trailing comma
@@ -57,7 +53,7 @@ You can also create a tuple using the `tuple()` function.
 
 ## Tuple Method
 
-There are not many ways to work with tuples due to the fact that they are immutable. If you were to run `dir(tuple())`, you would find that tuples have only two methods:
+There are not many ways to work with tuples because they are immutable. If you were to run `dir(tuple())`, you would find that tuples have only two methods:
 
 - count()
 - index()
@@ -73,7 +69,7 @@ print(num_tup.count(4))
 2
 ```
 
-Index in Tuple is used to find a specific element, as previously discussed in lists, tuple indexing also start with `zero`. This means that the first items position is `0` and the second is `1`.
+Index in a tuple is used to find a specific element, as previously discussed in lists, tuple indexing also starts with `0`. This means that the first item's position is `0` and the second is `1`.
 
 ```py
 animal = ("dog", "lion", "leopard", "cat", "bear")
@@ -84,7 +80,7 @@ print(animal[0])  # print at index 0
 dog
 ```
 
-If we modify an element in tuple, this cause a `TypeError` to be raised because tuples are immutable and cannot be changed.
+If we modify an element in a tuple, this causes a `TypeError` to be raised because tuples are immutable and cannot be changed.
 
 ```py
 animal = ("dog", "lion", "leopard", "cat", "bear")
@@ -102,7 +98,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ## Concatenating Tuples
 
-Tuples can be joined together, in programming this is called “concatenation”. However, concatenation will end up creating a new tuple.
+Tuples can be joined together; in programming, this is called “concatenation”, however; concatenation will end up creating a new tuple.
 
 ```py
 a_tuple = (4,)
@@ -116,7 +112,7 @@ print(a_tuple + animal)
 
 ## Slicing in Tuples
 
-Slicing function is used to obtain part of the tuple. The main elements used in slicing is the index and the slicing operator `:` the example below explains how slicing is done with tuples.
+The slicing function is used to get a part of the tuple. The main elements used in tuple slicing are the index and the slicing operator `:` the example below explains how slicing is done with tuples.
 
 ```py
 animal = ("dog", "lion", "leopard", "cat", "bear")
@@ -139,4 +135,4 @@ print(animal[:2])  # print before index 2
 
 ## Differences between Tuples and Lists
 
-The difference between a list and a tuple is that lists are mutable while the tuples are immutable. Due to this tuples are simpler, they never change and don’t have any of the useful properties found in lists that make working with lists so powerful.
+The difference between a list and a tuple is that lists are mutable while tuples are immutable. Due to this tuples are simpler, they never change and don’t have any of the useful properties found in lists that make working with lists so powerful.

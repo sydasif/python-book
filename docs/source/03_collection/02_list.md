@@ -1,8 +1,8 @@
 # Lists in Python
 
-The list is the most versatile data type available in Python which can be written as a list of comma-separated values (items) between square brackets. Lists are created by separating values that are in square brackets. Lists are Python data structures which are mutable ordered sequences of elements. Each element in the list has a value called an item.
+The list is the most multipurpose data type available in Python which can be written as a list of comma-separated values (items) between square brackets. Lists are Python data structures which are mutable and ordered. Each element in the list has a value called an item.
 
-Lists are Python’s most flexible ordered collection (sequence) object type. Lists can contain any sort of object; numbers, strings and even other lists. Lists can contain another list called a `nested list`. The elements used in lists can be changed. This means lists can be mutated, unlike tuples or strings. They are mainly defined by having values inside brackets.
+Lists are Python’s most flexible ordered collection (sequence) object type. Lists can contain any sort of object; numbers, strings and even another list called a `nested list`. The elements used in lists can be changed, which means lists can be mutated, unlike tuples or strings.
 
 ```py
 # Example of a List 
@@ -14,7 +14,7 @@ print(week_day)
 ['Sunday', 'Monday', 'Friday']
 ```
 
-Lists are used in Python where programmers need to work with many related values. They help in condensing the code by keeping the related data together hence allowing the programmer to perform the same functions and operations on multiple values at once. Each item in the list corresponds to a given index number. The index is an integer value starting from `0`. An example of a list is given below:
+Lists are used in Python where programmers need to work with many related values. They help in reducing the code by keeping the related data together, allowing it to perform the same functions and operations on multiple values at once. Each item in the list links to a given index number. The index is an integer value starting from `0`. An example of a list is given below:
 
 ```py
 a = [100, "bottles", ["on", "the", "earth"]]
@@ -37,11 +37,10 @@ print(a[-1])
 
 ## Creation of List
 
-The creation of lists is done by placing strings between brackets and separating them with commas. This is done by adding a name just before the brackets.
+The creation of lists is done by placing values between brackets and separating them with commas. This is done by adding a name just before the brackets.
 
 ```py
 # this is a list that is referenced using the name list_items
-
 list_items = ['mango', 'juice', 'banana', 'tree', 'house', 'toy', 'cow', 'horse']
 ```
 
@@ -52,7 +51,7 @@ There are several ways to create a list:
 - Using the `list()` function: `list()`
 ```
 
-To retrieve a list, there are two important elements are used. These elements are the name of the list and the position of the item in the list. It is important to note that the positioning of the items would start from a `zero`.
+To retrieve a list, there are two important elements are used. These are the name of the list and the position of the item in the list. It is important to note that the positioning of the items would start from a `0`.
 
 ```py
 print(list_items[0])
@@ -62,7 +61,7 @@ print(list_items[0])
 mango
 ```
 
-We can add, remove or sort for items in a list.
+We can add, remove or sort items in a list.
 
 ```py
 fruit_list = ['apple', 'mango', 'carrot', 'banana']
@@ -96,7 +95,7 @@ Elements in a list have the following characteristics:
 
 ## List Slicing
 
-List slicing is a technique in python that helps read a list and return a specific segment of a list. The most important elements in list slicing are the full colons and negative signs. The name of the list is also an element that is used in the construction of a slicing statement. The example below shows how to list slicing is done in a single word.
+List slicing is a technique in Python that helps read a list and returns a specific segment of a list. The most important thing in list slicing is the `:` and negative signs. The name of the list is also an element that is used in the creation of a slicing statement. The example below shows how to list slicing is done in a single word.
 
 ```py
 fruit_list = ['apple', 'mango', 'carrot', 'banana', 'rice']
@@ -117,9 +116,9 @@ banana
 
 ## List Function and Method
 
-Lists have a few functions/method that are used to control and edit the data stored in a list.
+Lists have a few functions/methods that are used to control and manage the data stored in a list.
 
-- `.append()`
+- .append()
 
 This method gives the chance to add an item/element to an existing list.
 
@@ -135,9 +134,9 @@ print(fruit_name)
 ['mango', 'banana', 'orange', 'apple', 'grapes']
 ```
 
-- `.insert()`
+- .insert()
 
-This function works the same as the function append but is more specific to the position at which the new item will appear in the existing list.
+This function works the same as the function `append()` but is more specific to the position at which the new item will appear in the existing list.
 
 ```py
 fruit_name = ["mango", "banana", "orange", "apple"]
@@ -151,9 +150,9 @@ print(fruit_name)
 ['mango', 'banana', 'grapes', 'orange', 'apple']
 ```
 
-- `remove() & pop()`
+- remove() and pop()
 
-This is used to delete an item from the list. Its syntax is the same as those of the other functions. When an item appears more than once in the list, the command `remove()` will only delete the item that appears the first in the list.
+This is used to delete an item from the list. Its syntax is the same as those of the other functions. When an item seems more than once in the list, the command `remove()` will only delete the item that appears first in the list.
 
 ```py
 fruit_name = ["mango", "orange", "banana", "orange", "apple"]
@@ -195,7 +194,7 @@ Cell In [16], line 3
 ValueError: list.remove(x): x not in list
 ```
 
-To remove an item by position, the function `pop()` is used. When the method `pop()` is called without specifying the position, the last item is deleted. When this method is used, an item is deleted and the function returns the item that was deleted.
+To remove an item by position, the function `pop()` is used. When the method `pop()` is called without stating the position, the last item is deleted. When this method is used, an item is deleted and the function returns the item that was deleted.
 
 ```py
 fruit_name = ["mango", "orange", "banana", "orange", "apple"]
@@ -217,7 +216,7 @@ fruit_name.pop(2)  # index 2 at number 3rd position will pop
 
 - `extend()`
 
-This method is used to add a list to another list. This method is different from append as it deals with joining of two lists. The method joins two lists by adding the second list to the end of the first list as shown in the example below.
+This method is used to add a list to another list. This method is different from append as it deals with the joining of two lists. The method joins two lists by adding the second list to the end of the first list as shown in the example below.
 
 ```py
 list1 = [1, 2, 3]
@@ -229,7 +228,7 @@ print(list1)
 [1, 2, 3, 4, 5]
 ```
 
-To check attribute (method) of an object see {ref}`dir() method`.
+To check the attribute (method) of an object see {ref}`dir() method`.
 
 ```{seealso}
 - [More on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists). Methods of list objects.
@@ -240,7 +239,7 @@ To check attribute (method) of an object see {ref}`dir() method`.
 There is a way to remove an item from a list given its index instead of its value: the `del` statement. This differs from the `pop()` method which returns a value.
 
 ```py
-# remove an item from list
+# remove an item from the list
 del fruit_list[0]
 print(fruit_list)
 ```
