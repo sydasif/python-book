@@ -195,7 +195,7 @@ with open('device_ip') as f:
 
 For example, you have a configuration file in the same directory from where you the Python code. The filename is `device_config` with configuration, like this:
 
-```cosole
+```console
 conf ter
 int lo 10
 ip add 10.10.10.10 255.255.255.255
