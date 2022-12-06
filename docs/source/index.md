@@ -1,11 +1,11 @@
-# **Python for Network Engineer**
+# Python for Network Engineer
 
 Learn network programmability with Python, GNS3 and Cisco devices.
 
-## *What you'll learn*
+- **What you'll learn**
 
-- Python basic
-- Network automation with Python
+1. *Python basic*
+2. *Network automation with Python*
 
 ```{warning}
 This is a test project.
