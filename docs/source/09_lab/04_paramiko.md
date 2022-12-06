@@ -83,9 +83,12 @@ print('=====>>  Creating loop back <<=====')
 ssh_client.send("enable\n")
 ssh_client.send("cisco\n")
 ssh_client.send("conf ter\n")
+
+# For loop and range() function to create loop back interface
 for num in range (0,2):
     ssh_client.send('int lo ' + str(num) + '\n')
     ssh_client.send('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
+
 time.sleep(1)
 ssh_client.send('end\n')
 ssh_client.send('show ip int brief\n')
@@ -130,6 +133,7 @@ import time
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
+# For loop and range() function to connect multiple devices
 for device in range(11,13):
     ip = "192.168.10." + str(device)
     print ('\n##### Connecting to the device ' + ip +' #####')
@@ -181,7 +185,7 @@ R2#
 ### Done ###
 ```
 
-In this python script, we use the `for` loop and `list` to connect multiple devices.
+In this python script, we use the `for` loop and `list` to connect to multiple devices.
 
 ```py
 import paramiko
@@ -190,13 +194,16 @@ import time
 username = 'admin'  # username
 password = 'cisco'  # password
 
+# IP list fo network device
 devices =['192.168.10.11', '192.168.10.12']
 
+# For loop and list to connect multiple devices
 for device in devices:
-    print ('\n #### Connecting to the device ' + device + '####\n' )
+    print ('\n #### Connecting to the device ' + device + ' ####\n' )
+
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    
+
     client.connect(device,port=22,
                     username=username,
                     password=password,
@@ -206,10 +213,14 @@ for device in devices:
 
     ssh_client = client.invoke_shell()
 
+    ssh_client.send('enable\n')
+    ssh_client.send('cisco\n')
     ssh_client.send('config t\n')
+
+    # For loop and range() function to create loop back interface
     for num in range (2,5):
         ssh_client.send('int lo ' + str(num) + '\n')
-        ssh_client.send('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')  
+        ssh_client.send('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
 
     time.sleep(1)
     ssh_client.send('do term length 0\n')
@@ -219,4 +230,52 @@ for device in devices:
     print (output.decode('ascii'))
 
     client.close()
+```
+
+```console
+root@NetworkAutomation-1:~# python3 04_list_paramiko.py
+
+ #### Connecting to the device 192.168.10.11 ####
+
+
+R1>enable
+Password:
+R1#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int lo 2
+R1(config-if)#ip address 1.1.1.2 255.255.255.255
+R1(config-if)#int lo 3
+R1(config-if)#ip address 1.1.1.3 255.255.255.255
+R1(config-if)#int lo 4
+R1(config-if)#ip address 1.1.1.4 255.255.255.255
+R1(config-if)#do term length 0
+R1(config-if)#do show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.10.11   YES NVRAM  up                    up
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down
+Loopback2                  1.1.1.2         YES manual up                    up
+Loopback3                  1.1.1.3         YES manual up                    up
+Loopback4                  1.1.1.4         YES manual up                    up
+
+ #### Connecting to the device 192.168.10.12 ####
+
+
+R2>enable
+Password:
+R2#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#int lo 2
+R2(config-if)#ip address 1.1.1.2 255.255.255.255
+R2(config-if)#int lo 3
+R2(config-if)#ip address 1.1.1.3 255.255.255.255
+R2(config-if)#int lo 4
+R2(config-if)#ip address 1.1.1.4 255.255.255.255
+R2(config-if)#do term length 0
+R2(config-if)#do show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES NVRAM  administratively down down
+FastEthernet0/1            192.168.10.12   YES NVRAM  up                    up
+Loopback2                  1.1.1.2         YES manual up                    up
+Loopback3                  1.1.1.3         YES manual up                    up
+Loopback4                  1.1.1.4         YES manual up                    up
 ```
