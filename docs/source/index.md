@@ -11,7 +11,7 @@ Learn network programmability with Python, GNS3 and Cisco devices.
 
 Associate Engineer (DAE in Electronics),  learning network automation as a hobby after `25` years of job in a government organization in the field of Communication/Computer Networking, maybe it’s also exciting and helpful to others.
 
-- **Skill as an associate engineer**
+- *Skill as an associate engineer*
 
   - IP Addressing and Subnetting
   - Computer Basics - Windows 7/10 Desktop
