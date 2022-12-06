@@ -21,6 +21,6 @@ This is a test project.
 05_loop/index
 06_file-handling/index
 07_error/index
-08_function/index
+08_oop/index
 09_lab/index
 ```
