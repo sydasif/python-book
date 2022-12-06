@@ -1,4 +1,4 @@
-# Functions and Classes in Python
+# Functions and Classes
 
 Like any other programming language, some codes are used more than once and need not be rewritten over and over. These repeatable codes are called Functions.
 
