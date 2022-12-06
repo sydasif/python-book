@@ -1,11 +1,13 @@
-# Python and Network Automation
+# Network Automation
 
-Python language was developed by Guido van Rossum. Python has become a scripting language choice for network engineering to automate their tasks.
+Network automation is a process of automating a computer network's configuration, management and operations. The tasks that were usually done by the network or system administrator can be automated using several tools and technologies.
 
-Python is an easy-to-learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s neat syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and application development in many areas on most platforms.
+Scripting languages are widely used by Network and System administrators for automating tasks. This saves time, and effort and thereby reducing human errors as well. Among the automation tools, Python and Ansible are the most popular ones. With Software Defined Networking (SDN) in picture, knowing any of these programming languages is vital for the future of administering the network and systems.
+
+There is a significant change in the networking industry which is driving networking engineers and organizations to adopt the concepts and ideas of network programmability and automation. To cater for the need for organizational competitiveness, it is highly recommended that networking professionals learn the scripting languages and protocols as required for a new skill set.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_intro
 02_install

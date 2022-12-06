@@ -28,7 +28,7 @@ Python data type is a group of values that belong to one of the groups shown bel
 In this chapter, we discuss variables, strings, numbers, Boolean values and operators.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_variable
 02_string

@@ -1,4 +1,10 @@
-# Why learn Programming?
+# Python for Automation
+
+Python language was developed by Guido van Rossum. Python has become a scripting language choice for network engineering to automate their tasks.
+
+Python is an easy-to-learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s neat syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and application development in many areas on most platforms.
+
+## Why learn Programming?
 
 Network engineering is changing, as a network engineer, there has never been a better time for you to learn programming to automate networks and write code. In the late 90’s – 2010, a network engineer typed in the same CLI commands hundreds/thousands, of times to configure and troubleshoot network devices.
 

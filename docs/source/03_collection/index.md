@@ -14,7 +14,7 @@ Python collection, unlike a sequence, does not have a deterministic ordering. In
 - Set
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_collection
 02_list
