@@ -7,5 +7,6 @@ One of the best ways to learn about a topic is to practice what you study, valid
 
 01_setup
 02_telnetlib
-03_paramiko
+03_ssh
+04_paramiko
 ```
