@@ -105,7 +105,7 @@ True
 
 You will find that the `strip()` and `split()` methods are especially useful when parsing or manipulating text from a network device.
 
-If you has value of txet " 192.168.10.10 " including the whitespace. The methods `startswith()` or `endswith()` do not work because of the spaces. To remove the whitespace from this value, `strip()` method is used.
+If you have the value of text " 192.168.10.10 " including the whitespace. The methods `startswith()` or `endswith()` do not work because of the spaces. To remove the whitespace from this value, `strip()` method is used.
 
 ```console
 [$] <> python
@@ -146,7 +146,7 @@ Help on method_descriptor:
 split(self, /, sep=None, maxsplit=-1)
     Return a list of the substrings in the string, using sep as the separator string.
 
-Output is Ommited
+Output is Omitted
 ```
 ````
 
