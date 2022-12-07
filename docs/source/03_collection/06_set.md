@@ -1,6 +1,6 @@
 # Sets in Python
 
-A set is a container of an unordered collection of 'unique' and immutable objects. A set is a collection which is unordered, unchangeable*, and unindexed, therefore, they do not support function including slicing, indexing and any other function that is associated with sequencing.
+A set is a container of an unordered collection of 'unique' and immutable objects. A set is un-indexed, therefore, they do not support functions including slicing, indexing and any other function that is associated with sequencing.
 
 Sets are used to store multiple items in a single variable.  Sets are a collection of data with no duplicates. They are very useful when it comes to removing duplicate data from data collections.
 
@@ -49,7 +49,7 @@ print(fruit)
 
 ## Set methods
 
-In set we cann't change a value. However, We can add, remove etc.
+In set, we can’t change a value. However, we can add, remove etc.
 
 ### Adding Items
 
@@ -111,7 +111,7 @@ print(set1)
 The `remove()` method will remove the specified item from a set.
 
 ```py
-# remove() will create an error, if item does not exist
+# remove() will create an error if an item does not exist
 set1 = {10, 20, 30, 40, 50}
 set1.remove(30)
 print(set1)
@@ -141,7 +141,7 @@ Sets are useful in performing different operations such as finding union of sets
 Union of sets can be obtained by `union` or operator `|`.
 
 ```py
-# combines two or more sets together into a new set
+# combines two or more sets into a new set
 set_num1 = {10,20,30,50,100}
 set_num2 = {100,101,102,102,200}
 print(set_num1 | set_num2)
@@ -157,7 +157,7 @@ print(set_num3)
 {100, 101, 102, 200, 10, 50, 20, 30}
 ```
 
-The `intersection()` method takes two sets and returns a new set that contains only the items that are the same in the both sets. Intersection of sets can be obtained by `intersection` or operator `&`.
+The `intersection()` method takes two sets and returns a new set that contains only the items that are the same in both sets. The intersection of sets can be obtained by `intersection` or operator `&`.
 
 ```py
 # intersection(), it returns a new set
