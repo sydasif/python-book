@@ -1,6 +1,6 @@
 # Strings in Python
 
-String are a collection of characters/letters, in other terms characters are simple letters and symbols that are used to construct a string and character include alphanumeric letters, numbers and white space.
+A string is a collection of characters/letters, in other terms characters are simple letters and symbols that are used to make a string and characters include alphanumeric letters, numbers and white space.
 
 In Python, strings are written and enclosed between either single or double quotes. Once a string variable has been created and declared, it is impossible to change its values, unless a new string is created. Assigning a string to a variable is done with the variable name followed by an equal sign `=` and the string.
 
@@ -13,7 +13,7 @@ print(name)
 Ali
 ```
 
-Using triple quotes allows, to create multi-line strings. Any whitespace within the string will also be included.
+Using triple quotes allows the creation of multi-line strings. Any whitespace within the string will also be included.
 
 ```py
 triple = """multi-line
@@ -28,7 +28,7 @@ string
 
 ## String Slicing
 
-There are various ways of manipulating a string using the slicing method, works as the same way that it does for list.
+There are various ways of manipulating a string using the slicing method, which works the same way that it does for a list.
 
 ```py
 greeting = "Hello, World!"
@@ -45,7 +45,7 @@ Hello, World
 
 ## String Concatenation
 
-Strings allows concatenation, for joining two strings into one.
+Strings allow concatenation for joining two strings into one.
 
 ### Addition
 
@@ -65,7 +65,7 @@ JohnAlex
 John Alex
 ```
 
-### Repetition/Replication
+### Repetition/replication
 
 The nice thing about the multiplication operator (*) is that it’s also possible to use it on strings. For example, to print a line of `60` dashes.
 
@@ -82,7 +82,7 @@ print("-" * 60)
 Python has a set of built-in methods that you can use on strings.
 
 ```{Note}
-All string methods returns new values. They do not change the original string.
+All string methods return new values. They do not change the original string.
 ```
 
 ```py
@@ -101,7 +101,7 @@ False
 ['Samsung', 'Ltd']
 ```
 
-You will find that the .strip() and .split() methods are especially useful when parsing or manipulating text from network device.
+You will find that the `.strip()` and `.split()` methods are especially useful when parsing or manipulating text from a network device.
 
 ```py
 my_string = 'This is a string'
@@ -115,9 +115,9 @@ print(my_string.split())  # The result is a list
 To get a full listing of the methods and attributes that you can access, you can use Python’s built-in
 {ref}`dir() method`
 
-## Escape sequences
+## Escape Sequences
 
-There is a special characteristic that is understood by the compiler as commands other than characters. All these characters are known as the 'Escape Sequences'. The special characters are marked with a backslash `\`. The backslash `\` would, therefore, indicate that the character that is going to be printed next is a special one that should initiate some instructions. Below are the examples of special character that are used with strings:
+There is a special character, that is understood by the compiler as commands other than characters. All these characters are known as the 'escape` sequences. The special characters are marked with a backslash `\`. The backslash `\` would, therefore, indicate that the character that is going to be printed next is a special one that should initiate some instructions. Below are examples of special characters that are used with strings:
 
 - `\n` Newline
 - `\t` Horizontal tab
@@ -126,7 +126,7 @@ There is a special characteristic that is understood by the compiler as commands
 
 ## Raw Strings
 
-To avoid special processing on a string such as escape sequences. Specify a raw string by prefixing `r` or `R` to the string.
+To avoid special processing on a string such as `escape` sequences. Specify a raw string by prefixing `r` or `R` to the string.
 
 ```py
 string = r"newline is indicated by \n."
@@ -137,7 +137,7 @@ print(string)
 newline is indicated by \n.
 ```
 
-## String formatting
+## String Formatting
 
 String formatting or string substitution is where you have a string that you would like to insert into another string.
 
@@ -147,9 +147,9 @@ Python has three different ways to accomplish string formatting:
 - Using `format()`
 - Using formatted string literals (`f-strings`)
 
-### Formattin string using `%`
+### Formatting string using `%`
 
-Using the `%` method is Python’s oldest method of string formatting. The most common use of using the % sign is when you would use `%s`, which means convert any Python object to a string using `str()`.
+Using the `%` method is Python’s oldest method of string formatting. The most common use of using the % sign is when you would use `%s`, which means converting any Python object to a string using `str()`.
 
 ```py
 # insert string
@@ -182,13 +182,13 @@ print("Hello, %s. Your age is %i" % (name, age))
 Hello, Ali. Your age is 40
 ```
 
-To pass in multiple items, you use the percent sign followed by a tuple of the items to insert.
+To pass in multiple items, you use the `%` sign followed by a tuple of the items to insert.
 
 ```{seealso}
 For more info see [website](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
 ```
 
-### Formatting string using `format()`
+### Formatting string using format()
 
 The `format()` method formats the specified value(s) and insert them inside the string's placeholder. The placeholder is defined using curly brackets: `{}`. The `format()` method returns the formatted string.
 
@@ -245,7 +245,7 @@ IP: 10.1.1.1
 For more info see python [doc](https://docs.python.org/3/library/string.html#formatstrings).
 ```
 
-### Formatting Strings with `f-strings`
+### Formatting string with f-strings
 
 Formatted string literals or `f-strings` are strings that have an `f` at the beginning and curly braces inside of them that contain expressions, much like the ones you saw in the previous section.
 
@@ -259,7 +259,7 @@ print(f'Hello {name}, you are {age} years old')
 Hello Alex, you are 20 years old
 ```
 
-The `f-string` can do things that neither `%s` nor `format()` can do. Because of the fact that `f-strings` are evaluated at runtime, you can put any valid Python expression inside of them.
+The `f-string` can do things that neither `%s` nor `format()` can do. Because `f-strings` are evaluated at runtime, you can put any valid Python expression inside of them.
 
 ```py
 age = 25
