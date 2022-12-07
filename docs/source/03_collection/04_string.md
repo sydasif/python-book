@@ -86,34 +86,69 @@ All string methods return new values. They do not change the original string.
 ```
 
 ```py
-# used different methods .lower(), .upper(), .strip(), .isdigit()
+# methods lower(), upper(), isdigit() and startswith()
 vendor = "Samsung Ltd"
 print(vendor.upper())
 print(vendor.lower())
 print(vendor.isdigit())
-print(vendor.split())
+print(vendor.startswith('S'))
 ```
 
 ```console
 SAMSUNG LTD
 samsung ltd
 False
-['Samsung', 'Ltd']
+True
 ```
 
-You will find that the `.strip()` and `.split()` methods are especially useful when parsing or manipulating text from a network device.
+### strip() method
+
+You will find that the `strip()` and `split()` methods are especially useful when parsing or manipulating text from a network device.
+
+If you has value of txet " 192.168.10.10 " including the whitespace. The methods `startswith()` or `endswith()` do not work because of the spaces. To remove the whitespace from this value, `strip()` method is used.
+
+```console
+[$] <> python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ipaddr = ' 192.168.10.10 '
+>>> ipaddr
+' 192.168.10.10 '  
+>>> ipaddr.strip()
+'192.168.10.10'
+```
+
+### split() methods
+
+Return a list of the substrings in the string:
 
 ```py
-my_string = 'This is a string'
-print(my_string.split())  # The result is a list
+my_name = 'Ali Ahmed'
+print(my_name.split())  # The result is a list
 ```
 
 ```console
-['This', 'is', 'a', 'string']
+['Ali', 'Ahmed']
 ```
 
-To get a full listing of the methods and attributes that you can access, you can use Python’s built-in
-{ref}`dir() method`
+To get a full listing of the methods and attributes that you can access, you can use Python’s built-in {ref}`dir() method`
+
+````{epigraph}
+To learn how to use a given method that you see in the output of a dir(). Use the built-in help() function, the following examples show the way you can use help() method:
+
+```console
+[$] <> python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> help(str.split)
+Help on method_descriptor:
+
+split(self, /, sep=None, maxsplit=-1)
+    Return a list of the substrings in the string, using sep as the separator string.
+
+Output is Ommited
+```
+````
 
 ## Escape Sequences
 
