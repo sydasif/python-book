@@ -1,6 +1,6 @@
 # Dictionaries in Python
 
-Dictionaries are used to store data values in `key-value` pairs. A dictionary is a collection which is ordered, changeable and does not allow a duplicate keys, any key of the dictionary is associated (or mapped) to a value. Keys within a dictionary are 'unique' and must be from immutable data types such as strings or numbers.
+Dictionaries are used to store data values in `key-value` pairs. A dictionary is a collection which is ordered, and changeable and does not allow duplicate keys, any key of the dictionary is associated (or mapped) to a value. Keys within a dictionary are 'unique' and must be from immutable data types such as strings or numbers.
 
 ```{Note}
 As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
@@ -19,7 +19,7 @@ print(my_car)
 {'brand': 'Ford', 'model': 'Mustang', 'year': 1992}
 ```
 
-Python’s built-in `dict()` function can create a dictionary. A `dict()` function accept a series of keyword arguments `(1="one", 2="two")`, a list of tuples, or another dictionary.
+Python’s built-in `dict()` function can create a dictionary. A `dict()` function accepts a series of keyword arguments `(1="one", 2="two")`, a list of tuples, or another dictionary.
 
 ```py
 numbers = dict(one=1, two=2, three=3)
@@ -48,10 +48,10 @@ Dictionary elements can be created, accessed, modified or deleted. While a dicti
 
 ### Accessing Dictionaries
 
-Dictionaries are very fast, can access any value in a dictionary via the key. If the key is not found, a `KeyError` will receive.
+Dictionaries are very fast and can access any value in a dictionary via the key. If the key is not found, a `KeyError` will receive.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
+my_car = {"brand": "Ford", "model": "Mustang", "year": 1992}
 print(my_car["brand"])
 ```
 
@@ -71,7 +71,7 @@ print(my_car)
 {'brand': 'Ford', 'model': 'Mustang', 'year': 2000}
 ```
 
-Setting a pre-existing key to a new value, will overwrite the previous value.
+Setting a pre-existing key to a new value will overwrite the previous value.
 
 ```py
 my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
@@ -83,7 +83,7 @@ print(my_car)
 {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
 ```
 
-Python’s `del` keyword remove the key-value.
+Python’s `del` keyword removes the key-value.
 
 ```py
 del my_car["year"]
@@ -97,7 +97,7 @@ print(my_car)
 The values in dictionary items can be of any data type.
 
 ```py
-# Adding new key-value as list
+# Adding new key-value as a list
 my_car["colors"] = ["black", "red", "blue"]
 print(my_car)
 ```
@@ -149,7 +149,7 @@ my_car.get("model")
 'Mustang'
 ```
 
-The `clear()` method used to remove all the items from the dictionary.
+The `clear()` method is used to remove all the items from the dictionary.
 
 ```py
 my_car = {"brand": "Ford","model": "Mustang","year": 1992}
