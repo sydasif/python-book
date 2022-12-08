@@ -122,3 +122,37 @@ ip address 1.1.1.1 255.255.255.255
 ip address 2.2.2.2 255.255.255.255
 ip address 3.3.3.3 255.255.255.255
 ```
+
+### For loop - network example
+
+In this code, you can iterate over a list of your device IP.
+
+```py
+# IP list fo network device
+devices =['192.168.10.11', '192.168.10.12']
+
+# For loop and list to connect multiple devices
+for device in devices:
+    print ('#### Connecting to the device ' + device + ' ####\n' )
+```
+
+```console
+#### Connecting to the device 192.168.10.11 ####
+
+#### Connecting to the device 192.168.10.12 ####
+```
+
+For loop and `range()` function to create configuration template.
+
+```py
+for num in range (0,2):
+    print('int lo ' + str(num) + '\n')
+    print('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
+```
+
+```console
+int lo 0
+ip address 1.1.1.0 255.255.255.255
+int lo 1
+ip address 1.1.1.1 255.255.255.255
+```
