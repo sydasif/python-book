@@ -1,6 +1,6 @@
 # Paramiko Module
 
-To automate networking devices via SSH, network engineer use Paramiko, as per module docs:
+To automate networking devices via SSH, network engineer use Paramiko, Python community has developed an SSH client library, called Paramiko. As per Paramiko module docs:
 
 ```{epigraph}
 Paramiko is a pure-Python [1] (2.7, 3.4+) implementation of the SSHv2 protocol [2], providing both client and server functionality. It provides the foundation for the high-level SSH library Fabric, which is what we recommend you use for common client use-cases such as running remote shell commands or transferring files.
@@ -8,13 +8,15 @@ Paramiko is a pure-Python [1] (2.7, 3.4+) implementation of the SSHv2 protocol [
 -- [Paramiko Docs](https://www.paramiko.org/)
 ```
 
-To install paramiko simply use pip for installation.
+To install paramiko simply use `pip` for installation as below:
 
 ```console
 pip install paramiko
 ```
 
 ## Example of Paramiko
+
+Let's start by importing the Paramiko library and creating a client object. Set policy to use when connecting to servers without a known host key, AutoAddPolicy Policy automatically adding the hostname and new host key to representing of an OpenSSH-style “known hosts” file. Specify the host, username, and password.
 
 ```py
 import paramiko
@@ -24,7 +26,7 @@ import time
 client = paramiko.SSHClient()
 # Sets the policy that the client should use regarding keys
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-# The next few lines invoke a new interactive shell from the connection
+
 client.connect('192.168.10.11',
                 username='admin',
                 password='cisco',
@@ -33,16 +35,14 @@ client.connect('192.168.10.11',
             )
 
 ssh_client = client.invoke_shell()
-
 # Send command to the remote device
 ssh_client.send("sh ip int bri\n")
 # Wait for the command to be finished
 time.sleep(3)
 
-'''if you did not clear out the received buffer? 
-The output would just keep on filling up the buffer and would overwrite it.
-For consistency of the output, we will retrieve the output from the 
-buffer each time we execute a command.'''
+'''if you did not clear out the received buffer?  The output would just keep
+on filling up the buffer and would overwrite it. For consistency of the output,
+we will retrieve the output from the buffer each time we execute a command.'''
 
 output = ssh_client.recv(5000)
 print(output.decode('ascii'))
@@ -63,6 +63,20 @@ R1>
 ### Example of for loop
 
 In this python script, we use the `for` loop and `range()` functions to create a loopback interface on `R1`.
+
+````{margin} **For loop and range()**
+```py
+for num in range (0,2):
+    print('int lo ' + str(num) + '\n')
+    print('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
+```
+```console
+int lo 0
+ip address 1.1.1.0 255.255.255.255
+int lo 1
+ip address 1.1.1.1 255.255.255.255
+```
+````
 
 ```py
 import paramiko
@@ -186,6 +200,22 @@ R2#
 ```
 
 In this python script, we use the `for` loop and `list` to connect to multiple devices.
+
+````{margin} **For loop and list**
+```py
+# IP list fo network device
+devices =['192.168.10.11', '192.168.10.12']
+
+# For loop and list to connect multiple devices
+for device in devices:
+    print ('#### Connecting to the device ' + device + ' ####\n' )
+```
+```console
+#### Connecting to the device 192.168.10.11 ####
+
+#### Connecting to the device 192.168.10.12 ####
+```
+````
 
 ```py
 import paramiko
