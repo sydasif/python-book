@@ -24,8 +24,8 @@ The Python program code below demonstrates a Python function to print the length
 
 ```py
 # this code returns the actual length of the string
-motd_ban = "Welcome to Network Automation"
-print(len(motd_ban))
+banner = "Welcome to Network Automation"
+print(len(banner))
 ```
 
 ```console
@@ -60,6 +60,6 @@ print(user)
 ```
 
 ```console
->>> Enter your username: admin
-admin
+>>> Enter your username: Ali
+Ali
 ```
