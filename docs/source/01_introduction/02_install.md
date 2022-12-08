@@ -1,4 +1,4 @@
-# What is Python?
+# [What is Python?](https://www.python.org/about/gettingstarted/)
 
 Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.
 
@@ -104,5 +104,5 @@ or
 - [How to Install Python on Windows](https://realpython.com/installing-python/#how-to-install-python-on-windows)
 - [How to Install Python on Linux](https://realpython.com/installing-python/#how-to-install-python-on-linux)
 - [How to Install Python on macOS](https://realpython.com/installing-python/#how-to-install-python-on-macos)
-- [See more information about Python](https://www.python.org/about/gettingstarted/)
+- [Python installation: Windows, Mac and Linux (Kali Linux, Ubuntu) or just run in your browser 😀](https://www.youtube.com/watch?v=LMmtwTV6gTY&t=174s)
 ```
