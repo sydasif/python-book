@@ -64,20 +64,6 @@ R1>
 
 In this python script, we use the `for` loop and `range()` functions to create a loopback interface on `R1`.
 
-````{margin} **For loop and range()**
-```py
-for num in range (0,2):
-    print('int lo ' + str(num) + '\n')
-    print('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
-```
-```console
-int lo 0
-ip address 1.1.1.0 255.255.255.255
-int lo 1
-ip address 1.1.1.1 255.255.255.255
-```
-````
-
 ```py
 import paramiko
 import time
@@ -200,22 +186,6 @@ R2#
 ```
 
 In this python script, we use the `for` loop and `list` to connect to multiple devices.
-
-````{margin} **For loop and list**
-```py
-# IP list fo network device
-devices =['192.168.10.11', '192.168.10.12']
-
-# For loop and list to connect multiple devices
-for device in devices:
-    print ('#### Connecting to the device ' + device + ' ####\n' )
-```
-```console
-#### Connecting to the device 192.168.10.11 ####
-
-#### Connecting to the device 192.168.10.12 ####
-```
-````
 
 ```py
 import paramiko
