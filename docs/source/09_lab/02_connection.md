@@ -9,7 +9,37 @@ In this section, I describe telnet and ssh to test our lab to connect to network
 
 **Telnet**  is a type of network protocol that allows users on the Internet/local area networks to provide a bidirectional interactive text-oriented communication using a virtual terminal connection, to another device.
 
-The telnet command is used along with the hostname and then the user credentials are entered. Telnet sends commands and retrieves data from the remote devices in plain text, anyone watching your Telnet packets on the wire will see your username, password, and everything you do on the remote system, so it is recommended that it not be used in the production environment.
+Telnet is easy to configure but not used often anymore since it is insecure, everything you do is sent in plaintext while SSH uses encryption. However, some older devices might only support telnet, so it’s good to know how to configure it.
+
+### Telnet Server
+
+Your router or switch will have a certain amount of VTY lines. These are virtual terminal lines. Let’s configure only the first five VTY lines:
+
+```console
+config ter
+line vty 0 4
+transport input all
+login local
+username admin password cisco
+enable password cisco
+end
+wr
+```
+
+We now have an admin user with a password. Let’s test this:
+
+```console
+root@NetworkAutomation-1:~# telnet 192.168.10.11
+Trying 192.168.10.11 ... Open
+
+User Access Verification
+
+Username: admin
+Password:
+R1>
+```
+
+As the above procedure configures `S-1` and `R-2`.
 
 ## Secure Shell
 
@@ -40,8 +70,11 @@ To authenticate an SSH connection, we need to set up RSA public/private key pair
 The name of the RSA keypair will be the `hostname` and `domain` name of the router:
 
 ```console
+config ter
 ip domain-name cisco.local
 crypto key generate rsa general-keys modulus 2048
+end
+wr
 ```
 
 Now SSH to `R-1`:

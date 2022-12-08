@@ -54,7 +54,7 @@ iface eth1 inet static
 Now configure the router `R1` in the same subnet as the container network address.
 
 ```console
-conf ter
+config ter
 hostname R1
 int fa0/0
 ip address 192.168.10.11 255.255.255.0
@@ -65,7 +65,7 @@ end
 Configure the router `R2`
 
 ```console
-conf ter
+config ter
 hostname R2
 int fa0/1
 ip address 192.168.10.12 255.255.255.0
@@ -73,38 +73,12 @@ no shut
 end
 ```
 
-We need to enable a password for the telnet connection:
-
-```console
-conf ter
-enable password cisco
-username admin password cisco
-line vty 0 4
-login local
-transport input all
-end
-wr
-```
-
 - **Switch Configuration**
-
-Configure S1 as below:
-
-```console
-conf ter
-hostname S1
-enable password cisco
-username admin password cisco
-line vty 0 4
-login local
-transport input all
-end
-```
 
 Configure the IP address (192.168.10.10) on `VLAN1`, and check interface with `sh ip int brief`.
 
 ```console
-conf ter
+config ter
 int vlan 1
 ip address 192.168.10.10 255.255.255.0
 no shut
