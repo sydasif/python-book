@@ -1,8 +1,8 @@
 # Strings in Python
 
-A string is a collection of characters/letters, in other terms characters are simple letters and symbols that are used to make a string and characters include alphanumeric letters, numbers and white space.
+A string is a collection of characters/letters, in other terms characters are simple letters and symbols that are used to make a string and characters include alphanumeric letters, numbers and whitespace.
 
-In Python, strings are written and enclosed between either single or double quotes. Once a string variable has been created and declared, it is impossible to change its values, unless a new string is created. Assigning a string to a variable is done with the variable name followed by an equal sign `=` and the string.
+In Python, strings are written and enclosed between either `single` or `double` quotes. Once a string variable has been created and declared, it is impossible to change its values, unless a new string is created. Assigning a string to a variable is done with the variable name followed by an equal sign `=` and the string.
 
 ```py
 name = 'Ali'
@@ -13,7 +13,7 @@ print(name)
 Ali
 ```
 
-Using triple quotes allows the creation of multi-line strings. Any whitespace within the string will also be included.
+Using `triple` quotes allows the creation of multi-line strings. Any whitespace within the string will also be included.
 
 ```py
 triple = """multi-line
@@ -45,32 +45,40 @@ Hello, World
 
 ## String Concatenation
 
-Strings allow concatenation for joining two strings into one.
+Strings allow concatenation for joining two strings into one or combine text with numbers.
 
 ### Addition
 
-This operator allows the user to put together two strings to come up with the third string.
+The `+` operator allows the user to put together two strings to come up with the third string.
 
 ```py
 first_name = "John"
 sec_name = "Alex"
-full_name = first_name + sec_name
-print(full_name)
 full_name = first_name + " " + sec_name
 print(full_name)
 ```
 
 ```console
-JohnAlex
 John Alex
 ```
 
-### Repetition/replication
+```py
+first_name = "John"
+second_name = "Alex"
+full_name = (f"My name is: {first_name} {second_name}")
+print(full_name)
+```
 
-The nice thing about the multiplication operator (*) is that it’s also possible to use it on strings. For example, to print a line of `60` dashes.
+```console
+My name is: John Alex
+```
+
+### Strign Repetition/replication
+
+The nice thing about the multiplication operator `*` is that it’s also possible to use it on strings. For example, to print a line of `60` dashes.
 
 ```py
-print("-" * 60)
+print(f"-" * 60)
 ```
 
 ```console
