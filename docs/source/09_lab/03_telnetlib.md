@@ -28,11 +28,11 @@ From the above output copy the example and amend it as below:
 
 ```py
 from telnetlib import Telnet
-tn = Telnet('192.168.10.11')   # connect to finger port
-tn.write(b'admin\n')  # Username
+tn = Telnet('192.168.10.11')   # connecting device ip
+tn.write(b'admin\n')  # Username 
 tn.write(b'cisco\n')  # Password
-tn.write(b'sh ip int bri\n')  # Cisco router cmd
-tn.write(b'exit\n')  # Cisco router cmd
+tn.write(b'sh ip int bri\n')  # Cisco router command
+tn.write(b'exit\n')  # Cisco router command
 print(tn.read_all())  # Print the output
 ```
 
@@ -44,7 +44,7 @@ b'\r\n\r\nUser Access Verification\r\n\r\nUsername: admin\r\nPassword: \r\nR1>sh
 root@NetworkAutomation-1:~#
 ```
 
-The above text in byte string is difficult to understand by humans, to make it human readable we need to convert it in plain text string.
+The above text in `byte` string is difficult to understand by humans, to make it human readable we need to convert it in plain text string.
 
 ```{margin} **How does ASCII work?**
 
@@ -80,13 +80,13 @@ FastEthernet0/1            unassigned      YES NVRAM  administratively down down
 R1>exit
 ```
 
-Python module `telnetlib` not only has basic methods for sending and receiving data but also has a few techniques (methods) that will watch and wait for a particular string to arrive from the remote system. The standard way to use it, see the Python script from telnetlib [docs](https://docs.python.org/3/library/telnetlib.html#telnet-example) and amend it, as per your requirement.
+Python module `telnetlib` not only has basic methods for sending and receiving data but also has a few techniques (methods) that will watch and wait for a particular string to arrive from the remote system. The standard way to use it, copy the Python script from telnetlib [docs](https://docs.python.org/3/library/telnetlib.html#telnet-example) and amend it, as per your requirement.
 
 ```py
 import getpass
 import telnetlib
 
-# A variable for the IP address
+# A variable for the device IP address
 HOST = "192.168.10.10" 
 # A variable for the username
 user = input("Enter your Username: ")
@@ -124,6 +124,6 @@ FastEthernet0/1            unassigned      YES NVRAM  administratively down down
 R1>exit
 ```
 
-```{epigraph}
-[getpass](https://docs.python.org/3/library/getpass.html) module allows you to request a password without displaying input characters.
+```{Note}
+[getpass](https://docs.python.org/3/library/getpass.html) module allows you to request a password prompt without displaying the input characters.
 ```
