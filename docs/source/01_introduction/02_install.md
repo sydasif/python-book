@@ -2,7 +2,7 @@
 
 Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.
 
-## Some of Python's notable features
+## Some of Python's Features
 
 - Uses a neat syntax, making the programs you write easier to read.
 - Is an easy-to-use language that makes it simple to get your program working.
@@ -12,7 +12,7 @@ Python is a clear and powerful object-oriented programming language, comparable 
 - Runs anywhere, including Mac OS, Windows, Linux, and Unix.
 - Is free software in two senses. It doesn't cost anything to download or use Python.
 
-### Some programming-language features of Python
+### Some Programming-language Features of Python
 
 - A variety of basic data types is available; numbers, lists and dictionaries.
 - Python supports object-oriented programming with classes.
@@ -35,7 +35,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 If you need to install Python, you may download the most recent stable version. This is the one, with the highest number that isn't marked as an alpha or beta release. Please see the [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download) for the most up-to-date versions of Python and other operating systems. They are available via the download buttons on that page.
 
-## Getting Started with Python
+## Getting Started
 
 Python is an interpreted programming language, this means as a developer you write Python `.py` files in a text editor and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:
 
@@ -61,7 +61,7 @@ Save your file, open your command line, navigate to the directory where you save
 Hello, World!
 ```
 
-## Python Command Line
+## Command Line
 
 In Python from time to time, it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself. Type the following on the Windows, MacOS or Linux command line:
 
@@ -94,15 +94,24 @@ Whenever you are done in the Python command line, you can simply type the follow
 [$] <> exit()
 ```
 
-or
+or use:
 
 ```console
 [$] <> quit()
 ```
 
+## print() Statement
+
+A `print()` statement can take any number of arguments and output them separated with a space to the console.
+
+```py
+print("Hello", 10, 3.5)
+```
+
+```console
+Hello 10 3.5
+```
+
 ```{seealso}
-- [How to Install Python on Windows](https://realpython.com/installing-python/#how-to-install-python-on-windows)
-- [How to Install Python on Linux](https://realpython.com/installing-python/#how-to-install-python-on-linux)
-- [How to Install Python on macOS](https://realpython.com/installing-python/#how-to-install-python-on-macos)
-- [Python installation: Windows, Mac and Linux (Kali Linux, Ubuntu) or just run in your browser 😀](https://www.youtube.com/watch?v=LMmtwTV6gTY&t=174s)
+[Python installation: Windows, Mac and Linux (Kali Linux, Ubuntu) or just run in your browser 😀](https://www.youtube.com/watch?v=LMmtwTV6gTY&t=174s)
 ```

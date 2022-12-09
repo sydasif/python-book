@@ -32,7 +32,7 @@ b = 5
 
 Three double or three single quotes may be used for a multi-line comment.
 
-## [Indentation](https://peps.python.org/pep-0008/#indentation)
+## [Indentation in Python](https://peps.python.org/pep-0008/#indentation)
 
 Indentation refers to the spaces/tabs at the beginning of a code line. While in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 
@@ -114,7 +114,7 @@ IndentationError: expected an indented block after 'if' statement on line 3
 
 Everybody makes mistakes, especially while programming, as you see `IndentationError:` in the above code. Mistakes in programs are called errors. You’ll experience two main types of errors, syntax errors and runtime errors.
 
-## Syntax Errors
+### Syntax errors
 
 A syntax error occurs when you write code that isn’t allowed in the Python language.
 
@@ -132,7 +132,7 @@ SyntaxError: unterminated string literal (detected at line 2)
 
 The code won’t run! `IDLE` displays an alert box with the above message. `IDLE` highlights the line containing `print("Hello, World)` in red to help you quickly find the line of code with the syntax error.
 
-## Runtime Errors
+### Runtime errors
 
 `IDLE` catches syntax errors before a program starts running. In variance, runtime errors only occur while a program is running. To generate a runtime error, remove both quotation marks and save them as the `hello_world.py` file.
 

@@ -41,7 +41,17 @@ Once installed, you can create a virtual environment using your terminal or `cmd
 [$] <> virtualenv <FOLDER_NAME>
 ```
 
-### Pin Your Dependencies
+### Virtual environment for a specific version
+
+To create virtual environment for a specific version environment use the below command:
+
+```console
+[$] <> virtualenv -p python3.7 venv
+```
+
+This will not work in a virtual environment using Python’s `venv` module. Activating, deactivating and freezing, work exactly as a virtual environment using Python’s `venv` module.
+
+## Pin Your Dependencies
 
 To make your virtual environments reproducible, you may need its contents. To do this is by creating `requirements.txt` file while your virtual environment is active.
 
@@ -56,16 +66,6 @@ After working/deleting your `venv` folder you can create the same environment wi
 $ source new-venv/bin/activate
 $ python -m pip install -r requirements.txt
 ```
-
-### Creating a virtual environment for a specific version
-
-To create a specific version environment use the below command:
-
-```console
-[$] <> virtualenv -p python3.7 venv
-```
-
-This will not work in a virtual environment using Python’s `venv` module. Activating, deactivating and freezing, work exactly as a virtual environment using Python’s `venv` module.
 
 ```{seealso}
 - [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)

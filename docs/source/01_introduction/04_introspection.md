@@ -32,7 +32,7 @@ print(type(d))
 <class 'complex'>
 ```
 
-## dir() method
+## dir() Method
 
 The Python `dir()` method returns the list of valid attributes of the passed object as below:
 
@@ -58,7 +58,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-## help() function
+## help() Function
 
 The Python `help()` function is used to display the documentation of modules, functions, classes, keywords, etc. The help function has the following syntax:
 
@@ -141,7 +141,7 @@ DESCRIPTION
     >>> print(tn.read_all())
 ```
 
-## [pydoc](https://docs.python.org/3/library/pydoc.html#module-pydoc) — Documentation generator and online help
+### [pydoc](https://docs.python.org/3/library/pydoc.html#module-pydoc) — Documentation generator and online help
 
 The `pydoc` module automatically generates documentation from Python modules. The documentation can be presented as pages of text on the console, served to a web browser, or saved to HTML files.
 
