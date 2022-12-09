@@ -1,4 +1,4 @@
-# Python Strings
+# String in Python
 
 Python strings are referred to as a sequence of characters/letters that are either literal constants or some kind of variable surrounded by either single quotation marks, or double quotation marks.
 
@@ -6,8 +6,8 @@ The program code below demonstrates the printing of string.
 
 ```py
 #  variable 'my_str' is a string
-my_str = "Network Automation is a fun"
-print(my_str)
+my_string = "Network Automation is a fun"
+print(my_string)
 ```
 
 ```console
@@ -36,7 +36,7 @@ print(len(banner))
 Don't use the word 'welcome' in any type of banner on a network device.
 ```
 
-## The len() Function
+## len() Function
 
 You can pass the `len()` function to a string value (or a variable containing a string), and the function evaluates to the integer value of the number of characters in that string.
 
@@ -48,18 +48,29 @@ len('hello')
 5
 ```
 
-## User input in Python
+## input() Function
 
-In Python, if you need to interact with users, either to get data input or to provide some sort of result. Asking the user to provide some type of input, Python provides us with built-in `input()` functions to take the input from the keyboard.
+If you need to interact with user, either to get data input or to provide some sort of result. Asking the user to provide some type of input, Python provides us with built-in `input()` functions to take the input from the keyboard.
 
-This function first takes the input from the user, converts it into a string and stores it in a variable. It does not evaluate the expression; it just returns the complete statement as String. When the input function is called it stops the program and waits for the user’s input. When the user presses enter, the program resumes and returns what the user has typed.
+This function first takes the input from the user, converts it into a string and stores it in a variable. It does not evaluate the expression; it just returns the complete statement as string. When the `input()` function is called it stops the program and waits for the user’s input. When the user presses `enter`, the program resumes and returns what the user has typed.
+
+You can prompt the user to input a string and assign it a variable.
+
+```shell
+[$] <> python3
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> input()
+```
+
+You can prompt a question with the `input()` statement.
 
 ```py
-user = input("Enter your username: ")
+user = input("What is your name? ")
 print(user)
 ```
 
 ```console
->>> Enter your username: Ali
+>>> What is your name? Ali
 Ali
 ```

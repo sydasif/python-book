@@ -1,15 +1,15 @@
-# Python Numbers
+# Numbers in Python
 
 Python has only three built-in numeric types; these include integer, float and complex. These types are known by the value assigned to the variable.
 
 ## Integers
 
-You can create an integer in two ways in Python. The most common way is to assign an integer to a variable:
+An integer is a whole number and not a fraction. You can create an integer in two ways in Python, the most common way is to assign an integer to a variable:
 
 ```py
 # integer
-num_int = 1
-print(num_int)
+int_one = 1
+print(int_one)
 ```
 
 ```console
@@ -19,8 +19,21 @@ print(num_int)
 The other way to create an integer is to use the `int()` callable, like this:
 
 ```py
-num_int = int(3)
-print(num_int)
+int_two = int(3)
+print(int_two)
+```
+
+```console
+3
+```
+
+You can do simple math with variables:
+
+```py
+a = 1
+b = 2
+add = a + b
+print(add)
 ```
 
 ```console
@@ -39,12 +52,11 @@ int('101', 16)
 
 ## Floats
 
-A float in Python refers to a number that has a decimal point in it. For example, `2.0` is a float while `2` is an integer. The most common way is to assign a float to a variable, and the other way to create a float is to use the `float()`.
+A float is refers to a number that has a decimal point in it. For example, `2.0` is a float while `2` is an integer. The most common way is to assign a float to a variable, and the other way to create a float is to use the `float()`.
 
 ```py
-# float
-num_float = 1.5 
-print(num_float)
+float_one = 1.5 
+print(float_one)
 ```
 
 ```console
@@ -52,12 +64,29 @@ print(num_float)
 ```
 
 ```py
-num_float = float(10.5) 
-print(num_float)
+float_two = float(10.5) 
+print(float_two)
 ```
 
 ```console
 10.5
+```
+
+You can do simple math with variables:
+
+```py
+a = 1.0
+b = 2.0
+add = a + b
+print(add)
+```
+
+```console
+3.0
+```
+
+```{Note}
+Note that the arithmetic of the integer and floats will convert the result to float.
 ```
 
 ## Complex Numbers
@@ -78,15 +107,24 @@ print(z)
 
 In Python programming, you may need to know if an expression is `True` or `False`. You can evaluate any expression in Python, and get one of two answers. When comparing two values, the expression is evaluated and Python returns the Boolean value.
 
-Booleans represent two values:
+Booleans represent one of two values:
 
 - True or
 - False
 
+```shell
+[$] <> python3
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 10 < 12
+True
+```
+
 The `bool()` built-in function creates a Boolean value and allows the program/code to evaluate any logic (expression), and give a Boolean value in return. This is because in Boolean logic all values are reduced to either `True` or `False`.
 
 ```{Note}
-`bool()` is a subclass of integer.
+- Boolean valuse is a subclass of integer.
+- It is case-sensitve, if you write `true` (instead of `True`), it will not work.
 ```
 
 ## None Type
