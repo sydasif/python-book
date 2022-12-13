@@ -190,4 +190,4 @@ Compressed configuration from 3586 bytes to 1679 bytes[OK]
 S1#
 ```
 
-There are lots of additional examples are [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md) on Github.
+There are lots of additional examples [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md) on Github.
