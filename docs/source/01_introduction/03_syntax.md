@@ -1,6 +1,6 @@
 # Python Syntax
 
-As you learned previously in {ref}`Getting Started with Python`, Python syntax can be executed by writing directly in the command line, or by creating a Python file, using the `.py` file extension, and running it in the command line.
+As you learned previously in {ref}`Getting Started`, Python syntax can be executed by writing directly in the command line, or by creating a Python file, using the `.py` file extension, and running it in the command line.
 
 Key syntax points:
 

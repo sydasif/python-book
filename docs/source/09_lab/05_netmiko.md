@@ -24,7 +24,7 @@ Netmiko has the following requirements (which pip will install for you)
 - pyserial
 - textfsm
 
-## Getting Started
+## Getting Started with Netmiko
 
 Import the `ConnectHandler()` class from the Netmiko library, creates an object, and establish an SSH connection to the remote device. The required arguments to pass in as dictionary to created object as below:
 
@@ -133,3 +133,61 @@ Connecting to the Host 192.168.10.10
 
 username admin privilege 15 password 0 cisco
 ```
+
+### Configuration changes from a file
+
+This script demonstrates, how to use the method `send_config_from_file()` in netmiko for device configuration. Using this you will be able to fetch config from external file and push to device.
+
+````{margin}
+Configuration file in the same dir
+
+```console
+$ cat config_file.cfg 
+logging buffered 100000
+no logging console
+```
+````
+
+```py
+from netmiko import ConnectHandler
+
+
+S1 = {
+ 'device_type': 'cisco_ios',
+ 'ip': '192.168.10.10',
+ 'username': 'admin',
+ 'password': 'cisco',
+ 'secret': 'cisco',
+}
+
+net_connect = ConnectHandler(**S1)
+
+file = "config_file.cfg"
+
+with ConnectHandler(**S1) as net_connect:
+    output = net_connect.send_config_from_file(file)
+    output += net_connect.save_config()
+
+print()
+print(output)
+print()
+```
+
+```console
+root@NetworkAutomation-1:~# python3 03_config_file.py
+
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#logging buffered 100000
+S1(config)#no logging console
+S1(config)#end
+S1#write mem
+
+Building configuration...
+Compressed configuration from 3586 bytes to 1679 bytes[OK]
+S1#
+```
+
+### Additional Examples
+
+There are lots of additional examples [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md).
