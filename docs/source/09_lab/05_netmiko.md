@@ -26,7 +26,7 @@ Netmiko has the following requirements (which pip will install for you)
 
 ## Getting Started
 
-Import the` ConnectHandler()` class from the Netmiko library, creates an object, and establish an SSH connection to the remote device. The required arguments to pass in as dictionary to created object as below:
+Import the `ConnectHandler()` class from the Netmiko library, creates an object, and establish an SSH connection to the remote device. The required arguments to pass in as dictionary to created object as below:
 
 - device_type
 - hostname or IP
@@ -64,4 +64,72 @@ root@NetworkAutomation-1:~# python3 01_basic_netmiko.py
 Interface                  IP-Address      OK? Method Status                Protocol
 FastEthernet0/0            192.168.10.11   YES NVRAM  up                    up
 FastEthernet0/1            unassigned      YES NVRAM  administratively down down
+```
+
+This script uses a dictionary and lists to SSH and configures multiple Cisco devices. It uses for loop to get each device from the dictionary.
+
+```py
+from netmiko import ConnectHandler
+
+R1 = {
+ 'device_type': 'cisco_ios',
+ 'ip': '192.168.10.11',
+ 'username': 'admin',
+ 'password': 'cisco',
+ 'secret': 'cisco',
+}
+
+R2 = {
+ 'device_type': 'cisco_ios',
+ 'ip': '192.168.10.12',
+ 'username': 'admin',
+ 'password': 'cisco',
+ 'secret': 'cisco',
+}
+
+S1 = {
+ 'device_type': 'cisco_ios',
+ 'ip': '192.168.10.10',
+ 'username': 'admin',
+ 'password': 'cisco',
+ 'secret': 'cisco',
+}
+
+devices = [R1, R2, S1]
+
+for device in devices:
+    print()
+    print (f"Connecting to the Host {device['ip']}")
+    print()
+    net_connect = ConnectHandler(**device)
+    net_connect.enable()
+
+    #  Create a list of configuration commands
+    config_commands = ['username admin pri 15 password cisco']
+    # Making Configuration Changes using send_config_set() method
+    net_connect.send_config_set(config_commands)  # Pass that list to the send_config_set() method.
+    # Save running-config to startup-config by executing the save_config() method.
+    net_connect.save_config()
+
+    output = net_connect.send_command('show running-config | section username')
+    print(output)
+```
+
+```console
+root@NetworkAutomation-1:~# python3 02_multi_device.py
+
+Connecting to the Host 192.168.10.11
+
+
+username admin privilege 15 password 0 cisco
+
+Connecting to the Host 192.168.10.12
+
+
+username admin privilege 15 password 0 cisco
+
+Connecting to the Host 192.168.10.10
+
+
+username admin privilege 15 password 0 cisco
 ```
