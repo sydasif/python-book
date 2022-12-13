@@ -66,7 +66,9 @@ FastEthernet0/0            192.168.10.11   YES NVRAM  up                    up
 FastEthernet0/1            unassigned      YES NVRAM  administratively down down
 ```
 
-This script uses a dictionary and lists to SSH and configures multiple Cisco devices. It uses for loop to get each device from the dictionary.
+### Making Configuration Changes
+
+This script uses a dictionary and lists to SSH and configures multiple Cisco devices using `send_config_set()` method. It uses for loop to get each device from the dictionary.
 
 ```py
 from netmiko import ConnectHandler
@@ -106,9 +108,9 @@ for device in devices:
 
     #  Create a list of configuration commands
     config_commands = ['username admin pri 15 password cisco']
-    # Making Configuration Changes using send_config_set() method
-    net_connect.send_config_set(config_commands)  # Pass that list to the send_config_set() method.
-    # Save running-config to startup-config by executing the save_config() method.
+    # Pass that list to the send_config_set() method
+    net_connect.send_config_set(config_commands)
+    # Save running-config to startup-config by executing the save_config() method
     net_connect.save_config()
 
     output = net_connect.send_command('show running-config | section username')
@@ -188,6 +190,4 @@ Compressed configuration from 3586 bytes to 1679 bytes[OK]
 S1#
 ```
 
-### Additional Examples
-
-There are lots of additional examples [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md).
+There are lots of additional examples are [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md) on Github.
