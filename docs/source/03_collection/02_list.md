@@ -230,10 +230,6 @@ print(list1)
 
 To check the attribute (method) of an object see {ref}`dir() method`.
 
-```{seealso}
-- [More on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists). Methods of list objects.
-```
-
 ## [The `del` statement](https://docs.python.org/3/tutorial/datastructures.html#the-del-statement)
 
 There is a way to remove an item from a list given its index instead of its value: the `del` statement. This differs from the `pop()` method which returns a value.
@@ -246,4 +242,8 @@ print(fruit_list)
 
 ```console
 ['mango', 'carrot', 'banana', 'rice']
+```
+
+```{seealso}
+- [More on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists). Methods of list objects.
 ```
