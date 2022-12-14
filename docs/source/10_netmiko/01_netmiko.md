@@ -1,8 +1,4 @@
-# [Netmiko Module](https://pynet.twb-tech.com/blog/netmiko-python-library.html)
-
-Netmiko is a multi-vendor library that simplifies SSH management to network devices, this library is based on the Paramiko SSH library. Netmiko supports a wide range of devices.
-
-## Purpose
+# What is Netmiko?
 
 Netmiko simplifies SSH management to network devices. The purposes of this library are the following:
 
@@ -23,6 +19,16 @@ Netmiko has the following requirements (which pip will install for you)
 - scp >= 0.13.2
 - pyserial
 - textfsm
+
+Then import netmiko from the Python shell to make sure the module is correctly installed.
+
+```console
+[$] <> python
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import netmiko
+>>>
+```
 
 ## Getting Started with Netmiko
 
@@ -188,6 +194,50 @@ S1#write mem
 Building configuration...
 Compressed configuration from 3586 bytes to 1679 bytes[OK]
 S1#
+```
+
+### Exception handling
+
+The exception handling module `netmiko.ssh_exception` in netmiko provides some exception classes that can handle such situations, that is `AuthenticationException`, and will catch the authentication errors in the remote device. The second class is `NetMikoTimeoutException`, which will catch timeouts/connectivity issues.
+
+```py
+from netmiko import ConnectHandler
+from netmiko.ssh_exception import NetmikoTimeoutException
+from netmiko.ssh_exception import NetmikoAuthenticationException
+
+R2 = {
+'device_type': 'cisco_ios',
+'ip': '192.168.10.12',
+'username': 'admin',
+'password': 'cisco123', # wrong password
+}
+
+R3 = {
+'device_type': 'cisco_ios',
+'ip': '192.168.10.13', # wrong IP 
+'username': 'admin',
+'password': 'cisco',
+}
+
+devices = [R2, R3]
+
+for device in devices:
+    try:
+        net_connect = ConnectHandler(**device)
+        output = net_connect.send_command("show ip int brief")
+        print(output)
+        print()
+    except NetmikoTimeoutException:
+        print("Device not reachable ---> {}".format(device['ip']))
+    except NetmikoAuthenticationException:
+        print("Authentication Error ---> {}".format(device['ip']))
+```
+
+```console
+root@NetworkAutomation-1:~# python3 04_netmiko_exception.py
+
+Authentication Error ---> 192.168.10.12
+Device not reachable ---> 192.168.10.13
 ```
 
 There are lots of additional examples [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md) on Github.
