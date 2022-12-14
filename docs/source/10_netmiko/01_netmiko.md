@@ -22,9 +22,9 @@ Netmiko has the following requirements (which pip will install for you)
 
 Then import netmiko from the Python shell to make sure the module is correctly installed.
 
-```console
-[$] <> python
-Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
+```shell
+[$] <> python3 
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import netmiko
 >>>
