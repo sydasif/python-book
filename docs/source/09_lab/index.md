@@ -9,5 +9,4 @@ One of the best ways to learn about a topic is to practice what you study, valid
 02_connection
 03_telnetlib
 04_paramiko
-05_netmiko
 ```
