@@ -40,4 +40,5 @@ This project (book) is under development.
 07_error/index
 08_oop/index
 09_lab/index
+10_netmiko/index
 ```

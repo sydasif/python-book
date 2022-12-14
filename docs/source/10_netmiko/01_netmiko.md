@@ -209,12 +209,12 @@ R2 = {
 'device_type': 'cisco_ios',
 'ip': '192.168.10.12',
 'username': 'admin',
-'password': 'cisco123', # wrong password
+'password': 'cisco123',  # Wrong Password
 }
 
 R3 = {
 'device_type': 'cisco_ios',
-'ip': '192.168.10.13', # wrong IP 
+'ip': '192.168.10.13',  # Wrong IP Addr 
 'username': 'admin',
 'password': 'cisco',
 }
