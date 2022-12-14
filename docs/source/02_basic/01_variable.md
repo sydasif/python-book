@@ -95,15 +95,3 @@ my_variable_name = "Ali"
 ```{Note}
 Use a more descriptive name such as `age`, `car_name`, or `total_volume`.
 ```
-
-## The print() Function
-
-The `print()` function displays the string/variable inside the parentheses on the screen. The line `print('Hello world!')` means “Print out the text in the string 'Hello world!'.”  A value that is passed to a function call is an argument.
-
-```py
-print("Hello, World!")
-```
-
-```console
-Hello, World!
-```
