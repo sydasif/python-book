@@ -6,16 +6,11 @@ To make the script better, your code needs to keep working even when the unexpec
 
 Another common issue is what to do if the user enters invalid input or tries to open a file that is not present or deleted. support.
 
-```{seealso}
-Full listing of the built-in exceptions, on Python [documentation](https://docs.python.org/3/library/exceptions.html).
-```
-
 ## Exceptons Handling
 
-Python comes with a special syntax that we can use to catch an exception. It is known as the `try/except` statement.
+Python comes with a special syntax that you can use to catch an exception. It is known as the `try/except` statement.
 
 ```py
-# The try block will generate an exception
 try:
   print(x)
 except NameError:
@@ -35,16 +30,18 @@ When you write the `except` without specifying the exception type, it is known a
 To catch multiple exceptions. Here is one way to do that:
 
 ```py
+x = '1'
+y = 2
+
 try:
-    print(x)
-except NameError:
-    print("Variable x is not defined")
+  z = x + y
+  print(z)
 except:
-    print("Something wrong")
+  print("Something wrong")
 ```
 
 ```console
-Variable x is not defined
+Something wrong
 ```
 
 ## finally Statement
@@ -53,11 +50,11 @@ There is more to the `try/except` statement than just `try` and `except`. You ca
 
 ```py
 try:
-    1 / 0
+  1 / 0
 except ZeroDivisionError:
-    print('You can not divide by zero!')
+  print('You can not divide by zero!')
 finally:
-    print('try/except block end.')
+  print('try/except block end.')
 ```
 
 ```console
@@ -66,7 +63,7 @@ try/except block end.
 ```
 
 ```{Note}
-You can also skip the except statement entirely and create a try/finally
+You can also skip the `except` statement entirely and create a try/finally
 ```
 
 ## else Statement
@@ -85,4 +82,8 @@ else:
 ```console
 Hello
 Nothing went wrong
+```
+
+```{seealso}
+Full listing of the built-in exceptions, on Python [documentation](https://docs.python.org/3/library/exceptions.html).
 ```
