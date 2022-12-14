@@ -37,7 +37,6 @@ Three double or three single quotes may be used for a multi-line comment.
 Indentation refers to the spaces/tabs at the beginning of a code line. While in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 
 ```py
-# Example
 if 5 > 2:
   print("Five is greater than two!")
 ```

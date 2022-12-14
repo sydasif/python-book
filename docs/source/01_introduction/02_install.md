@@ -67,6 +67,9 @@ In Python from time to time, it is quickest and easiest not to write the code in
 
 ```shell
 [$] <> python3
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
 ```
 
 From there you can write any Python code, including the `Hello, World!` example from earlier in the tutorial:
@@ -90,26 +93,33 @@ Hello, World!
 
 Whenever you are done in the Python command line, you can simply type the following to quit the Python command line interface:
 
-```console
-[$] <> exit()
+```shell
+[$] <> python3
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
 ```
 
 or use:
 
-```console
-[$] <> quit()
+```shell
+[$] <> python3 
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
 ```
 
 ## print() Statement
 
 A `print()` statement can take any number of arguments and output them separated with a space to the console.
 
-```py
-print("Hello", 10, 3.5)
-```
-
-```console
+```shell
+[$] <> python3
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello", 10, 3.5)
 Hello 10 3.5
+>>>
 ```
 
 ```{seealso}

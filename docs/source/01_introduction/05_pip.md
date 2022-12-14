@@ -25,7 +25,7 @@ Depending on how you installed Python, there might be other mechanisms available
 
 On Ubuntu its come pre-installed if not, install it with the below command:
 
-```console
+```shell
 [$] <> sudo apt update
 $ sudo apt install python3-venv python3-pip
 ```
@@ -40,24 +40,24 @@ As a popular open-source development project, Python has an active supporting co
 
 The following command will install the latest version of a module and its dependencies from the Python Packaging Index.
 
-```console
+```shell
 [$] <> python3 -m pip install netmiko
 ```
 
 It is also possible to specify an exact or minimum version directly on the command line, the package name and the version.
 
-```console
+```shell
 [$] <> python -m pip install SomePackage==1.0.4    # specific version
 ```
 
 Upgrading existing modules
 
-```console
+```shell
 [$] <> python3 -m pip install --upgrade netmiko
 ```
 
 or `pip` must be requested explicitly to upgrade.
 
-```console
+```shell
 [$] <> python3 -m pip install -U pip
 ```
