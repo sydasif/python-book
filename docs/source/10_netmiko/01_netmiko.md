@@ -240,4 +240,58 @@ Authentication Error ---> 192.168.10.12
 Device not reachable ---> 192.168.10.13
 ```
 
+### Backup device configuration
+
+Device configuration backup is one of the most important tasks for any network engineer. In this use case, a sample python script can be used to back up the device configuration.
+
+```py
+from netmiko import ConnectHandler
+from datetime import datetime
+import time
+
+time_now = datetime.now()
+time_stamp = time_now.strftime("%d-%b-%Y")
+
+username = "admin"
+password = "cisco"
+
+
+R1 = {
+    "host": "192.168.10.11",
+    "username": username,
+    "password": password,
+    "device_type": "cisco_ios",
+}
+
+R2 = {
+    "host": "192.168.10.12",
+    "username": username,
+    "password": password,
+    "device_type": "cisco_ios",
+}
+
+devices = [R1, R2]
+
+for device in devices:
+    net_connect = ConnectHandler(**device)
+    print ('Initiating running cofig {}'.format(device['host']))
+    sh_run = net_connect.send_command('show run')
+
+    with open(
+        device['host'] + "_"  + time_stamp, 'w') as f:
+        f.write(sh_run)
+        print("Backup Saved")
+
+print ('Finished backup saving...')
+```
+
+```console
+root@NetworkAutomation-1:~# python3 05_backup_netmiko.py
+Initiating running cofig 192.168.10.11
+Backup Saved
+Initiating running cofig 192.168.10.12
+Backup Saved
+Finished backup saving...
+```
+
 There are lots of additional examples [here](https://github.com/ktbyers/netmiko/blob/develop/EXAMPLES.md) on Github.
