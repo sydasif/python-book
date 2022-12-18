@@ -1,30 +1,32 @@
 # Python Syntax
 
-As you learned previously in {ref}`Getting Started`, Python syntax can be executed by writing directly in the command line, or by creating a Python file, using the `.py` file extension, and running it in the command line.
+As you learned previously in {ref}`Getting Started`, Python code can be executed by writing directly in the command line, or by creating a Python file, using the `.py` file extension, and running it in the command line.
 
 Key syntax points:
 
 - Python was designed for readability and is similar to the English language reading.
 - Python relies on indentation, using whitespace, to define a block of code, such as loops, functions and classes.
 - Blank lines are ignored in Python code when executing the program.
-- Variables are created when assigning a value, dynamically typed, which means has no command to declare a variable.
+- Variables are created dynamically when assigning a value, which means no command to declare a variable type.
 
 ## Comments in Python
 
 When writing code you often need to leave a comment, for example, to describe features of the code. Comments in Python can be one-line:
 
 ```py
-# Important comment
-a = 6
-b = 5 # A much-needed comment
+# Important comment read carefully 
+username = "admin"
+password = "admin123"  # Don't hard code your password
 ```
 
-One-line comments start with a `#` sign. Note that the comment can be in-line where the code itself is or in a separate line. If it is necessary to write several lines of comments in order to not put the `#` sign before each line, we can make a multi-line comment:
+One-line comments start with a `#` sign. Note that the comment can be in-line where the code itself is or in a separate line.
+
+If it is necessary to write several lines of comments in order to not put the `#` sign before each line, we can make a multi-line comment:
 
 ```py
 """
-This is a multi-line comment
-A second-line comment
+This is a multi-line comment in your code
+A second-line comment in your code.
 """
 a = 14
 b = 5
