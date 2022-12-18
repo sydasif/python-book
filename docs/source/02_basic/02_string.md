@@ -74,3 +74,52 @@ print(user)
 >>> What is your name? Ali
 Ali
 ```
+
+## bin() in Python
+
+The `bin()` method converts an integer to its binary value and returns it.
+
+```py
+num = 100
+print(bin(num))  # print binary number
+```
+
+```console
+0b1100100
+```
+
+The `bin()` method returns, the binary string equivalent to the given integer and `TypeError` for a non-integer argument.
+
+```{Note}
+The prefix `0b` in the output `0b1100100` represents that the result is a binary string.
+```
+
+## oct() in Python
+
+The `oct()` function takes an integer number and returns its octal representation.
+
+```py
+num = 100
+print(oct(num))  # print octal number
+```
+
+```console
+0o144
+```
+
+The `oct()` function returns an octal string from the given integer number.
+
+## hex() in Python
+
+The `hex()` function converts an integer number to the corresponding hexadecimal string. The `hex()` function converts an integer to the corresponding hexadecimal number in string form and returns it.
+
+```py
+num = 100
+print(hex(num))  # print hex number
+```
+
+```console
+0x64
+```
+
+The returned hexadecimal string starts with the prefix 0x indicating it's in hexadecimal form.
