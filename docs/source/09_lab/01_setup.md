@@ -17,7 +17,7 @@ We start with some basic knowledge about how to set up GNS3, download Cisco imag
 - Download the Network Automation appliance from GNS3 marketplace.
 - Create the simple topology as the figure below in GSN3.
 
-```{figure} ../images/lab-pic.png
+```{figure} ../images/lab.png
 ---
 width: 100%
 name: topology

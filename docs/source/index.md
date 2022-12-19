@@ -13,11 +13,15 @@ Associate Engineer (DAE in Electronics),  learning network automation as a hobby
 
 - *Skill as an associate engineer*
 
+  - Routing and Switching
+  - OFC/LAN Networking
   - IP Addressing and Subnetting
-  - Computer Basics - Windows 7/10 Desktop
-  - Linux and Ubuntu Desktop - Hands On
-  - Ansible Automation - Hands On
-  - Python Programming for Network Engineers
+  - Computer Basics - Windows 7/10
+  - Linux and Ubuntu Desktop/Server
+  - VMvare/KVM/VirtualBox
+  - Docker/Vagrant - Hands On
+  - Ansible Network Automation
+  - Python Network Automation
 
 - **Conventions**
 
