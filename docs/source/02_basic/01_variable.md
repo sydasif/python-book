@@ -5,7 +5,7 @@ A variable is a storage/reserve memory location with a name and a value in Pytho
 - Variables keep values accessible
 - Variables give values perception
 - Variables make change easy
-- Variabes have data types
+- Variables have data types
 
 ## Variable Declaration
 
@@ -20,15 +20,6 @@ print(name)
 Ali
 ```
 
-```py
-addr = "Pakistan"
-print(addr)
-```
-
-```console
-Pakistan
-```
-
 You can get the data type of a variable with the `type()` function.
 
 ```py
@@ -38,6 +29,28 @@ print(addr)
 
 ```console
 <class 'str'>
+```
+
+Assign values to multiple variables in one statement.
+
+```py
+age, city = 23, "Karachi"
+print(age, city)
+```
+
+```console
+23 Karachi
+```
+
+Assign the same value to multiple variables at once.
+
+```py
+age = num = 40
+print(age, num)
+```
+
+```console
+40 40
 ```
 
 ### Assignment Statements
