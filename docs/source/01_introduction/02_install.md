@@ -109,19 +109,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> quit()
 ```
 
-## print() Statement
-
-A `print()` statement can take any number of arguments and output them separated with a space to the console.
-
-```shell
-[$] <> python3
-Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> print("Hello", 10, 3.5)
-Hello 10 3.5
->>>
-```
-
 ## Text Editor
 
 Text editors are very important to a programmer, but as a beginner you only need a simple text editor. Here are some text editors to try:
