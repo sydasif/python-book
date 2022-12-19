@@ -131,5 +131,5 @@ Text editors are essential to a programmer, but as a beginner, you only need a s
 | gEdit | Linux, macOS, Windows | [Download](https://github.com/GNOME/gedit) |
 
 ```{seealso}
-[Python installation: Windows, Mac and Linux (Kali Linux, Ubuntu) or just run in your browser 😀](https://www.youtube.com/watch?v=LMmtwTV6gTY&t=174s)
+[Python installation: Windows, Mac and Linux (Kali Linux, Ubuntu) or just run in your browser](https://www.youtube.com/watch?v=LMmtwTV6gTY&t=174s)
 ```
