@@ -45,7 +45,7 @@ Python is an interpreted programming language, this means as a developer you wri
 
 Where `hello_world.py` is the name of your python file.
 
-Let's write your first Python file, called `hello_world.py`, which can be done in any text editor.
+Let's write your first Python file, called `hello_world.py`, which can be done in any {ref}`Text Editor`.
 
 ```python
 print("Hello, World!")
@@ -121,6 +121,16 @@ Type "help", "copyright", "credits" or "license" for more information.
 Hello 10 3.5
 >>>
 ```
+
+## Text Editor
+
+Text editors are very important to a programmer, but as a beginner you only need a simple text editor. Here are some text editors to try:
+
+| Name | OS | Link |
+| ----------- | -------- | --------------- |
+| Visual Studio Code | Windows, macOS, Linux | [Download](https://code.visualstudio.com/) |
+| Notepad++ | Windows | [Download](https://notepad-plus-plus.org/) |
+| gEdit | Linux, macOS, Windows | [Download](https://github.com/GNOME/gedit) |
 
 ```{seealso}
 [Python installation: Windows, Mac and Linux (Kali Linux, Ubuntu) or just run in your browser 😀](https://www.youtube.com/watch?v=LMmtwTV6gTY&t=174s)
