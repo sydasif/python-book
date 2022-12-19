@@ -1,28 +1,40 @@
 # [What is Python?](https://www.python.org/about/gettingstarted/)
 
-Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.
+Python is a clear, powerful and General Purpose object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java. The distinctive feature of Python is that it is an interpreted language.
+
+The Python `IDLE` (Integrated Development Environment) executes instructions one line at a time from top to bottom and left to right.
 
 ## Some of Python's Features
 
-- Uses a neat syntax, making the programs you write easier to read.
-- Is an easy-to-use language that makes it simple to get your program working.
-- Python is ideal for prototype development and other ad-hoc programming tasks.
-- Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, and reading and modifying files.
-- Python's interactive mode makes it easy to test short snippets of code.
-- Runs anywhere, including Mac OS, Windows, Linux, and Unix.
-- Is free software in two senses. It doesn't cost anything to download or use Python.
+Let us now see various features of Python that make it so powerful and popular:
 
-### Some Programming-language Features of Python
+### Easy
 
-- A variety of basic data types is available; numbers, lists and dictionaries.
-- Python supports object-oriented programming with classes.
-- Code can be grouped into modules and packages.
-- The language supports raising and catching exceptions, resulting in cleaner error handling.
-- Python contains advanced programming features such as generators and list comprehensions.
+Python is very easy to learn and understand. use a neat syntax, making the programs you write easier to read.
+
+### Interpreted
+
+It is interpreted language, executed line by line. This makes it simple to get your program working test and debug.
+
+### Object-Oriented
+
+The Python programming language supports classes and objects and hence it is object-oriented and ideal for prototype development and other ad-hoc programming tasks.
+
+### Free and Open Source
+
+The language and its source code are available to the public for free; It doesn't cost anything to download or use Python, which means there is no need to buy a costly license.
+
+### Portable
+
+Python is open-source, you can run it anywhere, including Mac OS, Windows, Linux or any other platform.
+
+### Large Python Library
+
+Python comes with an extensive standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, and reading and modifying files.
 
 ## [Downloading Python](https://www.python.org/downloads/)
 
-Before you start, you will need Python on your computer. Many operating systems, including MacOS and Linux, come with Python preinstalled. The version of Python that comes with your operating system is called the system Python. Check whether you already have an up-to-date version of Python installed by entering python in a command line window.
+Before you start, you will need Python on your computer. Many operating systems, including macOS and Linux, come with Python preinstalled. The version of Python that comes with your operating system is called the system Python. Check whether you already have an up-to-date version of Python installed by entering python in a command line window.
 
 If you see a response from a Python interpreter it will include a version number in its initial display.
 
@@ -37,7 +49,7 @@ If you need to install Python, you may download the most recent stable version. 
 
 ## Getting Started
 
-Python is an interpreted programming language, this means as a developer you write Python `.py` files in a text editor and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:
+Python is an interpreted programming language, this means as a developer you write Python `.py` files in a {ref}`Text Editor` and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:
 
 ```shell
 [$] <> python3 hello_world.py
@@ -63,7 +75,7 @@ Hello, World!
 
 ## Command Line
 
-In Python from time to time, it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself. Type the following on the Windows, MacOS or Linux command line:
+In Python from time to time, it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself. Type the following on the Windows, macOS or Linux command line:
 
 ```shell
 [$] <> python3
@@ -91,27 +103,26 @@ Type "help", "copyright", "credits" or "license" for more information.
 Hello, World!
 ```
 
-Whenever you are done in the Python command line, you can simply type the following to quit the Python command line interface:
+Whenever you are done in the Python command line, you can type the following to quit the Python command line interface:
 
 ```shell
 [$] <> python3
 Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> exit()
+>>> exit() or quit()
 ```
 
-or use:
+## The IDLE
 
-```shell
-[$] <> python3 
-Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> quit()
-```
+You can use the Integrated Development Environment to code in Python. Open the Start menu. Click on IDLE(Python). This will take you to the command prompt for Python. You can now begin coding.
+
+![idle](/docs/source/images/idle.PNG)
+
+You can use Python Shell as an interpreter. Otherwise, you can create a new file to write a Python program, save it and click `Run` to run the program.
 
 ## Text Editor
 
-Text editors are very important to a programmer, but as a beginner you only need a simple text editor. Here are some text editors to try:
+Text editors are essential to a programmer, but as a beginner, you only need a simple text editor. Here are some text editors to try:
 
 | Name | OS | Link |
 | ----------- | -------- | --------------- |
