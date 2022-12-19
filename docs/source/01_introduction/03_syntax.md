@@ -1,13 +1,10 @@
 # Python Syntax
 
-As you learned previously in {ref}`Getting Started`, Python code can be executed by writing directly in the command line, or by creating a Python file, using the `.py` file extension, and running it in the command line.
+As you learned previously in {ref}`Getting Started`, Python code can be executed by writing directly in the command line/IDLE, or by creating a Python file, using the `.py` file extension, and running it in the command line.
 
-Key syntax points:
+## What is Python Syntax?
 
-- Python was designed for readability and is similar to the English language reading.
-- Python relies on indentation, using whitespace, to define a block of code, such as loops, functions and classes.
-- Blank lines are ignored in Python code when executing the program.
-- Variables are created dynamically when assigning a value, which means no command to declare a variable type.
+The Python syntax defines all the sets of rules that are used to create code in Python programming. You will need to learn and understand the Python syntax in order to learn the Python language. Python was designed for readability and is similar to English language reading. Python relies on indentation, using whitespace, to define a block of code, such as loops, functions and classes. Blank lines are ignored in Python code when executing the program. Variables are created dynamically typed, you don’t define the type of the variable. It is assumed on the basis of the value it holds.
 
 ## Comments in Python
 
@@ -16,7 +13,7 @@ When writing code you often need to leave a comment, for example, to describe fe
 ```py
 # Important comment read carefully 
 username = "admin"
-password = "admin123"  # Don't hard code your password
+password = "admin123"  # Don't hardcode your password
 ```
 
 One-line comments start with a `#` sign. Note that the comment can be in-line where the code itself is or in a separate line.
@@ -105,11 +102,31 @@ print("Five is greater than two!")
 IndentationError: expected an indented block after 'if' statement on line 3
 ```
 
+## Python Quotations
+
+Python supports the single quote and the double quote for string literals. But if you begin a string with a single quote, you must end it with a single quote. The same goes for double quotes.
+
+```py
+print('Hello, World!')
+```
+
+```console
+Hello, World!
+```
+
+This string is delimited by double quotes.
+
+```py
+print("Hello, World!")
+```
+
+```console
+Hello, World!
+```
+
 ## [Tabs or Spaces?](https://peps.python.org/pep-0008/#tabs-or-spaces)
 
-- Spaces are the preferred indentation method.
-- Tabs should be used solely to remain consistent with code that is already indented with tabs.
-- Python disallows mixing tabs and spaces for indentation.
+In Python, spaces are the preferred indentation method. Tabs should be used solely to remain consistent with code that is already indented with tabs. Python disallows mixing tabs and spaces for indentation.
 
 ## Error in Python
 
