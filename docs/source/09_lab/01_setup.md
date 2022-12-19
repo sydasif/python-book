@@ -20,9 +20,9 @@ We start with some basic knowledge about how to set up GNS3, download Cisco imag
 ```{figure} ../images/lab-pic.png
 ---
 width: 100%
-name: Lab Topology
+name: topology
 ---
-*Fig. 9.1*
+Lab 
 ```
 
 - **Network Automation docker container**

@@ -65,7 +65,7 @@ Use an SSH client to connect your remote server to a network device, the most po
 
 ## SSH Configuration
 
-To authenticate an SSH connection, we need to set up RSA public/private key pair. We will configure SSH in lab {ref}`Lab Topology`, so that we can access it from any other device. NetworkAutomation-1 will be used as an SSH client.
+To authenticate an SSH connection, we need to set up RSA public/private key pair. We will configure SSH on {ref}`topology`, so that we can access it from any other device. NetworkAutomation-1 will be used as an SSH client.
 
 The name of the RSA keypair will be the `hostname` and `domain` name of the router:
 

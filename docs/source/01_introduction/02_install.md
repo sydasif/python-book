@@ -119,9 +119,9 @@ You can use the Integrated Development Environment to code in Python. Open the S
 ```{figure} ../images/idle.PNG
 ---
 width: 100%
-name: Python IDLE
+name: idle
 ---
-*Fig. 1.1* 
+Python IDLE 
 ```
 
 You can use Python Shell as an interpreter. Otherwise, you can create a new file to write a Python program, save it and click `Run` to run the program.
