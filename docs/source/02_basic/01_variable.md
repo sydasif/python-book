@@ -105,6 +105,28 @@ MyVariableName = "Ali"
 my_variable_name = "Ali"
 ```
 
+### Python naming convention
+
+- For variable names, function names, object names, and module names use lower case separated by underscore, for example:
+
+```py
+def my_router():
+    pass
+```
+
+- For class names, capitalize the first letter of each word.  Do not use any underscores.  For example:
+
+```py
+class UserProfile:
+    pass
+```
+
+- For constants, use all upper case; use underscores for word separation.
+
+```py
+PI = 3.14
+```
+
 ```{Note}
 Use a more descriptive name such as `age`, `car_name`, or `total_volume`.
 ```
