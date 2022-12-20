@@ -93,4 +93,32 @@ print(hex(num))  # print hex number
 0x64
 ```
 
-The returned hexadecimal string starts with the prefix 0x indicating it's in hexadecimal form.
+The returned hexadecimal string starts with the prefix 0x indicating it's in hexadecimal.
+
+### round() function
+
+The `round()` function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals.
+
+```py
+num = round(5.12345, 2)
+print(num)
+```
+
+```console
+5.12
+```
+
+### id() function
+
+All objects in Python when created, has its own unique id (memory location), the `id()` function returns a unique id of the specified object.
+
+```py
+num = 5.12
+id(num)
+```
+
+```console
+1707832475504
+```
+
+The id is the object's memory address, and will be different for each time you run the program. (except for some object that has a constant unique id, like integers from `-5` to `256`).
