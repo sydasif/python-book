@@ -9,19 +9,19 @@ Learn network programmability with Python, GNS3 and Cisco devices.
 
 - **About the Author**
 
-Associate Engineer (DAE in Electronics),  learning network automation as a hobby after `25` years of job in a government organization in the field of Communication/Computer Networking, maybe it’s also exciting and helpful to others.
+Associate Engineer (DAE in Electronics),  learning network automation as a hobby after `25` years of job in a government organization in the field of Communication/Computer Networking.
 
-- *Skill as an associate engineer*
+- *Skill as an Associate Engineer*
 
   - Routing and Switching
   - OFC/LAN Networking
   - IP Addressing and Subnetting
   - Computer Basics - Windows 7/10
   - Linux and Ubuntu Desktop/Server
-  - VMvare/KVM/VirtualBox
+  - VMware/KVM/VirtualBox
   - Docker/Vagrant - Hands On
-  - Ansible Network Automation
-  - Python Network Automation
+  - Ansible for Network Automation
+  - Python for Network Automation
 
 - **Conventions**
 
