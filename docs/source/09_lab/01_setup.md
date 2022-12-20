@@ -2,6 +2,14 @@
 
 GNS3 is used by hundreds of thousands of network engineers worldwide to emulate, configure, test and troubleshoot virtual and real networks. GNS3 allows you to run a small topology consisting of only a few devices on your laptop, to those that have many devices hosted on multiple servers or even hosted in the cloud.
 
+```{figure} ../images/lab.png
+---
+width: 100%
+name: topology
+---
+Lab 
+```
+
 GNS3 is open source, free software that you can download from <http://gns3.com>
 
 ## Basic settings for GNS3
@@ -16,14 +24,6 @@ We start with some basic knowledge about how to set up GNS3, download Cisco imag
 
 - Download the Network Automation appliance from GNS3 marketplace.
 - Create the simple topology as the figure below in GSN3.
-
-```{figure} ../images/lab.png
----
-width: 100%
-name: topology
----
-Lab 
-```
 
 - **Network Automation docker container**
 
