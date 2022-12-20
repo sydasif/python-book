@@ -7,9 +7,8 @@ Python has only three built-in numeric types; these include integer, float and c
 An integer is a whole number and not a fraction. You can create an integer in two ways in Python, the most common way is to assign an integer to a variable:
 
 ```py
-# integer
-int_one = 1
-print(int_one)
+num_one = 1
+print(num_one)
 ```
 
 ```console
@@ -19,8 +18,8 @@ print(int_one)
 The other way to create an integer is to use the `int()` callable, like this:
 
 ```py
-int_two = int(3)
-print(int_two)
+num_two = int(3)
+print(num_two)
 ```
 
 ```console
@@ -30,55 +29,34 @@ print(int_two)
 You can do simple math with variables:
 
 ```py
-a = 1
-b = 2
-add = a + b
-print(add)
+1 + 2
+1 - 2
 ```
 
 ```console
 3
+1
 ```
 
-You won’t use `int()` to create an integer, usually `int()` is used for converting string or other types to an integer or called type {ref}`Type Casting in Python`. `int()` takes an optional second argument for the base in which the first argument is to be interpreted. In other words, you can tell Python to convert to `base2`, `base8`, `base16` etc. The first argument has to be a string while the second argument is the base.
-
-```py
-int('101', 16)
-```
-
-```console
-257
-```
+You won’t use `int()` to create an integer, usually `int()` is used for converting string or other types to an integer or called {ref}`Type Casting in Python`.
 
 ## Floats
 
 A float is refers to a number that has a decimal point in it. For example, `2.0` is a float while `2` is an integer. The most common way is to assign a float to a variable, and the other way to create a float is to use the `float()`.
 
 ```py
-float_one = 1.5 
-print(float_one)
+num_one = 1.5 
+print(num_one)
 ```
 
 ```console
 1.5
 ```
 
-```py
-float_two = float(10.5) 
-print(float_two)
-```
-
-```console
-10.5
-```
-
 You can do simple math with variables:
 
 ```py
-a = 1.0
-b = 2.0
-add = a + b
-print(add)
+1.0 + 2.0
 ```
 
 ```console
@@ -86,7 +64,7 @@ print(add)
 ```
 
 ```{Note}
-Note that the arithmetic of the integer and floats will convert the result to float.
+Note that the arithmetic operation of the integer and floats will convert the result to float.
 ```
 
 ## Complex Numbers
@@ -94,7 +72,6 @@ Note that the arithmetic of the integer and floats will convert the result to fl
 A complex number has a real and an imaginary part, which is each a floating-point number. We can also use the `complex()` built-in function to create a complex number.
 
 ```py
-# complex
 z = 1j 
 print(z)
 ```
@@ -130,3 +107,53 @@ The `bool()` built-in function creates a Boolean value and allows the program/co
 ## None Type
 
 The `None` keyword is used to define a null value or no value at all. `None` is not the same as `0`, `False`, or an empty string. `None` is a data type of its own (None Type) and only None can be None.
+
+## Increment/Decrement a Number
+
+Python numbers are immutable, we can use them in arithmetic and assign their value back with ease:
+
+```py
+x = 5
+x = x + 1
+```
+
+```console
+6
+```
+
+Here, we have defined a variable, `x`. In the next line, we take `x` and add `1` to it. Then, we store the result back into `x`, as a result `x` stores `6`.
+
+Likewise, direct assignment also work just for decrement:
+
+```py
+x = 5
+x = x - 1
+```
+
+```console
+4
+```
+
+## Increment/Decrement with Assignment Operators
+
+Like most programming languages, Python has a way to increment a number. That said, increment operator `+=`. 
+
+```py
+x = 5
+x += 1
+```
+
+```console
+6
+```
+
+Without introducing any additional syntax, we can decrement a number with ease:
+
+```py
+x = 10
+x += -1
+```
+
+```console
+9
+```
