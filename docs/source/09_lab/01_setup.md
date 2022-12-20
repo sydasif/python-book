@@ -22,8 +22,7 @@ We start with some basic knowledge about how to set up GNS3, download Cisco imag
 
 ## Lab Setup
 
-- Download the Network Automation appliance from GNS3 marketplace.
-- Create the simple topology as the figure below in GSN3.
+Download the Network Automation appliance from GNS3 marketplace and create the simple topology as above in GSN3.
 
 - **Network Automation docker container**
 
