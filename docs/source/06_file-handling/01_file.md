@@ -56,7 +56,7 @@ Hello! Welcome to the text file.
 This file is for testing purposes only.
 ```
 
-If the file is located in a different location, you will have to specify the file path. By default, the `read()` method returns the whole text, but we can return one line by using the `readline()` method
+If the file is located in a different location, you will have to specify the file path. By default, the `read()` method returns the whole text as one big string, but we can return one line by using the `readline()` method.
 
 ```py
 f = open("my_file.txt")
@@ -69,6 +69,31 @@ f.close()
 Hello! Welcome to the text file.
 
 This file is for testing purposes only.
+```
+
+The `readlines()` method will return all the lines in a file in the format of a list where each element is a line in the file with a `\n` character.
+
+```py
+f = open("my_file.txt")
+print(f.readlines())
+f.close()
+```
+
+```console
+['Hello! Welcome to the text file.\n', 'This file is for testing purposes only.']
+```
+
+In Python `read()` method returns the whole text as a *string*, so you can use `splitlines()` method to splits a string into a list. The splitting is done at line breaks.
+
+```py
+f = open("my_file.txt")
+output = f.read()
+print(output.splitlines())
+f.close()
+```
+
+```console
+['Hello! Welcome to the text file.', 'This file is for testing purposes only.']
 ```
 
 ## Write and Create
@@ -169,7 +194,7 @@ with open('my_file') as f:
 
 ### Working with files - network example
 
-In this code you can iterate over a file of your device ip list to configure multiple device. The filename is `device_ip` with IP address of network devices, as below:
+In this code, you can iterate over a file of your device's IP list to configure multiple devices. The filename is `device_ip` with the IP address of network devices, as below:
 
 ```console
 192.168.10.10
@@ -193,7 +218,7 @@ with open('device_ip') as f:
 192.168.10.12
 ```
 
-For example, you have a configuration file in the same directory from where you the Python code. The filename is `device_config` with configuration, like this:
+For example, you have a configuration file in the same directory from where you have the Python code. The filename is `device_config` with a configuration, like this:
 
 ```console
 conf ter
