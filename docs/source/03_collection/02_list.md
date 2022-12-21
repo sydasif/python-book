@@ -1,47 +1,45 @@
 # Lists in Python
 
-The list is the most multipurpose data type available in Python which can be written as a list of comma-separated values (items) between square brackets. Lists are Python data structures which are mutable and ordered. Each element in the list has a value called an item.
+The list in Python is the most multipurpose data type available in Python which can be written as a list of comma-separated values (items) between square brackets. Lists are Python data structures which are mutable and ordered. Each element in the list has a value called an item.
 
 Lists are Python’s most flexible ordered collection (sequence) object type. Lists can contain any sort of object; numbers, strings and even another list called a `nested list`. The elements used in lists can be changed, which means lists can be mutated, unlike tuples or strings.
 
-```py
-# Example of a List 
-week_day = ["Sunday", "Monday", "Friday"]
-print(week_day)
+```py 
+days = ["Sunday", "Monday", "Friday"]
+print(days)
 ```
 
 ```console
 ['Sunday', 'Monday', 'Friday']
 ```
 
-Lists are used in Python where programmers need to work with many related values. They help in reducing the code by keeping the related data together, allowing it to perform the same functions and operations on multiple values at once. Each item in the list links to a given index number. The index is an integer value starting from `0`. An example of a list is given below:
+To reassign an item in list as below:
 
 ```py
-a = [100, "bottles", ["on", "the", "earth"]]
-print(a[2])
+days = ["Sunday", "Monday", "Friday"]
+days[2] = "someting"
+print(days)
+```
+
+```console
+['Sunday', 'Monday', 'someting']
+```
+
+Lists are used in Python where programmers need to work with many related values. They help in reducing the code by keeping the related data together, allowing it to perform the same functions and operations on multiple values at once. An example of a list is given below:
+
+```py
+my_list = [100, "bottles", ["on", "the", "earth"]]
+print(my_list[2])
 ```
 
 ```console
 ['on', 'the', 'earth']
 ```
-
-Lists can also be used for negative indexing.
-
-```py
-print(a[-1])
-```
-
-```console
-['on', 'the', 'earth']
-```
-
-## Creation of List
 
 The creation of lists is done by placing values between brackets and separating them with commas. This is done by adding a name just before the brackets.
 
 ```py
-# this is a list that is referenced using the name list_items
-list_items = ['mango', 'juice', 'banana', 'tree', 'house', 'toy', 'cow', 'horse']
+list_of_items = ['mango', 'juice', 'banana', 'tree', 'house', 'toy', 'cow', 'horse']
 ```
 
 ```{Note}
@@ -51,40 +49,29 @@ There are several ways to create a list:
 - Using the `list()` function: `list()`
 ```
 
-To retrieve a list, there are two important elements are used. These are the name of the list and the position of the item in the list. It is important to note that the positioning of the items would start from a `0`.
+Each item in the list links to a given index number. The index is an integer value starting from `0`. To retrieve a list, there are two important elements are used. These are the name of the list and the position of the item in the list.
 
 ```py
-print(list_items[0])
+print(list_of_items[0])
 ```
 
 ```console
 mango
 ```
 
-We can add, remove or sort items in a list.
+It is important to note that the positioning of the items would start from a `0`. We can also sort items in a list.
 
 ```py
 fruit_list = ['apple', 'mango', 'carrot', 'banana']
 ```
 
 ```py
-# Add an item to a list
-fruit_list.append('rice')
-print(fruit_list)
-```
-
-```console
-['apple', 'mango', 'carrot', 'banana', 'rice']
-```
-
-```py
-# sort a list
 fruit_list.sort()
 print(fruit_list)
 ```
 
 ```console
-['apple', 'banana', 'carrot', 'mango', 'rice']
+['apple', 'banana', 'carrot', 'mango']
 ```
 
 Elements in a list have the following characteristics:
@@ -93,32 +80,27 @@ Elements in a list have the following characteristics:
 - They maintain their ordering unless explicitly re-ordered.
 - They can be of any type, and types can be mixed.
 
-## List Slicing
+## List Concatenation
 
-List slicing is a technique in Python that helps read a list and returns a specific segment of a list. The most important thing in list slicing is the `:` and negative signs. The name of the list is also an element that is used in the creation of a slicing statement. The example below shows how to list slicing is done in a single word.
+The `+` operator can be used to concatenate two lists. It appends one list at the end of the other list and results in a new list as output.
 
 ```py
-fruit_list = ['apple', 'mango', 'carrot', 'banana', 'rice']
-print(len(fruit_list))
-print(fruit_list[-1]) # 1st item from the end
-print(fruit_list[-2]) # 2nd item from the end
-print(fruit_list[1:3]) # index 3 not included
-print(fruit_list[1:]) # until the end
+list1 = [10, 11, 12, 13, 14] 
+list2 = [20, 30, 42] 
+
+result = list1 + list2
+print(result) 
 ```
 
 ```console
-5
-rice
-banana
-['mango', 'carrot']
-['mango', 'carrot', 'banana', 'rice']
+[10, 11, 12, 13, 14, 20, 30, 42]
 ```
 
 ## List Function and Method
 
 Lists have a few functions/methods that are used to control and manage the data stored in a list.
 
-- .append()
+### .append() method
 
 This method gives the chance to add an item/element to an existing list.
 
@@ -134,7 +116,7 @@ print(fruit_name)
 ['mango', 'banana', 'orange', 'apple', 'grapes']
 ```
 
-- .insert()
+### .insert() method
 
 This function works the same as the function `append()` but is more specific to the position at which the new item will appear in the existing list.
 
@@ -150,7 +132,7 @@ print(fruit_name)
 ['mango', 'banana', 'grapes', 'orange', 'apple']
 ```
 
-- remove() and pop()
+### .remove() and .pop() method
 
 This is used to delete an item from the list. Its syntax is the same as those of the other functions. When an item seems more than once in the list, the command `remove()` will only delete the item that appears first in the list.
 
@@ -214,9 +196,9 @@ fruit_name.pop(2)  # index 2 at number 3rd position will pop
 'banana'
 ```
 
-- `extend()`
+### .extend() method
 
-This method is used to add a list to another list. This method is different from append as it deals with the joining of two lists. The method joins two lists by adding the second list to the end of the first list as shown in the example below.
+This method is used to add a list to another list. This method is different from append as it deals with the joining of two lists. This method joins two lists by adding the second list to the end and modified the first list as shown in the example below.
 
 ```py
 list1 = [1, 2, 3]
@@ -241,6 +223,27 @@ print(fruit_list)
 ```
 
 ```console
+['mango', 'carrot', 'banana', 'rice']
+```
+
+## List Slicing
+
+List slicing is a technique in Python that helps read a list and returns a specific segment of a list. The most important thing in list slicing is the `:` and negative signs. The name of the list is also an element that is used in the creation of a slicing statement. The example below shows how to list slicing is done in a single word.
+
+```py
+fruit_list = ['apple', 'mango', 'carrot', 'banana', 'rice']
+print(len(fruit_list))
+print(fruit_list[-1]) # 1st item from the end
+print(fruit_list[-2]) # 2nd item from the end
+print(fruit_list[1:3]) # index 3 not included
+print(fruit_list[1:]) # until the end
+```
+
+```console
+5
+rice
+banana
+['mango', 'carrot']
 ['mango', 'carrot', 'banana', 'rice']
 ```
 
