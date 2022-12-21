@@ -1,14 +1,9 @@
 # Tuple in Python
 
-A tuple is a list of items enclosed in parenthesis, is to be immutable (can't be changed) and more efficient. A tuple is a data structure that helps in the organization of data in Python. Since lists do the same purpose as a tuple, it can be hard to differentiate between the two. The main difference, however, is that once tuples have been created, they are hard to change. The main difference between tuples and lists is that tuples are immutable while lists aren’t.
+A tuple is a list of items enclosed in parenthesis, is to be immutable (can't be changed) and more efficient. A tuple is a data structure that helps in the organization of data in Python. Since lists do the same purpose as a tuple, it can be hard to differentiate between the two. The main difference, however, is that once tuples have been created, they are hard to change/modified. The main difference between tuples and lists is that tuples are immutable while lists aren’t.
 
 ```py
 animal = ("dog", "lion", "leopard", "cat", "bear")
-print(animal)
-```
-
-```console
-('dog', 'lion', 'leopard', 'cat', 'bear')
 ```
 
 ## Creating Tuples
@@ -16,30 +11,22 @@ print(animal)
 You can create tuples in different ways, as above one of the simplest methods to create a tuple is to have a sequence of values separated by commas. Those values could be integers, lists, dictionaries, or any other object, however; parentheses by themselves do not make a tuple:
 
 ```py
-# this is an integer
-num_tup = (3)
+num_tup = (3)  # this is an integer
 print(type(num_tup))
-```
 
-```console
-<class 'int'>
-```
-
-```py
-# this is tuple
-a_tuple = 4,
+a_tuple = 4,  # this is tuple
 print(type(a_tuple))
 ```
 
 ```console
+<class 'int'>
 <class 'tuple'>
 ```
 
 Only using a comma might be confusing, always use parentheses to make it explicit.
 
 ```py
-# Note the trailing comma
-a_tuple = (4,)
+a_tuple = (4,)  # Note the trailing comma
 print(type(a_tuple))
 ```
 
@@ -69,7 +56,7 @@ print(num_tup.count(4))
 2
 ```
 
-Index in a tuple is used to find a specific element, as previously discussed in lists, tuple indexing also starts with `0`. This means that the first item's position is `0` and the second is `1`.
+Indexing in a tuple is used to find a specific element, as previously discussed in lists, tuple indexing also starts with `0`. This means that the first item's position is `0` and the second is `1`.
 
 ```py
 animal = ("dog", "lion", "leopard", "cat", "bear")
