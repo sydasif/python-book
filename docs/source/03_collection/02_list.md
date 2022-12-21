@@ -4,7 +4,7 @@ The list in Python is the most multipurpose data type available in Python which 
 
 Lists are Python’s most flexible ordered collection (sequence) object type. Lists can contain any sort of object; numbers, strings and even another list called a `nested list`. The elements used in lists can be changed, which means lists can be mutated, unlike tuples or strings.
 
-```py 
+```py
 days = ["Sunday", "Monday", "Friday"]
 print(days)
 ```
@@ -59,20 +59,11 @@ print(list_of_items[0])
 mango
 ```
 
-It is important to note that the positioning of the items would start from a `0`. We can also sort items in a list.
+It is important to note that the positioning of the items would start from a `0`.
 
-```py
-fruit_list = ['apple', 'mango', 'carrot', 'banana']
-```
+## Negative Indexes
 
-```py
-fruit_list.sort()
-print(fruit_list)
-```
-
-```console
-['apple', 'banana', 'carrot', 'mango']
-```
+While indexes start at `0`, you can also use negative number for the index. The value `-1` refers to the last index in a list, the value `-2` refers to the second-to-last index in a list, and so on.
 
 Elements in a list have the following characteristics:
 
@@ -210,6 +201,21 @@ print(list1)
 [1, 2, 3, 4, 5]
 ```
 
+We can also sort items in a list.
+
+```py
+fruit_list = ['apple', 'mango', 'carrot', 'banana']
+```
+
+```py
+fruit_list.sort()
+print(fruit_list)
+```
+
+```console
+['apple', 'banana', 'carrot', 'mango']
+```
+
 To check the attribute (method) of an object see {ref}`dir() method`.
 
 ## [The `del` statement](https://docs.python.org/3/tutorial/datastructures.html#the-del-statement)
@@ -228,24 +234,22 @@ print(fruit_list)
 
 ## List Slicing
 
-List slicing is a technique in Python that helps read a list and returns a specific segment of a list. The most important thing in list slicing is the `:` and negative signs. The name of the list is also an element that is used in the creation of a slicing statement. The example below shows how to list slicing is done in a single word.
+List slicing is a technique in Python that helps read a list and returns a specific segment of a list in the form of a new list. The most important thing in list slicing is the colon `:` and name of the list that is used in the creation of a slicing statement. The example below shows how to list slicing is done in a single word.
 
 ```py
 fruit_list = ['apple', 'mango', 'carrot', 'banana', 'rice']
-print(len(fruit_list))
-print(fruit_list[-1]) # 1st item from the end
-print(fruit_list[-2]) # 2nd item from the end
+print(fruit_list[:4]) 
 print(fruit_list[1:3]) # index 3 not included
-print(fruit_list[1:]) # until the end
+print(fruit_list[0:])
 ```
 
 ```console
-5
-rice
-banana
+['apple', 'mango', 'carrot', 'banana']
 ['mango', 'carrot']
-['mango', 'carrot', 'banana', 'rice']
+['apple', 'mango', 'carrot', 'banana', 'rice']
 ```
+
+As a shortcut, leaving out the first index is the same as using 0, or the beginning of the list. Leaving out the second index is the same as using the length of the list, which will slice to the end of the list.
 
 ```{seealso}
 - [More on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists). Methods of list objects.
