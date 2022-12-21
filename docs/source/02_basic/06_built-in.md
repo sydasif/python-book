@@ -122,3 +122,19 @@ id(num)
 ```
 
 The id is the object's memory address, and will be different for each time you run the program. (except for some object that has a constant unique id, like integers from `-5` to `256`).
+
+### join() method
+
+The `join()` method takes all items in an iterable (eg. list/tuple) and joins them into one string. A string must be specified as the separator.
+
+```py
+names = ("John", "Peter", "Vicky")
+my_str = "#".join(names)
+print(type(my_str))
+print(my_str)
+```
+
+```console
+<class 'str'>
+John#Peter#Vicky
+```
