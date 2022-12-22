@@ -124,3 +124,33 @@ At least one of the conditions is True
 ```
 
 For the `NOT` operator, on the other hand, if a condition evaluates to `True` then it becomes `False` and vice versa.
+
+## Ternary Operators
+
+Pyton ternary operator is commonly known as conditional expressions. These operators evaluate expressions based on a condition being true or false.
+
+Here is an example of using these conditional expressions.
+
+```py
+num = True
+a = f"num is {num}" if num else f"num is {num}"
+print(a)
+```
+
+```console
+num is True
+```
+
+````{Note} **code above is same as below**
+```py
+num = True
+if num:
+    a = f"num is {num}"
+    print(a)
+else:
+    a = f"num is {num}"
+    print(a)
+```
+````
+
+Ternary Operator allows to quickly test a condition instead of a multiline if statement.
