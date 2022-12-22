@@ -37,15 +37,15 @@ print(type(num_int))
 In this example, you will use `int()` and `float()` to typecast a string literal to integer and float.
 
 ```py
-#string
+# string
 s = '132'
 
-#typecast to integer
+# typecast to integer
 n = int(s)
 print(n)
 print(type(n))
 
-#typecast to float
+# typecast to float
 f = float(s)
 print(f)
 print(type(f))
@@ -58,7 +58,7 @@ print(type(f))
 <class 'float'>
 ```
 
-````{margin}
+````{Note}
 Please note that, if you have decimal point in the string, you cannot typecast that directly to an integer. You should first typecast string to float and then to an integer. Following is a quick code snippet for the same.
 
 ```py
