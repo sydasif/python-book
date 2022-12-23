@@ -31,7 +31,7 @@ print(type(d))
 <class 'complex'>
 ```
 
-## dir() Method
+## dir() Function
 
 The Python `dir()` method returns the list of valid attributes of the passed object as below:
 

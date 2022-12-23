@@ -1,12 +1,10 @@
 # [What is Python?](https://www.python.org/about/gettingstarted/)
 
-Python is a clear, powerful and General Purpose object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java. The distinctive feature of Python is that it is an interpreted language.
-
-The Python `IDLE` (Integrated Development Environment) executes instructions one line at a time from top to bottom and left to right.
+Python is a clear, powerful and General Purpose object-oriented programming language. The distinctive feature of Python is that it is an interpreted language. The Python `IDLE` (Integrated Development Environment) executes instructions one line at a time from top to bottom and left to right.
 
 ## Some of Python's Features
 
-Let us now see various features of Python that make it so powerful and popular:
+Some various features of Python that make it so powerful and popular:
 
 ### Easy
 
@@ -16,11 +14,11 @@ Python is very easy to learn and understand. use a neat syntax, making the progr
 
 It is interpreted language, executed line by line. This makes it simple to get your program working test and debug.
 
-### Object-Oriented
+### Object oriented
 
 The Python programming language supports classes and objects and hence it is object-oriented and ideal for prototype development and other ad-hoc programming tasks.
 
-### Free and Open Source
+### Free and open source
 
 The language and its source code are available to the public for free; It doesn't cost anything to download or use Python, which means there is no need to buy a costly license.
 
@@ -28,7 +26,7 @@ The language and its source code are available to the public for free; It doesn'
 
 Python is open-source, you can run it anywhere, including Mac OS, Windows, Linux or any other platform.
 
-### Large Python Library
+### Python large library
 
 Python comes with an extensive standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, and reading and modifying files.
 

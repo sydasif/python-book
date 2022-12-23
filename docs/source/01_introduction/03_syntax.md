@@ -4,7 +4,11 @@ As you learned previously in {ref}`Getting Started`, Python code can be executed
 
 ## What is Python Syntax?
 
-The Python syntax defines all the sets of rules that are used to create code in Python programming. You will need to learn and understand the Python syntax in order to learn the Python language. Python was designed for readability and is similar to English language reading. Python relies on indentation, using whitespace, to define a block of code, such as loops, functions and classes. Blank lines are ignored in Python code when executing the program. Variables are created dynamically typed, you don’t define the type of the variable. It is assumed on the basis of the value it holds.
+The Python syntax defines all the sets of rules that are used to create code in Python programming. You will need to learn and understand the Python syntax in order to learn the Python language.
+
+Python was designed for readability and is similar to English language reading. Python relies on indentation, using whitespace, to define a block of code, such as loops, functions and classes. Blank lines are ignored in Python code when executing the program.
+
+Variables are created dynamically typed, you don’t define the type of the variable. It is assumed on the basis of the value it holds.
 
 ## Comments in Python
 
@@ -51,9 +55,8 @@ Use 4 spaces per indentation level -- PEP 8
 ```
 
 ```py
-# Example of 2 spaces
 if 5 > 2:
-  print("Five is greater than two!")
+  print("Five is greater than two!")  # Example of 2 spaces
 ```
 
 ```console
@@ -61,9 +64,8 @@ Five is greater than two!
 ```
 
 ```py
-# Example of 4 spaces
 if 5 > 2:
-    print("Five is greater than two!") 
+    print("Five is greater than two!")  # Example of 4 spaces 
 ```
 
 ```console
@@ -73,7 +75,6 @@ Five is greater than two!
 You have to use the same number of spaces or tabs in the same block of code, otherwise, Python will give you an error.
 
 ```py
-# Indentation error
 if 5 > 2:
   print("Five is greater than two!")  # 2 spaces
     print("Five is greater than two!")  # 4 spaces
@@ -89,8 +90,6 @@ IndentationError: unexpected indent
 Python also gives you an error if you skip the indentation:
 
 ```py
-# Indentation error
-
 if 5 > 2:
 print("Five is greater than two!")
 ```

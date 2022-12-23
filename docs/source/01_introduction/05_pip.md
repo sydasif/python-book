@@ -1,4 +1,4 @@
-# [What is a Pip?](https://pypi.org/project/pip/)
+# [What is a pip?](https://pypi.org/project/pip/)
 
 `pip` is the package installer for Python. You can use `pip` to install packages from the Python Package Index and other indexes/libraries.
 

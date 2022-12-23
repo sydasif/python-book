@@ -1,8 +1,8 @@
-# Python for Automation
+# Python and Automation
 
-Python language was developed by Guido van Rossum. Python has become a scripting language choice for network engineering to automate their tasks.
+Python language was developed by Guido van Rossum. Python has become a scripting language choice for network engineers to automate their tasks. Python is an easy-to-learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
 
-Python is an easy-to-learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s neat syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and application development in many areas on most platforms.
+Python’s neat syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and application development in many areas on most platforms.
 
 ## Why learn Programming?
 
@@ -49,7 +49,7 @@ You need automation in networking to create a more efficient networking environm
 - Multiple tasks to execute a workflow
 - Automation is the first step towards orchestration
 
-## Automation Tools and Languages
+## Automation Tools
 
 Python is used for network automation, but it’s frequently used with other network automation tools for automating network monitoring, configurations and maintenance activities. Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
 

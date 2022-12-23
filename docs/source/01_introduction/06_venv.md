@@ -13,7 +13,7 @@ To use `venv` module, you can run Python using the `-m` flag. The `-m` flag tell
 [$] <> python -m venv test
 ```
 
-This will create a folder named *test* in whatever directory that you are open to in your terminal session. To activate the virtual environment, you will need to change directories into the test folder and run this on Linux/MacOS:
+This will create a folder named `test` in whatever directory that you are open to in your terminal session. To activate the virtual environment, you will need to change directories into the test folder and run this on Linux/MacOS:
 
 ```shell
 [$] <> source bin/activate 
