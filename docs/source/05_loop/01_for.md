@@ -1,4 +1,4 @@
-# For loops
+# For loop
 
 A `for` loop is used in which the user wants to continuously repeat the execution of a given block of code or statements a known number of times. A `for` loop is used for iterating over a collection (that is either a list, a tuple, a dictionary, a set, or a string). For instance, a `for` loop in Python, is used to run over a specific number of times until a certain condition is reached.
 
@@ -54,7 +54,7 @@ VLAN 4
 VLAN 5
 ```
 
-## break and continue statement
+## Break and Continue Statement
 
 With the `break` statement we can stop the loop before it has looped through all the items.
 
@@ -128,7 +128,7 @@ ip address 3.3.3.3 255.255.255.255
 In this code, you can iterate over a list of your device IP.
 
 ```py
-# IP list fo network device
+# IP list for network device
 devices =['192.168.10.11', '192.168.10.12']
 
 # For loop and list to connect multiple devices
@@ -155,4 +155,75 @@ int lo 0
 ip address 1.1.1.0 255.255.255.255
 int lo 1
 ip address 1.1.1.1 255.255.255.255
+```
+
+## enumerate() Function
+
+when dealing with iterators(list/tuple) and want to keep a count of iterations. Python provid a built-in function `enumerate()` for this task. `enumerate()` method adds a counter to an iterable and returns two value tuple.
+
+This enumerated object can then be used directly with for loops or converted into a list of tuples using the `list()` method.
+
+- Creating enumerate objects:
+
+```py
+my_list = ["eat", "sleep", "go"]
+my_tuple = enumerate(my_list)  
+
+print(list(my_tuple))
+```
+
+```console
+[(0, 'eat'), (1, 'sleep'), (2, 'go')]
+```
+
+- Creating enumerate object and printing out the tuple:
+
+```py
+my_list = ["eat", "sleep", "go"]
+
+for item in enumerate(my_list):
+    print(item)
+```
+
+```console
+(0, 'eat')
+(1, 'sleep')
+(2, 'go')
+```
+
+The index value from which the counter is to be started, by default is `0`.
+
+- Changing index value and printing out separately:
+
+```py
+my_list = ["eat", "sleep", "go"]
+
+for count, item in enumerate(my_list, 100):
+    print (count, item)
+```
+
+```console
+100 eat
+101 sleep
+102 go
+```
+
+- Getting desired output from tuple:
+
+```py
+my_list = ["eat", "sleep", "go"]
+
+
+for count, item in enumerate(my_list, 100):
+    print(count)
+    print(item)
+```
+
+```console
+100
+eat
+101
+sleep
+102
+go
 ```
