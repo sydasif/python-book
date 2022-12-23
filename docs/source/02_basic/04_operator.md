@@ -25,30 +25,6 @@ Arithmetic operators are used with numeric values to perform common mathematical
 | **      | Exponentiation | 8 ** 3 |
 | //      | Floor division | 3 // 8 |
 
-```py
-print(7 // 2) 
-```
-
-```console
-3
-```
-
-```py
-print(7 / 2)
-```
-
-```console
-3.5
-```
-
-```py
-print(5 % 3) # reminder
-```
-
-```console
-2
-```
-
 ## Assignment Operators
 
 Assignment operators are used to assigning values to variables.
@@ -64,24 +40,6 @@ Assignment operators are used to assigning values to variables.
 | //=         | x //= 3    | x = x // 3 |
 | **=         | x **= 3    | x = x ** 3 |
 
-```py
-x = 3
-print(x)
-```
-
-```console
-3
-```
-
-```py
-x += 3
-print(x)
-```
-
-```console
-6
-```
-
 ## Comparison operators
 
 Comparison operators are used to compare two or more variables. There are `7` main comparison operators in Python. These operators include:
@@ -94,35 +52,6 @@ Comparison operators are used to compare two or more variables. There are `7` ma
 | <           | Less than | x < y |
 | >=          | Greater than or equal to | x >= y |
 | <=          | Less than or equal to | x <= y |
-
-```py
-a = 21
-b = 10
-c = 0
-
-if ( a == b ):
-    print ("Line 1 - a is equal to b")
-else:
-    print ("Line 1 - a is not equal to b")
-```
-
-```console
-Line 1 - a is not equal to b
-```
-
-```py
-a = 5
-b = 20
-
-if ( a <= b ):
-    print ("Line 6 - a is either less than or equal to b")
-else:
-    print ("Line 6 - a is neither less than nor equal to b")
-```
-
-```console
-Line 6 - a is either less than or equal to b
-```
 
 ## Logical operators
 
@@ -138,24 +67,6 @@ To understand logical Operators how logical operators work, let’s evaluate log
 | and         | Returns True if both statements are true      | x < 5 and  x < 10 |
 | or          | Returns True if one of the statements is true | x < 5 or x < 4 |
 | not         | Reverse the result | not(x < 5 and x < 10) |
-
-```py
-x = 6
-print(x < 5 and  x < 10)
-```
-
-```console
-False
-```
-
-```py
-x = 6
-print(x < 5 or x > 4)
-```
-
-```console
-True
-```
 
 ## Identity Operators
 

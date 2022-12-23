@@ -5,7 +5,7 @@ Python strings are referred to as a sequence of characters/letters that are eith
 The program code below demonstrates the printing of string.
 
 ```py
-#  variable 'my_str' is a string
+# 'my_string' is a string
 my_string = "Network Automation is a fun"
 print(my_string)
 ```
@@ -23,9 +23,8 @@ In Python, single-quoted strings and double-quoted strings are the same. This PE
 The Python program code below demonstrates a Python function to print the length of the character.
 
 ```py
-# this code returns the actual length of the string
 banner = "Welcome to Network Automation"
-print(len(banner))
+print(len(banner))  # len() returns the length
 ```
 
 ```console

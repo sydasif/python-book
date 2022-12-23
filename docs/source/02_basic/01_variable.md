@@ -1,4 +1,4 @@
-# Variables in Python
+# Variable in Python
 
 A variable is a storage/reserve memory location with a name and a value in Python, variables are names that can be assigned to a value and then used to refer to that value in your code. Variables are fundamental to programming:
 
@@ -53,7 +53,7 @@ print(age, num)
 40 40
 ```
 
-### Assignment Statements
+### Assignment statements
 
 An operator is a symbol that operates on one or more values. Values are assigned to a variable using a special symbol called the assignment operator `=`. The `=` operator takes the value to the right of the operator and assigns it to the name on the left.
 
@@ -103,28 +103,6 @@ myVariableName = "Ali"
 MyVariableName = "Ali"
 # Snake Case - Each word is separated by an underscore character:
 my_variable_name = "Ali"
-```
-
-### Python naming convention
-
-- For variable names, function names, object names, and module names use lower case separated by underscore, for example:
-
-```py
-def my_router():
-    pass
-```
-
-- For class names, capitalize the first letter of each word.  Do not use any underscores.  For example:
-
-```py
-class UserProfile:
-    pass
-```
-
-- For constants, use all upper case; use underscores for word separation.
-
-```py
-PI = 3.14
 ```
 
 ```{Note}

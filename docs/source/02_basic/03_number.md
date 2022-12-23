@@ -40,7 +40,7 @@ You can do simple math with variables:
 
 You won’t use `int()` to create an integer, usually `int()` is used for converting string or other types to an integer or called {ref}`Type Casting in Python`.
 
-## Floats
+## Float
 
 A float is refers to a number that has a decimal point in it. For example, `2.0` is a float while `2` is an integer. The most common way is to assign a float to a variable, and the other way to create a float is to use the `float()`.
 
@@ -67,7 +67,7 @@ You can do simple math with variables:
 Note that the arithmetic operation of the integer and floats will convert the result to float.
 ```
 
-## Complex Numbers
+## Complex Number
 
 A complex number has a real and an imaginary part, which is each a floating-point number. We can also use the `complex()` built-in function to create a complex number.
 
