@@ -177,6 +177,22 @@ Output is Omitted
 ```
 ````
 
+### join() method
+
+The `join()` method takes all items in an iterable (eg. list/tuple) and joins them into one string. A string must be specified as the separator.
+
+```py
+names = ("John", "Peter", "Vicky")
+my_str = "#".join(names)
+print(type(my_str))
+print(my_str)
+```
+
+```console
+<class 'str'>
+John#Peter#Vicky
+```
+
 ## Escape Sequences
 
 There is a special character, that is understood by the compiler as commands other than characters. All these characters are known as the 'escape` sequences. The special characters are marked with a backslash `\`. The backslash `\` would, therefore, indicate that the character that is going to be printed next is a special one that should initiate some instructions. Below are examples of special characters that are used with strings:
