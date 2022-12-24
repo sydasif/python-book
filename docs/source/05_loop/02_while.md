@@ -47,13 +47,12 @@ while True:
 With the continue statement we can stop the current iteration, and continue with the next.
 
 ```py
-# Continue to the next if i is 3:
-
 i = 0
+
 while i < 5:
   i += 1
   if i == 3:
-    continue
+    continue  # skip to next if i == 3
   print(i)
 ```
 
@@ -66,9 +65,9 @@ while i < 5:
 
 ## Usage of For and While loop
 
-For loop: If you know, prior to the start of loop, how many times you want to repeat the loop.
+**For loop** If you know, prior to the start of loop, how many times you want to repeat the loop.
 
-While loop: If you don’t know of a certain number of runs and a set of conditions are to be met.
+**While loop** If you don’t know of a certain number of runs and a set of conditions are to be met.
 
 ```py
 age = 20
