@@ -73,7 +73,7 @@ print(full_name)
 My name is: John Alex
 ```
 
-### Strign Repetition/replication
+### Strign Replication
 
 The nice thing about the multiplication operator `*` is that it’s also possible to use it on strings. For example, to print a line of `60` dashes.
 
@@ -85,7 +85,7 @@ print(f"-" * 60)
 ------------------------------------------------------------
 ```
 
-## String Methods
+## String Method
 
 Python has a set of built-in methods that you can use on strings.
 
@@ -126,7 +126,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 '192.168.10.10'
 ```
 
-### split() methods
+### split() method
 
 Return a list of the substrings in the string:
 
@@ -202,7 +202,7 @@ There is a special character, that is understood by the compiler as commands oth
 - `\r` Carriage return
 - `\b` Backslash
 
-## Raw Strings
+## Raw String
 
 To avoid special processing on a string such as `escape` sequences. Specify a raw string by prefixing `r` or `R` to the string.
 
@@ -230,9 +230,8 @@ Python has three different ways to accomplish string formatting:
 Using the `%` method is Python’s oldest method of string formatting. The most common use of using the % sign is when you would use `%s`, which means converting any Python object to a string using `str()`.
 
 ```py
-# insert string
 name = "Ali"
-print("My name is: %s" %name)
+print("My name is: %s" %name)  # insert string
 ```
 
 ```console
@@ -240,9 +239,8 @@ My name is: Ali
 ```
 
 ```py
-# insert integer
 age = 40
-print("My age is: %i" %age)
+print("My age is: %i" %age)  # insert integer
 ```
 
 ```console
@@ -250,9 +248,9 @@ My age is: 40
 ```
 
 ```py
-# string formatting with multiple variables
 name = "Ali"
 age = 40
+# formatting with multiple variables
 print("Hello, %s. Your age is %i" % (name, age))
 ```
 
@@ -279,7 +277,6 @@ Hello, Ali. Your age is 40
 This example uses positional arguments. Python looks for two instances of `{}` and will insert the variables accordingly.
 
 ```py
-# used named arguments
 name = "Ali"
 age = 40
 print("Hello, {my_name}. Your age is {my_age}".format(my_name=name, my_age=age))
@@ -289,8 +286,9 @@ print("Hello, {my_name}. Your age is {my_age}".format(my_name=name, my_age=age))
 Hello, Ali. Your age is 40
 ```
 
+- Using dictionary
+
 ```py
-# useing dict
 dict = {"name": "Ali", "age": 40}
 print("Hello, {name}. Your age is {age}".format(**dict))
 ```
@@ -341,9 +339,8 @@ print(f"{age + 5}")
 ```
 
 ```py
-# Or call a method or function:
 name = 'Ali'
-print(f'{name.lower()}')
+print(f'{name.lower()}') # call a method or function
 ```
 
 ```console

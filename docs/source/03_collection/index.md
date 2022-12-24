@@ -6,7 +6,7 @@ A sequence is a group of items with a selective ordering. The order in which we 
 
 - String
 - List
-- Tuples and range object
+- Tuples
 
 Python collection, unlike a sequence, does not have an order. In a collection, while ordering is random, physically, they do have an order. Every time you call a set, you get its items in the same order. However, if we add or remove an item, it may affect the order.
 

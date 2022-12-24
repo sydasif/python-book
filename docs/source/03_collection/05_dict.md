@@ -42,11 +42,11 @@ print(info_list)
 
 Each `key` must be different in order to maintain uniqueness `i.e.` to get the correct information about a `value`.
 
-## Modification of dictionaries
+## Modification of Dictionaries
 
 Dictionary elements can be created, accessed, modified or deleted. While a dictionary is created, its elements will contain a `key-value` pair to be accessed. You can also delete some values or delete a complete dictionary using `del` and `clear` respectively.
 
-### Accessing Dictionaries
+### Accessing dctionaries
 
 Dictionaries are very fast and can access any value in a dictionary via the key. If the key is not found, a `KeyError` will receive.
 
@@ -133,7 +133,7 @@ jan
 Dictionaries are lookup tables. They map from a `key` to a `value`.
 ```
 
-## Dictionary Methods
+## Dictionary Method
 
 As the most data types in Python, dictionaries have also special methods to use.
 
@@ -161,7 +161,7 @@ my_car
 {}
 ```
 
-## Keys, values and items
+## Keys, values and Items
 
 Tree maps show unique keys to values. Consider the code below:
 

@@ -11,7 +11,7 @@ Collections in Python are grouped into two types:
 - Sequence
 - Mapping
 
-### Sequences in Python
+### Python sequence
 
 Sequences are a major data type arrangement in Python, with a concept of order, indexed numerically from `0`, including string, list and tuple. Things always come out of them in the same order as they were put in. It’s worth noting that every sequence is a collection, but not every collection is a sequence.
 
@@ -21,7 +21,7 @@ Sequences have got two main features.
 - Indexing operation, allows a user to fetch a particular item or element in a list. 
 - Indexing also gives a chance to perform operations on particular items.
 
-### Mapping in Python
+### Python mapping
 
 Mapping types collections, without a concept of order, indexed by keys, which include only one type, a dictionary. The ordering of items in sets is arbitrary (It’s technically not changeable). The ordering of keys and values in dictionaries is also random.
 

@@ -1,4 +1,4 @@
-# Lists in Python
+# List in Python
 
 The list in Python is the most multipurpose data type available in Python which can be written as a list of comma-separated values (items) between square brackets. Lists are Python data structures which are mutable and ordered. Each element in the list has a value called an item.
 
@@ -42,9 +42,7 @@ The creation of lists is done by placing values between brackets and separating 
 list_of_items = ['mango', 'juice', 'banana', 'tree', 'house', 'toy', 'cow', 'horse']
 ```
 
-```{Note}
-There are several ways to create a list:
-
+```{Note} There are several ways to create a list:
 - creates an empty list: `[]`
 - Using the `list()` function: `list()`
 ```
@@ -87,11 +85,11 @@ print(result)
 [10, 11, 12, 13, 14, 20, 30, 42]
 ```
 
-## List Function and Method
+## List Method
 
 Lists have a few functions/methods that are used to control and manage the data stored in a list.
 
-### .append() method
+### append() method
 
 This method gives the chance to add an item/element to an existing list.
 
@@ -107,7 +105,7 @@ print(fruit_name)
 ['mango', 'banana', 'orange', 'apple', 'grapes']
 ```
 
-### .insert() method
+### insert() method
 
 This function works the same as the function `append()` but is more specific to the position at which the new item will appear in the existing list.
 
@@ -123,7 +121,7 @@ print(fruit_name)
 ['mango', 'banana', 'grapes', 'orange', 'apple']
 ```
 
-### .remove() and .pop() method
+### remove() and pop() method
 
 This is used to delete an item from the list. Its syntax is the same as those of the other functions. When an item seems more than once in the list, the command `remove()` will only delete the item that appears first in the list.
 
@@ -187,7 +185,7 @@ fruit_name.pop(2)  # index 2 at number 3rd position will pop
 'banana'
 ```
 
-### .extend() method
+### extend() method
 
 This method is used to add a list to another list. This method is different from append as it deals with the joining of two lists. This method joins two lists by adding the second list to the end and modified the first list as shown in the example below.
 
@@ -218,7 +216,7 @@ print(fruit_list)
 
 To check the attribute (method) of an object see {ref}`dir() method`.
 
-## [The `del` statement](https://docs.python.org/3/tutorial/datastructures.html#the-del-statement)
+## [The del statement](https://docs.python.org/3/tutorial/datastructures.html#the-del-statement)
 
 There is a way to remove an item from a list given its index instead of its value: the `del` statement. This differs from the `pop()` method which returns a value.
 

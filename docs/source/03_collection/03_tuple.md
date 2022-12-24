@@ -26,7 +26,7 @@ print(type(a_tuple))
 Only using a comma might be confusing, always use parentheses to make it explicit.
 
 ```py
-a_tuple = (4,)  # Note the trailing comma
+a_tuple = (4,)  # note the trailing comma
 print(type(a_tuple))
 ```
 
@@ -120,6 +120,6 @@ print(animal[:2])  # print before index 2
 ('dog', 'lion')
 ```
 
-## Differences between Tuples and Lists
+## Tuples and Lists Differences
 
 The difference between a list and a tuple is that lists are mutable while tuples are immutable. Due to this tuples are simpler, they never change and don’t have any of the useful properties found in lists that make working with lists so powerful.
