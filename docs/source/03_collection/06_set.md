@@ -136,6 +136,7 @@ Union of sets can be obtained by `union` or operator `|`.
 set_num1 = {10,20,30,50,100}
 set_num2 = {100,101,102,102,200}
 print(set_num1 | set_num2)  # combines two or more sets into a new set
+
 print("-" * 35)
 
 set_num3 = set_num1.union(set_num2)  # to save the new set, do the following
@@ -155,6 +156,7 @@ set_num1 = {10,20,30,50,100}
 set_num2 = {100,101,102,102,200}
 set_num3 = set_num1.intersection(set_num2)  # intersection(), it returns a new set
 print(set_num3)
+
 print("-" * 5)
 
 print(set_num1 & set_num2)  # same as intersection() 
@@ -172,6 +174,7 @@ The `difference()` method will return a new set with the elements in the set tha
 set_num1 = {10,20,30,50,100}
 set_num2 = {100,101,102,102,200}
 print(set_num1.difference(set_num2))
+
 print("-" * 15)
 
 print(set_num2.difference(set_num1))  # same as difference
