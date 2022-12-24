@@ -5,12 +5,10 @@ Type casting is a method used to change the variable value into a different data
 In this example, you will take an integer literal assigned to a variable. Then typecast this integer to float using the `float()` function.
 
 ```py
-# integer
-num = 100
-# float
-num_float = float(num)
-print(num_float)
-print(type(num_float))
+num = 100  # integer
+num = float(num)  # typecast in float
+print(num)
+print(type(num))
 ```
 
 ```console
@@ -21,12 +19,10 @@ print(type(num_float))
 In the following code, you set a variable with a float value. Then typecast this float to an integer using `int()`.
 
 ```py
-# float
-num = 99.9
-# integer
-num_int = int(num)
-print(num_int)
-print(type(num_int))
+num = 99.9  # float
+num = int(num)  # typecast in integer
+print(num)
+print(type(num))
 ```
 
 ```console
@@ -37,16 +33,13 @@ print(type(num_int))
 In this example, you will use `int()` and `float()` to typecast a string literal to integer and float.
 
 ```py
-# string
-s = '132'
+s = '132'  # string
 
-# typecast to integer
-n = int(s)
+n = int(s)  # typecast to integer
 print(n)
 print(type(n))
 
-# typecast to float
-f = float(s)
+f = float(s)  # typecast to float
 print(f)
 print(type(f))
 ```
@@ -62,9 +55,7 @@ print(type(f))
 Please note that, if you have decimal point in the string, you cannot typecast that directly to an integer. You should first typecast string to float and then to an integer. Following is a quick code snippet for the same.
 
 ```py
-# String
-s = '132.564'
-# Typecast to integer
-n = int(float(s))
+s = '132.564'  # String
+n = int(float(s))  # typecast to integer
 ```
 ````
