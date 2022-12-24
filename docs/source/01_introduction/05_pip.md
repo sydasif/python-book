@@ -32,7 +32,7 @@ $ sudo apt install python3-venv python3-pip
 
 To check to install modules via `pip` use `pip list` and to check `pip` version use `pip --version` commands.
 
-## [Installing Modules with Pip](https://docs.python.org/3.8/installing/index.html)
+## [Installing Modules with pip](https://docs.python.org/3.8/installing/index.html)
 
 As a popular open-source development project, Python has an active supporting community of contributors and users that also make their software available for other Python developers to use under open-source license terms. `pip` is the preferred installer program. Starting with Python 3.4 is included by default with the Python binary installers.
 
