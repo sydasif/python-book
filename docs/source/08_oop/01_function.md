@@ -231,19 +231,18 @@ In Python, variables have different scopes depending on their location in the co
 Global variables are declared in Python scripts outside of any function. These variables are accessible anywhere in the code including functions within the Python program code. The example below shows a variable named `a` that has been created at the top of the function and is accessible from anywhere in the program code.
 
 ```py
-a = 5
+s = '5'
 
-def num():
-    print(a)
+def num(n):
+    print("local:", n)
+    print("global:", s)
 
-num()
-
-print(a)
+num(6)
 ```
 
 ```console
-5
-5
+local: 6
+global: 5
 ```
 
 ### Local variables
@@ -260,6 +259,11 @@ def num():
 num()
 
 print(a)
+```
+
+```console
+3
+5
 ```
 
 If we call variable `b` outside from function it will give an `NameError:` name 'b' is not defined.
