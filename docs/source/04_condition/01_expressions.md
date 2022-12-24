@@ -14,7 +14,7 @@ if num == True:
 True
 ```
 
-When you want to compare two values in Python, you need to use `==` instead of a single `=`. A single `=` is known as the assignment operator, as was mentioned in previous chapters. It assigns the value on the right to the variable on the left.
+When you want to compare two values in Python, you need to use comparisons operator `==` instead of a single `=`. A single `=` is known as the assignment operator, as was mentioned in previous chapters. It assigns the value on the right to the variable on the left.
 
 ## What is False and True?
 
@@ -32,7 +32,7 @@ The following values are `False`:
 
 ## Comparisons Operator
 
-In Python programming, the comparison operator is used to compare two values and evaluate them down to a single value that can either be `one` or `zero` or rather `True` or `False`. Boolean is a subclass of the `int` class. There are several boolean operators that can be used to evaluate an expression as either True or False. 
+In Python programming, the comparison operator is used to compare two values and evaluate them down to a single value that can either be `one` or `zero` or rather `True` or `False`. Boolean is a subclass of the `int` class. There are several boolean operators that can be used to evaluate an expression as either `True` or `False`.
 
 These expressions include:
 
@@ -47,8 +47,8 @@ These expressions include:
 x = 5
 y = 10
 
-print(x == y) # Is 5 equal to 10?
-print(x != y) # Is 5 not equal to 10?
+print(x == y)  # Is 5 equal to 10?
+print(x != y)  # Is 5 not equal to 10?
 ```
 
 ```console
@@ -85,7 +85,7 @@ For `AND` operator, both expressions must evaluate to `True` for the final boole
 | False and False  | False  | 
 ```
 
-For the `OR` operation, at least one of the two operators must evaluate to `True` for the final boolean expression to evaluate to `True`.
+For the `OR` operator, at least one of the two operators must evaluate to `True` for the final boolean expression to evaluate to `True`.
 
 ```py
 print((10 > 5) or (2 < 4))
@@ -97,8 +97,6 @@ True
 False
 ```
 
-`OR` operation can evaluate to `False` only, if both operations evaluate to `False`.
-
 ```{epigraph} **Logic OR Truth Table**
 | Expressions     | Result |
 | --------------- | -----  |
@@ -107,6 +105,8 @@ False
 | False or True   | True   |
 | False or False  | False  | 
 ```
+
+`OR` operation can evaluate to `False` only, if both operations evaluate to `False`.
 
 Lastly, `NOT` is the opposite of `False` and `True` which means, its inner expression is `True` for the new expression to evaluate to `False` else it will evaluate to `True`.
 
@@ -117,6 +117,4 @@ Lastly, `NOT` is the opposite of `False` and `True` which means, its inner expre
 | not False   | True |
 ```
 
-```{Note}
 Expressions consist of values and operators, and they can always evaluate (that is, reduce) down to a single value.
-```

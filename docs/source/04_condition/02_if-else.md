@@ -1,9 +1,8 @@
-# if-else Statement
+# If-else Statement
 
 `if` - `else` statement is a conditional statement in programming. If the statement is proved to be `True`, then a given set of code block (statement) are executed. If the statement is proved to be `False`, then another set of code block or none of the statement are executed.
 
-- An 'if statement' is written by using the `if` keyword.
-- The `elif` keyword in Python, "if the previous conditions were not true, then try this condition".
+- An `if` statement is written by using the `if` keyword.
 - The `else` keyword catches anything which isn't caught by the preceding conditions.
 
 ```py
@@ -20,12 +19,12 @@ else:
 ```
 
 ```{Note}
-We can use `if` without `else` statement also.
+You can use `if` without `else` statement also.
 ```
 
-## if elif and else Statements
+## Elif Statements
 
-The general expression used to represent the nested `if` and Multi-Way `if-elif-else` Statements is given below:
+The `elif` keyword, if the previous conditions were not true, then try this condition. The general expression used to represent the nested `if` and multi-Way `if`, `elif` and `else` Statements is given below:
 
 ```py
 num = 0
@@ -41,17 +40,20 @@ else:
 Number is Zero
 ```
 
-## Nested if-else statement
+## Nested If-else Statement
 
 We can use nested statement as below:
 
 ```py
 num = 0
+
 if num >= 0:
+
     if num == 0:
         print("Zero")
     else:
         print("+ve Number")
+
 else:
     print("-ve Number")        
 ```
@@ -60,18 +62,21 @@ else:
 Zero
 ```
 
-## if else and input()
+## If-else and input() Function
 
 In the code below we can mixed the `if` condition with `input()` function:
 
 ```py
 user = input("Enter your Username: ")
+
 if user == 'admin':
     password = input("Entef your Password: ")
+
     if password == 'cisco':
         print("Access granted...")
     else:
         print("Incorrect Password!!!")    
+
 else:
     print("Incorrect Username!!!")
 ```
@@ -82,7 +87,7 @@ Entef your Password: abc
 Incorrect Password!!!
 ```
 
-## if-else and logical operators
+## If-else and Logical Operators
 
 In case of `AND`, if both the operands are `True` then condition becomes `True`. If any of the operators is `False` then the condition evaluations to `False`.
 
@@ -125,7 +130,7 @@ At least one of the conditions is True
 
 For the `NOT` operator, on the other hand, if a condition evaluates to `True` then it becomes `False` and vice versa.
 
-## Ternary Operators
+## Ternary Operator
 
 Pyton ternary operator is commonly known as conditional expressions. These operators evaluate expressions based on a condition being true or false.
 
