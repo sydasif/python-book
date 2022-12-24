@@ -73,7 +73,7 @@ print(full_name)
 My name is: John Alex
 ```
 
-### Strign Replication
+### String Replication
 
 The nice thing about the multiplication operator `*` is that it’s also possible to use it on strings. For example, to print a line of `60` dashes.
 
