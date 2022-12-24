@@ -33,22 +33,16 @@ The code above is the same as:
 f = open("my_file.txt")
 ```
 
-Because `"r"` for read, and `"t"` for text are the default values, you do not need to specify them.
-
-```{Note}
-If the file does not exist, you will get an error.
-```
+Because `"r"` for read, and `"t"` for text are the default values, you do not need to specify them. If the file does not exist, you will get an error.
 
 ## read() Function
 
 When we open a file without setting the mode argument, the default is to open the file in “read-only” mode. The `open()` function returns a file object, which has a `read()` method for reading the content of the file.
 
 ```py
-# the file, located in the same folder
-f = open("my_file.txt")
+f = open("my_file.txt")  # file, located in the same folder
 print(f.read())
-# Always close the file when you are done with it.
-f.close()
+f.close()  # always close the file when you are done
 ```
 
 ```console
@@ -60,8 +54,8 @@ If the file is located in a different location, you will have to specify the fil
 
 ```py
 f = open("my_file.txt")
-print(f.readline())
-print(f.readline()) # Read the 2nd lines
+print(f.readline())  # read the 1st line
+print(f.readline())  # read the 2nd line
 f.close()
 ```
 
@@ -101,13 +95,11 @@ f.close()
 To write to an existing file, you must add a parameter to the `open()` function.
 
 ```py
-f = open("my_file.txt", "a")
-# '\n' add a new line 
-f.write("Now more content added to the file.\n") 
+f = open("my_file.txt", "a") 
+f.write("Now more content added to the file.\n")  # '\n' add a new line 
 f.close()
 
-# Read the file after the appending
-f = open("my_file.txt")
+f = open("my_file.txt")  # read the file after the append
 print(f.read())
 f.close()
 ```
@@ -119,13 +111,11 @@ Now more content added to the file.
 ```
 
 ```py
-# the "w" method will overwrite the entire file.
-f = open("my_file.txt", "w")
+f = open("my_file.txt", "w")  # the "w" method will overwrite the entire file
 f.write("I have deleted the all content!")
 f.close()
 
-# Read the file after the write
-f = open("my_file.txt")
+f = open("my_file.txt")  # read the file after the write
 print(f.read())
 f.close()
 ```
@@ -152,13 +142,13 @@ Create a new file if it does not exist:
 f = open("myfile.txt", "w")
 ```
 
-## File and context manager
+## File and Context Manager
 
 The best way to open a file in Python is to use Python’s special `with` statement is known as a context manager. In this example, you want to open a file, and then the `with` statement, automatically closes the file.
 
 ```py
-with open('my_file.txt') as f:
-    data = f.read()
+with open('my_file.txt') as file:
+    data = file.read()
     print(data)
 ```
 
@@ -172,8 +162,8 @@ This file is for testing purposes only.
 You can iterate over a file using Python’s `for` loop, this is actually one of the recommended methods for reading a file.
 
 ```py
-with open('my_file') as f:
-    for line in f:
+with open('my_file') as file:
+    for line in file:
         print(line)
 ```
 
@@ -186,8 +176,8 @@ This file is for testing purposes only.
 An alternative way to loop over the lines in a file.
 
 ```py
-with open('my_file') as f:
-    lines = f.readlines()
+with open('my_file') as file:
+    lines = file.readlines()
     for line in lines:
         print(line)
 ```
@@ -205,8 +195,8 @@ In this code, you can iterate over a file of your device's IP list to configure 
 Python code:
 
 ```py
-with open('device_ip') as f:
-    for ip in f:
+with open('device_ip') as file:
+    for ip in file:
         print(ip)
 ```
 
