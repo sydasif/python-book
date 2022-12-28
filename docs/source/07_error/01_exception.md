@@ -4,7 +4,7 @@ An exception is usually an event, that may not be an error that occurs during th
 
 To make the script better, your code needs to keep working even when the unexpected happens. For example, let’s say your application needs to pull down information from the router, what happens if your application loses its connectivity?
 
-Another common issue is what to do if the user enters invalid input or tries to open a file that is not present or deleted. support.
+Another common issue is what to do if the user enters invalid input or tries to open a file that is not present or deleted.
 
 ## Exceptons Handling
 
