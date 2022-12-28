@@ -1,6 +1,6 @@
 # Dictionaries in Python
 
-Dictionaries are used to store data values in `key-value` pairs. A dictionary is a collection which is ordered, and changeable and does not allow duplicate keys, any key of the dictionary is associated (or mapped) to a value. Keys within a dictionary are 'unique' and must be from immutable data types such as strings or numbers.
+Dictionaries are used to store data/value in `key-value` pairs. A dictionary is a collection which is ordered, and mutable and does not allow duplicate keys, any key of the dictionary is associated (or mapped) to a value. Keys within a dictionary are 'unique' and must be from immutable data types such as strings or numbers.
 
 ```{Note}
 As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
@@ -42,10 +42,6 @@ print(info_list)
 
 Each `key` must be different in order to maintain uniqueness `i.e.` to get the correct information about a `value`.
 
-## Modification of Dictionaries
-
-Dictionary elements can be created, accessed, modified or deleted. While a dictionary is created, its elements will contain a `key-value` pair to be accessed. You can also delete some values or delete a complete dictionary using `del` and `clear` respectively.
-
 ### Accessing dctionaries
 
 Dictionaries are very fast and can access any value in a dictionary via the key. If the key is not found, a `KeyError` will receive.
@@ -59,54 +55,7 @@ print(my_car["brand"])
 Ford
 ```
 
-To add a new item to a dictionary, use the square braces to enter a new key and set it to a value.
-
-```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
-my_car["year"] = 2000
-print(my_car)
-```
-
-```console
-{'brand': 'Ford', 'model': 'Mustang', 'year': 2000}
-```
-
-Setting a pre-existing key to a new value will overwrite the previous value.
-
-```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
-my_car["year"] = 2020
-print(my_car)
-```
-
-```console
-{'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
-```
-
-Python’s `del` keyword removes the key-value.
-
-```py
-del my_car["year"]
-print(my_car)
-```
-
-```console
-{'brand': 'Ford', 'model': 'Mustang'}
-```
-
-The values in dictionary items can be of any data type.
-
-```py
-# Adding new key-value as a list
-my_car["colors"] = ["black", "red", "blue"]
-print(my_car)
-```
-
-```console
-{'brand': 'Ford', 'model': 'Mustang', 'colors': ['black', 'red', 'blue']}
-```
-
-## Nested Dictionary
+### Nested Dictionary
 
 A dictionary within a dictionary is called a nested dictionary. It accumulated multiple dictionaries into one. Each dictionary will have its own key-value pair.
 
@@ -133,20 +82,54 @@ jan
 Dictionaries are lookup tables. They map from a `key` to a `value`.
 ```
 
-## Dictionary Method
+## Modification of Dictionaries
 
-As the most data types in Python, dictionaries have also special methods to use.
+Dictionary elements can be created, accessed, modified or deleted. While a dictionary is created, its elements will contain a `key-value` pair to be accessed. You can also delete some values or delete a complete dictionary using `del` and `clear` respectively.
 
-The `get()` method to get a value.
+To add a new item to a dictionary, use the square braces to enter a new key and set it to a value.
 
 ```py
-# If key not found, default None value will return 
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-my_car.get("model")
+my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
+my_car["year"] = 2000
+print(my_car)
 ```
 
 ```console
-'Mustang'
+{'brand': 'Ford', 'model': 'Mustang', 'year': 2000}
+```
+
+Setting a pre-existing key to a new value will overwrite the previous value.
+
+```py
+my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
+my_car["year"] = 2020
+print(my_car)
+```
+
+```console
+{'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+```
+
+The values in dictionary items can be of any data type.
+
+```py
+my_car["colors"] = ["black", "red", "blue"] # Adding new key-value as a list
+print(my_car)
+```
+
+```console
+{'brand': 'Ford', 'model': 'Mustang', 'colors': ['black', 'red', 'blue']}
+```
+
+Python’s `del` keyword removes the key-value.
+
+```py
+del my_car["year"]
+print(my_car)
+```
+
+```console
+{'brand': 'Ford', 'model': 'Mustang'}
 ```
 
 The `clear()` method is used to remove all the items from the dictionary.
@@ -161,19 +144,61 @@ my_car
 {}
 ```
 
-## Keys, values and Items
+### Dictionary Method
 
-Tree maps show unique keys to values. Consider the code below:
+As the most data types in Python, dictionaries have also special methods to use.
+
+The `get()` method to get a value, if the key not found, default value `None` will return.
+
+```py
+my_car = {"brand": "Ford","model": "Mustang","year": 1992}
+my_car.get("model")
+```
+
+```console
+'Mustang'
+```
+
+The `pop()` method removes the specified key from the dictionary and return the value of item.
+
+```py
+my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
+my_car.pop('year')
+```
+
+```console
+1992
+```
+
+The `keys()` method returns the keys of the dictionary, as a list.
 
 ```py
 my_car = {"brand": "Ford","model": "Mustang","year": 1992}
 print(my_car.keys())  # print keys
-print(my_car.values())  # print values
-print(my_car.items())  # print key-value pair
 ```
 
 ```console
 dict_keys(['brand', 'model', 'year'])
+```
+
+The `values()` method returns the values of the dictionary, as a list.
+
+```py
+my_car = {"brand": "Ford","model": "Mustang","year": 1992}
+print(my_car.values())  # print values
+```
+
+```console
 dict_values(['Ford', 'Mustang', 1992])
+```
+
+The `items()` method returns the object contains the `key-value` pairs of the dictionary, as tuples in a list.
+
+```py
+my_car = {"brand": "Ford","model": "Mustang","year": 1992}
+print(my_car.items())  # print key-value pair
+```
+
+```console
 dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1992)])
 ```
