@@ -148,7 +148,7 @@ my_car
 
 As the most data types in Python, dictionaries have also special methods to use.
 
-The `get()` method to get a value, if the key not found, default value `None` will return.
+The `get()` method to get a value, if the key not found, default value `None` will return without any error.
 
 ```py
 my_car = {"brand": "Ford","model": "Mustang","year": 1992}
@@ -157,6 +157,15 @@ my_car.get("model")
 
 ```console
 'Mustang'
+```
+
+```py
+my_car = {"brand": "Ford","model": "Mustang","year": 1992}
+print(my_car.get("origin"))
+```
+
+```console
+None
 ```
 
 The `pop()` method removes the specified key from the dictionary and return the value of item.
