@@ -124,13 +124,11 @@ my_set.pop()
 'a'
 ```
 
-If a set is empty, trying to pop() an item, will create an error. Lists are ordered while sets are not, so you can’t be sure what you
-will be removing with `pop()` since sets are not ordered.
+If a set is empty, trying to pop() an item, will create an error. Lists are ordered while sets are not, so you can’t be sure what you will be removing with `pop()` since sets are not ordered.
 
 ## Operations with sets
 
-Sets are useful in performing different operations such as finding union of sets, intersection and so on.
-Union of sets can be obtained by `union` or operator `|`.
+Sets are useful in performing different operations such as finding union of sets, intersection and so on. Union of sets can be obtained by `union` or operator `|`.
 
 ```py
 set_num1 = {10,20,30,50,100}
@@ -177,7 +175,7 @@ print(set_num1.difference(set_num2))
 
 print("-" * 15)
 
-print(set_num2.difference(set_num1))  # same as difference
+print(set_num2.difference(set_num1))
 ```
 
 ```console
