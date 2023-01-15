@@ -158,7 +158,7 @@ print(text)
 ['Thank you Python.', 'Welcome to the Network Automation.', 'Good Job.']
 ```
 
-To get a full listing of the methods and attributes that you can access, you can use Python’s built-in {ref}`dir() method`
+To get a full listing of the methods and attributes that you can access, you can use Python’s built-in {ref}`dir() Function`
 
 ````{epigraph}
 To learn how to use a given method that you see in the output of a dir(). Use the built-in help() function, the following examples show the way you can use help() method:

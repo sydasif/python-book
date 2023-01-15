@@ -214,7 +214,7 @@ print(fruit_list)
 ['apple', 'banana', 'carrot', 'mango']
 ```
 
-To check the attribute (method) of an object see {ref}`dir() method`.
+To check the attribute (method) of an object see {ref}`dir() Function`.
 
 ## [The del statement](https://docs.python.org/3/tutorial/datastructures.html#the-del-statement)
 
