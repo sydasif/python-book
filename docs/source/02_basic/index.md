@@ -1,6 +1,6 @@
 # Basic Data Types
 
-This chapter focuses on the basic fundamentals of the Python programming language that are needed to write a program or a script. Python has different data types, sets, strings, lists and dictionaries that are important in programming. Python also has several data types including numeric data types. There are also a set of characters called strings that are contained in Python.
+This chapter focuses on the basic fundamentals of the Python programming language that are needed to write a program or a script. Python has different data types, sets, strings, lists and dictionaries that are important in programming. Python also has several data types including numeric data types and a set of characters called strings that are contained in Python.
 
 Lists in Python are sequences of ordered elements that are mutable. Sets, on the other hand, are Python collections of unordered elements that are immutable. Tuples are also Python elements that describe immutable objects but use parenthesis.
 
