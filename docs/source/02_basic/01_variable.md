@@ -12,19 +12,19 @@ Python variable is a storage container or to reserve a memory location with a na
 Python is a dynamically typed language, a variable is created when you first assign a value to it. Variables do not need to be declared with any particular type, and can even be changed after they have been set.
 
 ```py
-name = "Ali"
+name = "Alex"
 print(name)
 ```
 
 ```console
-Ali
+Alex
 ```
 
 You can get the data type of a variable with the `type()` function.
 
 ```py
-addr = "Pakistan"
-print(addr)
+ip_addr = "192.168.10.1"
+print(type(ip_addr))
 ```
 
 ```console
@@ -34,23 +34,23 @@ print(addr)
 Assign values to multiple variables in one statement.
 
 ```py
-age, city = 23, "Karachi"
-print(age, city)
+vlan_01, vlan_10 = "default", "mgmt"
+print(vlan_01, vlan_10)
 ```
 
 ```console
-23 Karachi
+default mgmt
 ```
 
 Assign the same value to multiple variables at once.
 
 ```py
-age = num = 40
-print(age, num)
+host = ip_addr = "192.168.10.1"
+print(host, ip_addr)
 ```
 
 ```console
-40 40
+192.168.10.1 192.168.10.1
 ```
 
 If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables.
@@ -115,12 +115,12 @@ Variable names can be as long or as short as you like, but there are a few rules
 - Variable names are case-sensitive.
 
 ```py
-# Camel Case - Each word, except the first, starts with a capital letter:
-myVariableName = "Ali"
-# Pascal Case - Each word starts with a capital letter:
-MyVariableName = "Ali"
-# Snake Case - An underscore character separates each word:
-my_variable_name = "Ali"
+# Camel Case - Each word, except the first, starts with a capital letter.
+myVariableName = "Alex"
+# Pascal Case - Each word starts with a capital letter.
+MyVariableName = "Alex"
+# Snake Case - An underscore character separates each word.
+my_variable_name = "Alex"
 ```
 
 ```{Note}
