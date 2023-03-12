@@ -25,7 +25,7 @@ Associate Engineer (DAE in Electronics),  learning network automation as a hobby
 
 - **Conventions**
 
-This book is a guide for network engineers and is made for networkers to write casual code, so there’s not much time spent on style and beauty. Programming concepts—like object-oriented programming aren’t covered with details because of their complexity. But this book is mainly concerned with getting programs to work with the minimum amount of effort to automate networks.
+This book is a guide for network engineers and is made for networks to write casual code, so there’s not much time spent on style and beauty. Programming concepts—like object-oriented programming aren’t covered with details because of their complexity. But this book is mainly concerned with getting programs to work with the minimum amount of effort to automate networks.
 
 ```{warning}
 This project is under development.
