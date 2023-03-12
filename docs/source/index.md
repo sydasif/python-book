@@ -4,7 +4,7 @@ Learn network programmability with Python, GNS3 and Cisco devices.
 
 - **What you'll learn**
 
-  1. Python basic fundamentals
+  1. Python fundamentals
   2. Network automation with Python
 
 - **About the Author**
