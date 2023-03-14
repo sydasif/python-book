@@ -5,24 +5,24 @@ The list in Python is the most multipurpose data type available in Python which 
 Lists are Python’s most flexible ordered collection (sequence) object type. Lists can contain any sort of object; numbers, strings and even another list called a `nested list`. The elements used in lists can be changed, which means lists can be mutated, unlike tuples or strings.
 
 ```py
-days = ["Sunday", "Monday", "Friday"]
-print(days)
+vlans = ["vlan10", "vlan20", "vlan30"]
+print(vlans)
 ```
 
 ```console
-['Sunday', 'Monday', 'Friday']
+["vlan10", "vlan20", "vlan30"]
 ```
 
 To reassign an item in list as below:
 
 ```py
-days = ["Sunday", "Monday", "Friday"]
-days[2] = "someting"
-print(days)
+vlans = ["vlan10", "vlan20", "vlan30"]
+vlans[2] = "vlan5"
+print(vlans)
 ```
 
 ```console
-['Sunday', 'Monday', 'someting']
+['Sunday', 'Monday', 'vlan5']
 ```
 
 Lists are used in Python where programmers need to work with many related values. They help in reducing the code by keeping the related data together, allowing it to perform the same functions and operations on multiple values at once. An example of a list is given below:
@@ -39,7 +39,7 @@ print(my_list[2])
 The creation of lists is done by placing values between brackets and separating them with commas. This is done by adding a name just before the brackets.
 
 ```py
-list_of_items = ['mango', 'juice', 'banana', 'tree', 'house', 'toy', 'cow', 'horse']
+list_of_ip = ['192.168.1.1', '192.168.1.2', '192.168.1.3']
 ```
 
 ```{Note} There are several ways to create a list:
@@ -54,7 +54,7 @@ print(list_of_items[0])
 ```
 
 ```console
-mango
+192.168.1.1
 ```
 
 It is important to note that the positioning of the items would start from a `0`.
@@ -94,15 +94,15 @@ Lists have a few functions/methods that are used to control and manage the data 
 This method gives the chance to add an item/element to an existing list.
 
 ```py
-fruit_name = ["mango", "banana", "orange", "apple"]
-print(fruit_name)
-fruit_name.append("grapes")
-print(fruit_name)
+vlan_name = ["mgmt", "prod", "tech", "acct"]
+print(vlan_name)
+vlan_name.append("guest")
+print(vlan_name)
 ```
 
 ```console
-['mango', 'banana', 'orange', 'apple']
-['mango', 'banana', 'orange', 'apple', 'grapes']
+["mgmt", "prod", "tech", "acct"]
+["mgmt", "prod", "tech", "acct", "guest"]
 ```
 
 ### insert() method
@@ -110,15 +110,15 @@ print(fruit_name)
 This function works the same as the function `append()` but is more specific to the position at which the new item will appear in the existing list.
 
 ```py
-fruit_name = ["mango", "banana", "orange", "apple"]
-print(fruit_name)
-fruit_name.insert(2, "grapes")
-print(fruit_name)
+vlan_name = ["mgmt", "prod", "tech", "acct"]
+print(vlan_name)
+vlan_name.insert(2, "guest")
+print(vlan_name)
 ```
 
 ```console
-['mango', 'banana', 'orange', 'apple']
-['mango', 'banana', 'grapes', 'orange', 'apple']
+["mgmt", "prod", "tech", "acct"]
+["mgmt", "prod", "guest", "tech", "acct"]
 ```
 
 ### remove() and pop() method
@@ -126,41 +126,41 @@ print(fruit_name)
 This is used to delete an item from the list. Its syntax is the same as those of the other functions. When an item seems more than once in the list, the command `remove()` will only delete the item that appears first in the list.
 
 ```py
-fruit_name = ["mango", "orange", "banana", "orange", "apple"]
-print(fruit_name)
-fruit_name.remove("orange")
-print(fruit_name)
+vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
+print(vlan_name)
+vlan_name.remove("guest")
+print(vlan_name)
 ```
 
 ```console
-['mango', 'orange', 'banana', 'orange', 'apple']
-['mango', 'banana', 'orange', 'apple']
+["mgmt", "prod", "guest", "tech", "acct"]
+["mgmt", "prod", "tech", "acct"]
 ```
 
 If the command mentions an item that is not on the list, the functions will return an error which will indicate that the item is not on the list.
 
 ```py
-fruit_name = ["mango", "orange", "banana", "orange", "apple"]
-print(fruit_name)
+vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
+print(vlan_name)
 ```
 
 ```console
-['mango', 'orange', 'banana', 'orange', 'apple']
+["mgmt", "prod", "guest", "tech", "acct"]
 ```
 
 ```py
-fruit_name.remove("tomato")
-print(fruit_name)
+vlan_name.remove("tomato")
+print(vlan_name)
 ```
 
 ```console
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
 Cell In [16], line 3
-      1 fruit_name = ["mango", "orange", "banana", "orange", "apple"]
-      2 print(fruit_name)
-----> 3 fruit_name.remove("tomato")
-      4 print(fruit_name)
+      1 vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
+      2 print(vlan_name)
+----> 3 vlan_name.remove("tomato")
+      4 print(vlan_name)
 
 ValueError: list.remove(x): x not in list
 ```
@@ -168,21 +168,21 @@ ValueError: list.remove(x): x not in list
 To remove an item by position, the function `pop()` is used. When the method `pop()` is called without stating the position, the last item is deleted. When this method is used, an item is deleted and the function returns the item that was deleted.
 
 ```py
-fruit_name = ["mango", "orange", "banana", "orange", "apple"]
-fruit_name.pop()  # last item will pop
+vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
+vlan_name.pop()  # last item will pop
 ```
 
 ```console
-'apple'
+'acct'
 ```
 
 ```py
-fruit_name = ["mango", "orange", "banana", "orange", "apple"]
-fruit_name.pop(2)  # index 2 at number 3rd position will pop
+vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
+vlan_name.pop(2)  # index 2 at number 3rd position will pop
 ```
 
 ```console
-'banana'
+'guest'
 ```
 
 ### extend() method
@@ -202,16 +202,16 @@ print(list1)
 We can also sort items in a list.
 
 ```py
-fruit_list = ['apple', 'mango', 'carrot', 'banana']
+vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
 ```
 
 ```py
-fruit_list.sort()
-print(fruit_list)
+vlan_name.sort()
+print(vlan_name)
 ```
 
 ```console
-['apple', 'banana', 'carrot', 'mango']
+['acct', 'guest', 'mgmt', 'prod', 'tech']
 ```
 
 To check the attribute (method) of an object see {ref}`dir() Function`.
@@ -222,12 +222,12 @@ There is a way to remove an item from a list given its index instead of its valu
 
 ```py
 # remove an item from the list
-del fruit_list[0]
-print(fruit_list)
+del vlan_name[0]
+print(vlan_name)
 ```
 
 ```console
-['mango', 'carrot', 'banana', 'rice']
+['guest', 'mgmt', 'prod', 'tech']
 ```
 
 ## List Slicing
@@ -235,16 +235,16 @@ print(fruit_list)
 List slicing is a technique in Python that helps read a list and returns a specific segment of a list in the form of a new list. The most important thing in list slicing is the colon `:` and name of the list that is used in the creation of a slicing statement. The example below shows how to list slicing is done in a single word.
 
 ```py
-fruit_list = ['apple', 'mango', 'carrot', 'banana', 'rice']
-print(fruit_list[:4]) 
-print(fruit_list[1:3]) # index 3 not included
-print(fruit_list[0:])
+vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
+print(vlan_name[:4])
+print(vlan_name[1:3])  # index 3 not included
+print(vlan_name[0:])
 ```
 
 ```console
-['apple', 'mango', 'carrot', 'banana']
-['mango', 'carrot']
-['apple', 'mango', 'carrot', 'banana', 'rice']
+['mgmt', 'prod', 'guest', 'tech']
+['prod', 'guest']
+['mgmt', 'prod', 'guest', 'tech', 'acct']
 ```
 
 As a shortcut, leaving out the first index is the same as using 0, or the beginning of the list. Leaving out the second index is the same as using the length of the list, which will slice to the end of the list.
