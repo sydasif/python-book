@@ -22,7 +22,7 @@ print(vlans)
 ```
 
 ```console
-['Sunday', 'Monday', 'vlan5']
+['vlan10', 'vlan20', 'vlan5']
 ```
 
 Lists are used in Python where programmers need to work with many related values. They help in reducing the code by keeping the related data together, allowing it to perform the same functions and operations on multiple values at once. An example of a list is given below:
@@ -141,14 +141,6 @@ If the command mentions an item that is not on the list, the functions will retu
 
 ```py
 vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
-print(vlan_name)
-```
-
-```console
-["mgmt", "prod", "guest", "tech", "acct"]
-```
-
-```py
 vlan_name.remove("tomato")
 print(vlan_name)
 ```
@@ -158,9 +150,8 @@ print(vlan_name)
 ValueError                                Traceback (most recent call last)
 Cell In [16], line 3
       1 vlan_name = ["mgmt", "prod", "guest", "tech", "acct"]
-      2 print(vlan_name)
-----> 3 vlan_name.remove("tomato")
-      4 print(vlan_name)
+----> 2 vlan_name.remove("tomato")
+      3 print(vlan_name)
 
 ValueError: list.remove(x): x not in list
 ```
