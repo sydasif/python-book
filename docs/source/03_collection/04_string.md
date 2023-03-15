@@ -183,7 +183,7 @@ Python#Network#Automation
 ## Escape Sequences
 
 There is a special character, that is understood by the compiler as commands other than characters. All these characters
-are known as the 'escape` sequences. The special characters are marked with a backslash `\`. The backslash `\` would,
+are known as the `escape` sequences. The special characters are marked with a backslash `\`. The backslash `\` would,
 therefore, indicate that the character that is going to be printed next is a special one that should initiate some
 instructions. Below are examples of special characters that are used with strings:
 
