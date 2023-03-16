@@ -221,32 +221,32 @@ Using the `%` method is Python’s oldest method of string formatting. The most 
 you would use `%s`, which means converting any Python object to a string using `str()`.
 
 ```py
-name = "Ali"
-print("My name is: %s" %name)  # insert string
+ip_addr = "172.16.10.1"
+print("IP Address: %s" %ip_addr)  # insert string
 ```
 
 ```console
-My name is: Ali
+IP Address: 172.16.10.1
 ```
 
 ```py
-age = 40
-print("My age is: %i" %age)  # insert integer
+ios_version = 15
+print("iOS Version: %i" %ios_version)  # insert integer
 ```
 
 ```console
-My age is: 40
+iOS Version: 15
 ```
 
 ```py
-name = "Ali"
-age = 40
+ip_addr = "172.16.10.1"
+mask = "255.255.255.0"
 # formatting with multiple variables
-print("Hello, %s. Your age is %i" % (name, age))
+print("IP Address: %s. Mask: %s" % (ip_addr, mask))
 ```
 
 ```console
-Hello, Ali. Your age is 40
+IP Address: 172.16.10.1. Mask: 255.255.255.0
 ```
 
 To pass in multiple items, you use the `%` sign followed by a tuple of the items to insert.
@@ -257,53 +257,56 @@ The `format()` method formats the specified value(s) and insert them inside the 
 is defined using curly brackets: `{}`. The `format()` method returns the formatted string.
 
 ```py
-name = "Ali"
-age = 40
-print("Hello, {}. Your age is {}".format(name, age))
+ip_addr = "172.16.10.1"
+mask = "255.255.255.0"
+print("IP Address: {} Mask: {}".format(ip_addr, mask))
 ```
 
 ```console
-Hello, Ali. Your age is 40
+IP Address: 172.16.10.1 Mask: 255.255.255.0
 ```
 
 This example uses positional arguments. Python looks for two instances of `{}` and will insert the variables accordingly.
 
 ```py
-name = "Ali"
-age = 40
-print("Hello, {my_name}. Your age is {my_age}".format(my_name=name, my_age=age))
+ip_addr = "172.16.10.1"
+subnet = "255.255.255.0"
+print("IP Address: {ip} Mask: {mask}".format(ip=ip_addr, mask=subnet))
 ```
 
 ```console
-Hello, Ali. Your age is 40
+IP Address: 172.16.10.1 Mask: 255.255.255.0
 ```
 
 - Using dictionary
 
 ```py
-dict = {"name": "Ali", "age": 40}
-print("Hello, {name}. Your age is {age}".format(**dict))
+credentials = {"user": "admin", "pass": "P@ssW0rd"}
+print("Username: {user} \nPassword: {pass}".format(**credentials))
 ```
 
 ```console
-Hello, Ali. Your age is 40
+Username: admin 
+Password: P@ssW0rd
 ```
 
 A common coding style when working with `format()` is to create a formatted string and save it to a variable to 
 be used later.
 
 ```py
-ip = "10.1.1.1"
+ip_addr = "172.16.10.1"
 device = "SW1"
-device_ip = """Device: {device}
-IP: {ip}"""
-output = device_ip.format(device=device, ip=ip)
+description = f"""
+Device: {name}
+IP: {ip}
+"""
+output = description.format(device=name, ip_addr=ip)
 print(output)
 ```
 
 ```console
 Device: SW1
-IP: 10.1.1.1
+IP: 172.16.10.1
 ```
 
 ### Formatting string with f-strings
@@ -312,13 +315,13 @@ Formatted string literals or `f-strings` are strings that have an `f` at the beg
 that contain expressions, much like the ones you saw in the previous section.
 
 ```py
-name = 'Alex'
-age = 20
-print(f'Hello {name}, you are {age} years old')
+ip_addr = '172.16.10.1'
+mask = "255.255.255.0"
+print(f'IP Address {ip_addr} Mask: {mask}')
 ```
 
 ```console
-Hello Alex, you are 20 years old
+IP Address 172.16.10.1 Mask: 255.255.255.0
 ```
 
 The `f-string` can do things that neither `%s` nor `format()` can do. Because `f-strings` are evaluated at runtime,
@@ -332,6 +335,8 @@ print(f"{age + 5}")
 ```console
 30
 ```
+
+One more example as below:
 
 ```py
 name = 'Ali'
