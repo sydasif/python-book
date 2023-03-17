@@ -153,13 +153,13 @@ the following examples show the way you can use help() method:
 
 ```console
 [$] <> python
-Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
+Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36)
 >>> help(str.split)
 Help on method_descriptor:
 
 split(self, /, sep=None, maxsplit=-1)
-    Return a list of the substrings in the string, using sep as the separator string.
+    Return a list of the substrings in the string, using 
+    sep as the separator string.
 
 Output is Omitted
 ```
@@ -242,7 +242,7 @@ iOS Version: 15
 ip_addr = "172.16.10.1"
 mask = "255.255.255.0"
 # formatting with multiple variables
-print("IP Address: %s. Mask: %s" % (ip_addr, mask))
+print("IP Address: %s. Mask: %s" %(ip_addr, mask))
 ```
 
 ```console
@@ -294,19 +294,17 @@ A common coding style when working with `format()` is to create a formatted stri
 be used later.
 
 ```py
-ip_addr = "172.16.10.1"
-device = "SW1"
-description = f"""
-Device: {name}
-IP: {ip}
+description = """
+Device: {}
+IP: {}
 """
-output = description.format(device=name, ip_addr=ip)
+output = description.format('SW-01', '10.10.10.10')
 print(output)
 ```
 
 ```console
-Device: SW1
-IP: 172.16.10.1
+Device: SW-01
+IP: 10.10.10.10
 ```
 
 ### Formatting string with f-strings
