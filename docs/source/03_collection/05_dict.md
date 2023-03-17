@@ -11,48 +11,44 @@ As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, d
 There are a couple of different ways, we can create a dictionary. The most common method is by placing a comma-separated list of `key: value` pairs within curly braces.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
-print(my_car)
+credentials = {"user": "admin","pass": "p@wOrd", "secret": "cisco"}
+print(credentials)
 ```
 
 ```console
-{'brand': 'Ford', 'model': 'Mustang', 'year': 1992}
+{'user': 'admin', 'pass': 'p@wOrd', 'secret': 'cisco'}
 ```
 
 Python’s built-in `dict()` function can create a dictionary. A `dict()` function accepts a series of keyword arguments `(1="one", 2="two")`, a list of tuples, or another dictionary.
 
 ```py
-numbers = dict(one=1, two=2, three=3)
-print(numbers)
+credentials_list = [
+    ("user", "admin"),
+    ("pass", "p@wOrd"),
+    ("secret", "cisco"),
+    ("iOS", 15.2)
+]
+credentials = dict(credentials_list)
+print(credentials)
 ```
 
 ```console
-{'one': 1, 'two': 2, 'three': 3}
-```
-
-```py
-info_list = [('first_name', 'Ali'), ('last_name', 'Ahmed')]
-info_list = dict(info_list)
-print(info_list)
-```
-
-```console
-{'first_name': 'Ali', 'last_name': 'Ahmed'}
+{'user': 'admin', 'pass': 'p@wOrd', 'secret': 'cisco', 'iOS': 15.2}
 ```
 
 Each `key` must be different in order to maintain uniqueness `i.e.` to get the correct information about a `value`.
 
-### Accessing dctionaries
+### Accessing dictionaries
 
 Dictionaries are very fast and can access any value in a dictionary via the key. If the key is not found, a `KeyError` will receive.
 
 ```py
-my_car = {"brand": "Ford", "model": "Mustang", "year": 1992}
-print(my_car["brand"])
+credentials = {"user": "admin","pass": "p@wOrd", "secret": "cisco"}
+print(credentials["pass"])
 ```
 
 ```console
-Ford
+p@wOrd
 ```
 
 ### Nested Dictionary
@@ -60,22 +56,18 @@ Ford
 A dictionary within a dictionary is called a nested dictionary. It accumulated multiple dictionaries into one. Each dictionary will have its own key-value pair.
 
 ```py
-my_family = {
-    "parents": {'dad': 'mike', 'mom': 'carol'},
-    'kids': {'youngest': 'Ali', 'middle': 'jan', 'oldest': 'saira'}
+device_list = {
+    "cisco": {'r1': 'south', 's1': 'west'},
+    'juniper': {'r2': 'east', 's2': 'north'}
     }
     
-print(my_family['parents'])
-print(my_family['kids'])
-print(my_family['parents']["mom"])
-print(my_family['kids']["middle"])
+print(device_list['cisco'])
+print(device_list['juniper']["s2"])
 ```
 
 ```console
-{'dad': 'mike', 'mom': 'carol'}
-{'youngest': 'Ali', 'middle': 'jan', 'oldest': 'saira'}
-carol
-jan
+{'r1': 'south', 's1': 'west'}
+north
 ```
 
 ```{Note}
@@ -89,55 +81,58 @@ Dictionary elements can be created, accessed, modified or deleted. While a dicti
 To add a new item to a dictionary, use the square braces to enter a new key and set it to a value.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
-my_car["year"] = 2000
-print(my_car)
+credentials = {"user": "admin","pass": "p@wOrd", "secret": "cisco"}
+credentials["iOS"] = 15.2
+print(credentials)
 ```
 
 ```console
-{'brand': 'Ford', 'model': 'Mustang', 'year': 2000}
+{'user': 'admin', 'pass': 'p@wOrd', 'secret': 'cisco', 'iOS': 15.2}
 ```
 
 Setting a pre-existing key to a new value will overwrite the previous value.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
-my_car["year"] = 2020
-print(my_car)
+credentials = {"user": "admin","pass": "p@wOrd", "secret": "cisco"}
+credentials["iOS"] = 12.2
+print(credentials)
 ```
 
 ```console
-{'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+{'user': 'admin', 'pass': 'p@wOrd', 'secret': 'cisco', 'iOS': 12.2}
 ```
 
 The values in dictionary items can be of any data type.
 
 ```py
-my_car["colors"] = ["black", "red", "blue"] # Adding new key-value as a list
-print(my_car)
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+# Adding new key-value as a list
+credentials["devices"] = ["cisco", "juniper", "arista"]
+print(credentials)
 ```
 
 ```console
-{'brand': 'Ford', 'model': 'Mustang', 'colors': ['black', 'red', 'blue']}
+{'user': 'admin', 'pass': 'p@wOrd', 'devices': ['cisco', 'juniper', 'arista']}
 ```
 
 Python’s `del` keyword removes the key-value.
 
 ```py
-del my_car["year"]
-print(my_car)
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+del credentials["user"]
+print(credentials)
 ```
 
 ```console
-{'brand': 'Ford', 'model': 'Mustang'}
+{'pass': 'p@wOrd'}
 ```
 
 The `clear()` method is used to remove all the items from the dictionary.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-my_car.clear()
-my_car
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+credentials.clear()
+print(credentials)
 ```
 
 ```console
@@ -151,17 +146,19 @@ As the most data types in Python, dictionaries have also special methods to use.
 The `get()` method to get a value, if the key not found, default value `None` will return without any error.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-my_car.get("model")
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+print(credentials.get("pass"))
 ```
 
 ```console
-'Mustang'
+p@wOrd
 ```
 
+If there is no key is present in dictionary `None` type will return.
+
 ```py
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-print(my_car.get("origin"))
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+print(credentials.get("origin"))
 ```
 
 ```console
@@ -171,43 +168,43 @@ None
 The `pop()` method removes the specified key from the dictionary and return the value of item.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang", "year": 1992}
-my_car.pop('year')
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+print(credentials.pop('user'))
 ```
 
 ```console
-1992
+admin
 ```
 
 The `keys()` method returns the keys of the dictionary, as a list.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-print(my_car.keys())  # print keys
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+print(credentials.keys())  # print keys
 ```
 
 ```console
-dict_keys(['brand', 'model', 'year'])
+dict_keys(['user', 'pass'])
 ```
 
 The `values()` method returns the values of the dictionary, as a list.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-print(my_car.values())  # print values
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+print(credentials.values())  # print values
 ```
 
 ```console
-dict_values(['Ford', 'Mustang', 1992])
+dict_values(['admin', 'p@wOrd'])
 ```
 
 The `items()` method returns the object contains the `key-value` pairs of the dictionary, as tuples in a list.
 
 ```py
-my_car = {"brand": "Ford","model": "Mustang","year": 1992}
-print(my_car.items())  # print key-value pair
+credentials = {'user': 'admin', 'pass': 'p@wOrd'}
+print(credentials.items())  # print key-value pair
 ```
 
 ```console
-dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1992)])
+dict_items([('user', 'admin'), ('pass', 'p@wOrd')])
 ```
