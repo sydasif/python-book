@@ -1,46 +1,47 @@
 # Set in Python
 
-A set is a container of an unordered collection of 'unique' and immutable objects. A set is un-indexed, therefore, they do not support functions including slicing, indexing and any other function that is associated with sequencing.
+A set is a container of an unordered collection of 'unique' and immutable objects. A set is un-indexed, therefore, 
+they do not support functions including slicing, indexing and any other function that is associated with sequencing.
 
-Sets are used to store multiple items in a single variable.  Sets are a collection of data with no duplicates. They are very useful when it comes to removing duplicate data from data collections.
+Sets are used to store multiple items in a single variable.  Sets are a collection of data with no duplicates. 
+They are very useful when it comes to removing duplicate data from data collections.
 
-Python sets can have different items of different data types such as float, integer, string or even tuple. Python set elements cannot be changed but can only be added or updated
-
-Elements/items in a set can, however, be removed from the set using the `discard()` or `remove()` functions from sets. The `discard()` function removes an item from the set and returns no error if such an item is not found. The `remove()` function, on the other hand, is used to remove an item from a list and raise an error if such an item is not found.
+Python sets can have different items of different data types such as float, integer, string or even tuple. 
+Python set elements cannot be changed but can only be added or updated
 
 ## Creating Set
 
 In Python, sets are written with curly brackets or using the built-in Python function `set()`.
 
 ```py
-fruit = {"apple", "banana", "cherry"}
-print(fruit)
+vlan_num = {10, 20, 30, 40, 50}
+print(vlan_num)
 ```
 
 ```console
-{'apple', 'banana', 'cherry'}
+{50, 20, 40, 10, 30}
 ```
 
 When we `print()` the set, duplicates were removed automatically.
 
 ```py
-fruit = {"apple", "banana", "cherry", "apple"}
-print(fruit)
+vlan_name = {"tech", "accounts", "guest", "tech"}
+print(vlan_name)
 ```
 
 ```console
-{'apple', 'banana', 'cherry'}
+{'guest', 'accounts', 'tech'}
 ```
 
 It is also possible to use the `set()` constructor to make a set.
 
 ```py
-fruit = set(("apple", "banana", "cherry"))
-print(fruit)
+vlan_name = set(("tech", "guest", "accounts"))
+print(vlan_name)
 ```
 
 ```console
-{'apple', 'banana', 'cherry'}
+{'accounts', 'guest', 'tech'}
 ```
 
 ## Set Method
@@ -55,9 +56,9 @@ There are two ways to add items to a set:
 - update()
 
 ```py
-set1 = {10,20,30,40}
-set1.add(50)  # add() adds an item to set
-print(set1)
+vlan_num = {10,20,30,40}
+vlan_num.add(50)  # add() adds an item to set
+print(vlan_num)
 ```
 
 ```console
@@ -67,18 +68,18 @@ print(set1)
 To add multiple items all at once, then we should use the `update()` method.
 
 ```py
-my_set = {10,20,30,40}
-my_set.update(['d', 'e', 'f'])  # update() will take any iterable
-print(my_set)
+vlan_name = {10, 20, 30, 40}
+vlan_name.update([50, 60])  # update() will take any iterable
+print(vlan_name)
 ```
 
 ```console
-{'d', 40, 10, 'f', 'e', 20, 30}
+{40, 10, 50, 20, 60, 30}
 ```
 
 ### Removing items
 
-Removing items from sets have several different ways.
+Removing items from sets have different ways.
 
 You can use:
 
@@ -86,14 +87,14 @@ You can use:
 - remove()
 - pop()
 
-The `discard()` metohd allows deleting elements without showing an error if there is no element in set
+The `discard()` method allows deleting elements without showing an error if there is no element in set
 
 ```py
-set1 = {10, 20, 30, 40, 50}
-set1.discard(55)
-print(set1)
-set1.discard(50)
-print(set1)
+vlan_num = {10, 20, 30, 40, 50}
+vlan_num.discard(55)
+print(vlan_num)
+vlan_num.discard(50)
+print(vlan_num)
 ```
 
 ```console
@@ -101,27 +102,38 @@ print(set1)
 {20, 40, 10, 30}
 ```
 
-The `remove()` method will remove the specified item from a set. The `remove()` method will create an error if an item does not exist.
+The `remove()` method will remove the specified item from a set.
 
 ```py
-set1 = {10, 20, 30, 40, 50}
-set1.remove(30)
-print(set1)
+vlan_num = {10, 20, 30, 40, 50}
+vlan_num.remove(30)
+print(vlan_num)
 ```
 
 ```console
 {50, 20, 40, 10}
 ```
-
-The `pop()` method will remove and return an item from the set.
+The `remove()` method will create an error if an item does not exist.
 
 ```py
-my_set = {"a", "b", "c"}
-my_set.pop()
+vlan_num = {10, 20, 30, 40, 50}
+print(vlan_num.remove(60))
 ```
 
 ```console
-'a'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 60
+```
+The `pop()` method will remove and return an item from the set.
+
+```py
+vlan_name = set(("tech", "guest", "accounts"))
+print(vlan_name.pop())
+```
+
+```console
+accounts
 ```
 
 If a set is empty, trying to pop() an item, will create an error. Lists are ordered while sets are not, so you can’t be sure what you will be removing with `pop()` since sets are not ordered.
@@ -131,14 +143,14 @@ If a set is empty, trying to pop() an item, will create an error. Lists are orde
 Sets are useful in performing different operations such as finding union of sets, intersection and so on. Union of sets can be obtained by `union` or operator `|`.
 
 ```py
-set_num1 = {10,20,30,50,100}
-set_num2 = {100,101,102,102,200}
-print(set_num1 | set_num2)  # combines two or more sets into a new set
+vlan_num_one = {10, 20, 30, 50, 100}
+vlan_num_two = {100, 101, 102, 102, 200}
+print(vlan_num_one | vlan_num_two)  # combines two or more sets into a new set
 
 print("-" * 35)
 
-set_num3 = set_num1.union(set_num2)  # to save the new set, do the following
-print(set_num3)
+vlan_num = vlan_num_one.union(vlan_num_two)  # to save the new set, do the following
+print(vlan_num)
 ```
 
 ```console
@@ -150,14 +162,14 @@ print(set_num3)
 The `intersection()` method takes two sets and returns a new set that contains only the items that are the same in both sets. The intersection of sets can be obtained by `intersection` or operator `&`.
 
 ```py
-set_num1 = {10,20,30,50,100}
-set_num2 = {100,101,102,102,200}
-set_num3 = set_num1.intersection(set_num2)  # intersection(), it returns a new set
-print(set_num3)
+vlan_num_one = {10, 20, 30, 50, 100}
+vlan_num_two = {100, 101, 102, 102, 200}
+vlan_num = vlan_num_one.intersection(vlan_num_two)  # intersection(), it returns a new set
+print(vlan_num)
 
 print("-" * 5)
 
-print(set_num1 & set_num2)  # same as intersection() 
+print(vlan_num_one & vlan_num_two)  # same as intersection() 
 ```
 
 ```console
@@ -169,13 +181,13 @@ print(set_num1 & set_num2)  # same as intersection()
 The `difference()` method will return a new set with the elements in the set that are not in the other set.
 
 ```py
-set_num1 = {10,20,30,50,100}
-set_num2 = {100,101,102,102,200}
-print(set_num1.difference(set_num2))
+vlan_num_one = {10, 20, 30, 50, 100}
+vlan_num_two = {100, 101, 102, 102, 200}
+print(vlan_num_one.difference(vlan_num_two))
 
 print("-" * 15)
 
-print(set_num2.difference(set_num1))
+print(vlan_num_two.difference(vlan_num_one))
 ```
 
 ```console
