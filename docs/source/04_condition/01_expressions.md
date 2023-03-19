@@ -5,13 +5,13 @@ Boolean expressions are expressions in Python programming language that produces
 This can be shown in the expressions below:
 
 ```py
-num = bool(2)
-if num == True:
-    print(num)
+one = 1
+two = 2
+print(one == two)
 ```
 
 ```console
-True
+False
 ```
 
 When you want to compare two values in Python, you need to use comparisons operator `==` instead of a single `=`. A single `=` is known as the assignment operator, as was mentioned in previous chapters. It assigns the value on the right to the variable on the left.
