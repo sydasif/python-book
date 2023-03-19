@@ -145,11 +145,11 @@ Sets are useful in performing different operations such as finding union of sets
 ```py
 vlan_num_one = {10, 20, 30, 50, 100}
 vlan_num_two = {100, 101, 102, 102, 200}
-print(vlan_num_one | vlan_num_two)  # combines two or more sets into a new set
-
+# combines two or more sets
+print(vlan_num_one | vlan_num_two)  
 print("-" * 35)
-
-vlan_num = vlan_num_one.union(vlan_num_two)  # to save the new set, do the following
+# combine and save in new set
+vlan_num = vlan_num_one.union(vlan_num_two)  
 print(vlan_num)
 ```
 
@@ -164,12 +164,11 @@ The `intersection()` method takes two sets and returns a new set that contains o
 ```py
 vlan_num_one = {10, 20, 30, 50, 100}
 vlan_num_two = {100, 101, 102, 102, 200}
-vlan_num = vlan_num_one.intersection(vlan_num_two)  # intersection(), it returns a new set
+vlan_num = vlan_num_one.intersection(vlan_num_two)  
 print(vlan_num)
-
 print("-" * 5)
-
-print(vlan_num_one & vlan_num_two)  # same as intersection() 
+# same as intersection()
+print(vlan_num_one & vlan_num_two)   
 ```
 
 ```console
