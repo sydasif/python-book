@@ -4,79 +4,73 @@
 set of code block (statement) are executed. If the statement is proved to be `False`, then another set of code block or 
 none of the statement are executed.
 
-- An `if` statement is written by using the `if` keyword.
-- The `else` keyword catches anything which isn't caught by the preceding conditions.
+An `if` statement is written by using the `if` keyword.
 
 ```py
-is_up = True
-if is_up:
+is_up = "up"
+if is_up == "up":
     print("interface is up")
-else:
-    print("interface is down")
 ```
 
 ```console
 interface is up
 ```
 
-```{Note}
-You can use `if` without `else` statement also.
+The `else` keyword catches anything which isn't caught by the preceding conditions.
+
+```py
+is_up = "down"
+if is_up == "up":
+    print("interface is up")
+else:
+    print("interface is down")
+```
+
+```console
+interface is down
 ```
 
 ## Elif Statements
 
-The `elif` keyword, if the previous conditions were not true, then try this condition. The general expression used to represent the nested `if` and multi-Way `if`, `elif` and `else` Statements is given below:
+The `elif` keyword, if the previous conditions were not true, then try this condition. The general expression used to 
+represent the nested `if` and multi-Way `if`, `elif` and `else` Statements is given below:
 
 ```py
-num = 0
-if num > 0:
-    print("Number is greater then zero")
-elif num == 0:
-    print("Number is Zero")
+is_up = "shut"
+if is_up == "up":
+    print("interface is up")
+elif is_up == "shut":
+    print("interface is shut by admin")
 else:
-    print("Number is less then zero")        
+    print("interface is down")
 ```
 
 ```console
-Number is Zero
+interface is shut down by admin
 ```
-
-## If-else and input() Function
 
 In the code below we can mixed the `if` condition with `input()` function:
 
 ```py
-user = input("Enter your Username: ")
+user = input("Enter your username: ")
 
-if user == 'admin':
-    password = input("Enter your Password: ")
-    if password == 'cisco':
-        print("Access granted...")
-    else:
-        print("Incorrect Password!!!")    
+if user == "ali":
+    print("You are authorized to proceed...")
+elif user == "bob":
+    print("You are authorized to proceed...")
 else:
-    print("Incorrect Username!!!")
+    print("You are not authorized to proceed...")
 ```
 
 ```console
-Enter your Username: admin
-Enter your Password: abc
-Incorrect Password!!!
+Enter your username: bob
+You are authorized to proceed...
 ```
 
 ## If- else and Logical Operators
 
-In case of `AND`, if both the operands are `True` then condition becomes `True`. If any of the operators is `False` then the condition evaluations to `False`.
-
-```py
-num = 9
-if num > 0 and num < 10:
-    print(num)
-```
-
-```console
-9
-```
+In case of `AND`, if both the operands are `True` then condition becomes `True`. If any of the operators is `False` 
+then the condition evaluations to `False`.
 
 ```py
 num = 0
@@ -90,7 +84,8 @@ else:
 Number is out of range
 ```
 
-For the `OR` operator, if any of the two operands are `True` then condition becomes `True`. If both operators are `False` then the condition becomes `False`.
+For the `OR` operator, if any of the two operands are `True` then condition becomes `True`. If both operators are 
+`False` then the condition becomes `False`.
 
 ```py
 a = 200
@@ -116,8 +111,7 @@ Here is an example of using these conditional expressions.
 
 ```py
 num = True
-a = f"num is {num}" if num else f"num is {num}"
-print(a)
+print(Numbers is true) if num else print(Number is false)
 ```
 
 ```console
@@ -128,11 +122,9 @@ num is True
 ```py
 num = True
 if num:
-    a = f"num is {num}"
-    print(a)
+    print(Number is true)
 else:
-    a = f"num is {num}"
-    print(a)
+    print(Numbers is false)
 ```
 ````
 
