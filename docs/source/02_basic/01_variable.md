@@ -12,12 +12,14 @@ Python variable is a storage container or to reserve a memory location with a na
 Python is a dynamically typed language, a variable is created when you first assign a value to it. Variables do not need to be declared with any particular type, and can even be changed after they have been set.
 
 ```py
-name = "Alex"
-print(name)
-```
+# Assign a string value to a variable
+device_name = "Router1"
 
-```console
-Alex
+# Assign an integer value to a variable
+device_port = 22
+
+# Assign a boolean value to a variable
+is_connected = True
 ```
 
 You can get the data type of a variable with the `type()` function.
@@ -122,7 +124,17 @@ MyVariableName = "Alex"
 # Snake Case - An underscore character separates each word.
 my_variable_name = "Alex"
 ```
+You may also want to consider using all-caps naming convention for variables that represent constants or configuration values that should not be modified during runtime. For example:
+
+```py
+# Define a constant value using all-caps naming convention
+MAX_DEVICES = 100
+```
+
+Using all-caps variable names for constants can make it clear that the value should not be modified and helps to distinguish them from regular variables.
 
 ```{Note}
-Use a more descriptive name such as `vlan_name` or `number_of_route`.
+As a network engineer, you may want to use variable names that are descriptive and meaningful, such as device_name, 
+device_ip, device_username, and device_password. Using meaningful variable names can make your code more readable and 
+easier to understand for yourself and others who may read your code.
 ```
