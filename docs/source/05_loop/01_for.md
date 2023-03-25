@@ -4,6 +4,7 @@ A `for` loop is used in which the user wants to continuously repeat the executio
 
 ```py
 ip_list = ["192.168.10.10", "192.168.10.11", "192.168.10.12"]
+
 for ip in ip_list:
   print(ip)
 ```
@@ -23,8 +24,13 @@ range(start, stop, step)
 ```
 
 ```py
-x = range(3, 6)
-x = range(3, 20, 2)  # increment by 2
+range(3, 6)
+
+```
+
+```console
+[3, 4, 5]
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 ```
 
 To loop through a specified number of times, the `range()` function returns a sequence of numbers, `for` loop is used to determine the number of iterations in advance.
@@ -112,6 +118,7 @@ A nested loop is a loop inside a loop. The "inner loop" will be executed one tim
 ```py
 ip_list = ['1.1.1.1', '2.2.2.2', '3.3.3.3']  # list
 netmask = ("255.255.255.255",)  # tuple
+
 for ip in ip_list:
     for mask in netmask:
         print(f'ip address {ip} {mask}')
@@ -147,14 +154,14 @@ For loop and `range()` function to create configuration template.
 ```py
 for num in range (0,2):
     print('int lo ' + str(num) + '\n')
-    print('ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
+    print(' ip address 1.1.1.' + str(num) + ' 255.255.255.255\n')
 ```
 
 ```console
 int lo 0
-ip address 1.1.1.0 255.255.255.255
+ ip address 1.1.1.0 255.255.255.255
 int lo 1
-ip address 1.1.1.1 255.255.255.255
+ ip address 1.1.1.1 255.255.255.255
 ```
 
 ## enumerate() Function
