@@ -1,236 +1,243 @@
-# Function in Python
+## Functions and Classes
 
-There is some piece of code that has been organized into a block and can be reused more than once for a single related task. These blocks of code are functions in Python. They provide reusing of program codes, and creating a customized function is easy in Python. We defined a function in Python using the `def` keyword.
+In Python, the concept of functions plays a crucial role, allowing developers to encapsulate and reuse code efficiently. Functions provide a way to create modular and maintainable code, as specific tasks can be performed by calling a function multiple times, eliminating the need for redundant code.
 
-```py
-def my_function():  # Creating a Function
-  print("Hello, Ali your age is 13 years.")
+Python's strength in object-oriented programming (OOP) further enhances its capabilities. In Python, almost everything is treated as an object, each associated with functions (methods), properties (attributes), and variables. A class serves as a blueprint in OOP, defining the structure and behavior of objects. Instances of a class can be created, essentially representing concrete examples based on the class's specifications.
 
+When naming functions, objects, and modules in Python, adhere to the convention of using lowercase letters separated by underscores. For instance:
 
-my_function()  # Calling a Function
+```python
+def my_router():
+    pass
 ```
 
-```console
-Hello, Ali your age is 13 years.
+On the other hand, when naming classes, follow the convention of capitalizing the first letter of each word without using underscores. For example:
+
+```python
+class UserProfile:
+    pass
 ```
 
-Functions begin with the keyword `def`, then followed by the name of the function and parenthesis. The parenthesis takes all the input parameters and the code block in every function begins after a colon. To call a function, use the function name followed by a parenthesis.
+This naming convention enhances code readability and aligns with Python's style guidelines.
+
+Python's functions are blocks of organized code designed to be reusable for specific tasks. They allow the efficient reuse of code segments and the creation of customized functions is straightforward. The syntax for defining a function in Python involves using the `def` keyword.
+
+```python
+def configure_router(router_name):
+    print(f"{router_name} Configuration is completed.")
+
+configure_router("R1")  # Calling the Function
+```
+
+Functions commence with the `def` keyword, followed by the function name and parentheses, which may include input parameters. The code block for each function is indicated by a colon. To invoke a function, simply use its name followed by parentheses. This structure promotes code clarity and the modular design of programs.
 
 There are two types of functions in Python:
 
 - Built-in Functions
 - User-defined Functions
 
-Built-in functions are those functions that have been pre-written with the Python language and contained in the libraries. Python language has several built-in functions that are reused over and over making it easy to perform similar tasks without necessarily writing the code from scratch. For example, Python has many built-in functions, such as `dir()` and `sum()`.
+## Built-in Functions
 
-Python language allows a declaration of functions, these functions are called user-defined functions and are created by the programmer during the code.
+Built-in functions are pre-written functions provided by the Python language and stored in its libraries. These functions are readily available for use and help streamline common tasks without the need to write code from scratch. Python boasts a range of built-in functions, including widely-used ones like dir() and sum().
+
+## User-defined Functions
+
+Python allows the creation of user-defined functions, which are functions declared by the programmer within their code. These functions are tailored to specific needs and tasks, providing a way to organize and reuse code for custom functionalities.
+
+This distinction between built-in and user-defined functions showcases the versatility of Python, enabling developers to leverage both pre-existing functionalities and create their own tailored solutions.
 
 ## Return Values
 
-Python automatically returns `None` value if you do not specify a return value. Let’s try calling the function and assigning its result to a variable.
+In Python, if you do not explicitly specify a return value for a function, it automatically returns `None`. Let's explore this concept by calling a function and assigning its result to a variable.
 
-```py
-def my_function(num):
-    print(5 + num)
+```python
+def configure_device(device_name):
+    print(f"Configuring {device_name}")
+    # Note: No explicit return statement, so it defaults to None
 
-add = my_function(3)
-print(add)
+result = configure_device("Router1")
+print(result)  # Output: None
 ```
 
-```console
-8
-None
+In the example above, the `configure_device` function configures a network device and does not have a specific return statement, thus defaulting to `None`.
+
+To make a function return a value, the `return` statement is used:
+
+```python
+def get_device_status(device_name):
+    # Simulating some network automation logic
+    status = "Online"
+    return f"{device_name} is {status}"
+
+device_status = get_device_status("Switch2")
+print(device_status)  # Output: Switch2 is Online
 ```
 
-To let a function return a value, we use the `return` statement.
+In this network automation-related example, the `get_device_status` function simulates network logic and returns the status of a device. The returned value can be assigned to a variable for further use.
 
-```py
-def my_function(num):
-    return 5 + num
+Furthermore, if a function does not encounter a `return` statement, or if it encounters a `return` statement without an expression, it automatically returns `None`. This behavior is designed to handle cases where a function is primarily intended for its side effects, such as printing information or modifying external variables, rather than producing a specific result.
 
+Here's an example to illustrate this:
 
-add = my_function(3)
-print(add)
+```python
+def print_message(message):
+    print(message)
+
+result = print_message("Hello, World!")
+print(result)  # Output: None
 ```
 
-```console
-8
+In this example, the `print_message` function prints a message but does not have a `return` statement. When the function is called and assigned to the variable `result`, `result` holds the value `None` because the function does not explicitly return anything.
+
+It's worth noting that in Python, a function doesn't always have to return a value. Some functions are designed for their side effects, and the absence of a `return` statement implies a default return of `None`. If you need a function to explicitly return a value, you use the `return` keyword followed by the expression to be returned.
+
+```python
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(3, 5)
+print(result)  # Output: 8
 ```
+
+In the `add_numbers` function, the `return a + b` statement explicitly returns the sum of `a` and `b`. If there were no `return` statement in this function, it would also return `None` by default.
 
 ## Function Arguments
 
-In most functions, let you pass in arguments to them. The reason for this is that you will normally want to pass one or more arguments to a function, so that the function can do something with them.
+In most functions, you can pass arguments to them. This is because you typically want to provide one or more values to a function, allowing it to perform actions based on these inputs.
 
-In Python, the terms `parameter` and `argument` are used interchangeably. However, there is a diffrence between these two terms. Parameters are the variables when defining a function, whereas arguments are the values assigned to these parameters when passed into a function during a function call.
+In Python, the terms "parameter" and "argument" are often used interchangeably. However, there is a distinction between these two terms. Parameters are the variables defined when creating a function, while arguments are the actual values assigned to these parameters when the function is called.
 
-### Positional arguments
+## Positional Arguments
 
-Positional arguments are values that are passed into a function based on the order in which the parameters were listed during the function definition. The order is especially important as values passed into these functions are assigned to corresponding parameters based on their position.
+Positional arguments involve passing values to a function based on the order in which parameters are listed during the function definition. The order of these values is crucial, as they are assigned to corresponding parameters based on their position.
 
-The following example has a function with one positional argument `name`. When the function is called, we pass along a name, which is used inside the function to print the greeting.
+Consider the following example, where a function takes a single positional argument, `device_name`. When the function is called, a device name is provided, and it is used inside the function to print relevant information.
 
-```py
-def greeting(name):
-    print(f"Hello, {name}")
+```python
+def configure_device(device_name):
+    print(f"Configuring {device_name}")
 
-greeting("Ali")
+configure_device("Router1")
+# Output: Configuring Router1
 ```
 
-```console
-Hello, Ali
+Here, the function `configure_device` expects a device name as a positional argument, and when calling the function with `"Router1"`, the device name is utilized inside the function for configuration.
+
+When working with functions, arguments are specified after the function name, inside the parentheses. You can include as many positional arguments as needed, separating them with commas for clear organization and functionality.
+
+## Default Arguments
+
+Default arguments provide a way to make your functions callable with fewer arguments, offering flexibility in function calls. Unlike required arguments, which must be passed for the function to execute a task, default arguments come with predefined values.
+
+Consider the following example, where a function `configure_device` has a regular argument, `device_name`, and a default argument, `configuration_mode`, which defaults to "basic."
+
+```python
+def configure_device(device_name, configuration_mode="basic"):
+    print(f"Configuring {device_name} in {configuration_mode} mode.")
+
+configure_device("Router1")
+# Output: Configuring Router1 in basic mode.
 ```
 
-Arguments are specified after the function name, inside the parentheses. You can add as many positional arguments as you want, just separate them with a comma.
+In this example, the `configure_device` function takes a regular argument `device_name` and a default argument `configuration_mode`, which defaults to "basic." When calling the function without specifying `configuration_mode`, it defaults to the predefined value.
 
-### Default arguments
+You can also explicitly specify values for both regular and default arguments:
 
-Default arguments are a way to make your function callable with less arguments, whereas required arguments are ones that you have to pass in to the function for the function to execute a task.
-
-```py
-def greeting(name, age: int=5):
-    print(f"Welcome {name}. You are {age} years old.")
-
-greeting("Ali")
+```python
+configure_device("Router2", configuration_mode="advanced")
+# Output: Configuring Router2 in advanced mode.
 ```
 
-```console
-Welcome Ali. You are 5 years old.
+Here, we specified both `device_name` and `configuration_mode` parameters, allowing flexibility in function calls. When dealing with default arguments, you can choose to specify positional arguments first, followed by keyword arguments. If values are passed without specifying their position, they will be assigned based on the order of parameters.
+
+## Keyword (Named) Arguments
+
+Sending arguments with the key=value syntax, known as keyword (named) arguments, provides a flexible way to call networking functions where the order of arguments becomes independent.
+
+Consider the following example with a function `configure_network_device`:
+
+```python
+def configure_network_device(device_name, configuration_mode="basic", interface="eth0"):
+    print(f"Configuring {device_name} in {configuration_mode} mode on interface {interface}.")
+
+configure_network_device("Router1", configuration_mode="advanced", interface="eth1")
+# Output: Configuring Router1 in advanced mode on interface eth1.
 ```
 
-In the above example, a regular argument `name` and a default argument, `age` which is a defaulte value to `5`. When we call this code without specifying the `age`, we see it defaults to `5`.
+In this scenario, the function `configure_network_device` has a regular argument `device_name` and two default arguments, `configuration_mode` and `interface`. By using keyword arguments, the order of the arguments becomes flexible. This allows you to specify values for particular parameters, making your function calls more explicit.
 
-```py
-def greeting(name, age: int=5):
-    print(f"Welcome {name}. You are {age} years old.")
+With keyword arguments, the positions of the arguments become less critical. However, it's important to note that keyword arguments should come after positional arguments and before default arguments in a function call. Here's an example:
 
-greeting("Ali", age=10)
+```python
+configure_network_device("Router2", interface="eth2")
+# Output: Configuring Router2 in basic mode on interface eth2.
 ```
 
-```console
-Welcome Ali. You are 10 years old.
+In this case, we specified the `device_name` positionally and provided a value for the `interface` parameter using a keyword argument.
+
+## `*args` and `**kwargs` in Functions
+
+In functions, flexibility is key, and Python supports the concept of handling an arbitrary number of arguments and keyword arguments through `*args` and `**kwargs`.
+
+**`*args` - An Arbitrary Number of Arguments**
+
+```python
+def network_status(*devices):
+    print("Devices in the network:", devices)
+
+network_status("Router1", "Switch2", "Firewall3")
+# Output: Devices in the network: ('Router1', 'Switch2', 'Firewall3')
 ```
 
-In this example, we specified `age` and `name` parameters. When we do that, you can specify positional argument first in order,as positional argument followed by a keyword argument. If we pass in values without specifying where they should go, they will be passed in order.
+With `*args`, the function `network_status` can accept an arbitrary number of devices, making it suitable for scenarios where the number of devices in the network is not fixed.
 
-### Keyword (named) arguments
+**`**kwargs` - An Arbitrary Number of Keyword Arguments**
 
-You can also send arguments with the `key=value` syntax. This way the order of the arguments does not matter.
+```python
+def configure_device(**config_params):
+    print("Configuration parameters:", config_params)
 
-```py
-
-def my_function(child2, child1):
-  print("The youngest child is " + child2)
-  print("The older child is", child1)
-
-my_function(child1="Ali", child2="Toba")
+configure_device(device_type="Router", interface="eth0", vlan=10)
+# Output: Configuration parameters: {'device_type': 'Router', 'interface': 'eth0', 'vlan': 10}
 ```
 
-```console
-The youngest child is Toba
-The older child is Ali
-```
+Using `**kwargs`, the function `configure_device` can handle an arbitrary number of keyword arguments, allowing for a more dynamic configuration approach.
 
-With keyword arguments, as long as you assign a value to the parameter, the positions of the arguments do not matter. However, they do have to come after positional arguments and before default arguments in a function call.
+## Handling Tuple and Dictionary as Arguments
 
-### args and kwargs in function
-
-In Python function, we want that our functions to only accept a small number of arguments, keyword arguments or both. We normally don’t want too many arguments as it becomes more complicated to modify our function later. However, Python supports the concept of any number of arguments or keyword arguments.
-
-- *args - An arbitrary number of arguments
-- **kwargs - An arbitrary number of keyword arguments
-
-```{Note}
-We need to pay attention to the `*` and the `**`, the name, `arg` or `kwarg` can be anything.
-```
-
-```py
-def my_function(*args):
-  print(args)
-
-my_function(1, 2, 3)
-```
-
-```console
-(1, 2, 3)
-```
-
-If you do not know how many keyword arguments that will be passed into your function, add two asterisk `**` before the parameter name in the function.
-
-```py
-def my_function(**kwargs):
-  print(kwargs)
-
-my_function(f_name = "Ali", l_name = "Ahmed")
-```
-
-```console
-{'f_name': 'Ali', 'l_name': 'Ahmed'}
-```
-
-If we created the function to accept keyword arguments only but we passed in normal arguments. This caused a `TypeError` to be thrown. Now let’s inspect our `*args` and `**kwargs` and see what they are:
-
-```py
-def check_type(*args, **kwargs):
-    print("*args is:", type(args))
-    print("**kwargs is:", type(kwargs))
-
-check_type()
-```
-
-```console
-*args is: <class 'tuple'>
-**kwargs is: <class 'dict'>
-```
-
-```{Note}
-*args* is a tuple and *kwargs* are a dictionary.
-```
-
-Let’s see if we can pass our function a `tuple` and `dict` for the `*args` and `**kwargs`:
-
-- Pass in tuple as argument:
-
-```py
+```python
+# Handling Tuple as Argument
 my_tuple = (1, 2, 3)
 
 def tup_output(*args):
-    print(args)
+    print("Tuple output:", args)
 
 tup_output(*my_tuple)
-```
+# Output: Tuple output: (1, 2, 3)
 
-```console
-((1, 2, 3),)
-```
-
-With `*my_tuple`, Python extract the individual values in the tuple and pass each of them in as arguments.
-
-- Pass in dictionary as keyword argument:
-
-```py
+# Handling Dictionary as Keyword Argument
 my_dict = {'one': 1, 'two': 2}
 
 def dict_output(**kwargs):
-    print(kwargs)
+    print("Dictionary output:", kwargs)
 
 dict_output(**my_dict)
+# Output: Dictionary output: {'one': 1, 'two': 2}
 ```
 
-```console
-{'one': 1, 'two': 2}
-```
+Here, `*my_tuple` allows the function to extract individual values from the tuple, and `**my_dict` passes each key-value pair as keyword arguments.
 
-With `**my_dict`, tells Python to pass in each `key=value` pair as keyword arguments.
+Understanding `*args` and `**kwargs` provides a powerful mechanism for creating adaptable and versatile networking functions in Python.
 
-## Scope of Variables
+## Scope of Variables in function
 
-In Python, variables have different scopes depending on their location in the code. Variables can be either `local` or `global`. A `local` variable is referred to those, that are declared within a function. Global variables are that, declared outside of the function at the script and accessible from anywhere in the program including functions.
+In Python, the scope of variables is crucial to understand, as variables can be either local or global. Local variables are declared within functions and are accessible only within those functions, while global variables are declared outside of functions and are accessible throughout the entire script, including within functions.
 
-### Global variables
+### Global Variables
 
-Global variables are declared in Python scripts outside of any function. These variables are accessible anywhere in the code including functions within the Python program code. The example below shows a variable named `a` that has been created at the top of the function and is accessible from anywhere in the program code.
+Global variables are declared outside of any function in a Python script. They are accessible from anywhere in the code, including functions within the program.
 
-```py
+```python
 s = '5'
 
 def num(n):
@@ -238,18 +245,18 @@ def num(n):
     print("global:", s)
 
 num(6)
+# Output:
+# local: 6
+# global: 5
 ```
 
-```console
-local: 6
-global: 5
-```
+In this example, the variable `s` is declared globally and is accessible both within the function `num` and outside of it.
 
-### Local variables
+### Local Variables
 
-Loacl variables are declared inside of a functions. These variables are only accessible within the functions where they are declared. These variables cannot be used/accessed on other parts of the program code except within the functions.
+Local variables are declared inside functions and are only accessible within the functions where they are defined. They cannot be accessed outside of the function.
 
-```py
+```python
 a = 5
 
 def num():
@@ -257,13 +264,163 @@ def num():
     print(b)
 
 num()
+# Output: 3
 
 print(a)
+# Output: 5
 ```
 
-```console
-3
-5
+Here, the variable `a` is global and can be accessed both inside and outside the function `num`. However, the variable `b` is local to the function `num` and cannot be accessed outside of it.
+
+```python
+# Attempting to access local variable b outside of the function
+print(b)
+# Output: NameError: name 'b' is not defined
 ```
 
-If we call variable `b` outside from function it will give an `NameError:` name 'b' is not defined.
+If we attempt to access the local variable `b` outside of the function, it results in a `NameError` since `b` is not defined in the global scope.
+
+Understanding variable scope is crucial for writing modular and maintainable networking scripts in Python.
+
+As a network engineer diving into Python, these fundamental concepts pave the way for effective network automation. Functions, return values, arguments, and variable scope are the building blocks of modular, scalable, and maintainable networking scripts. By embracing Python's versatility, network engineers can streamline tasks, enhance efficiency, and adapt to the dynamic nature of networking environments.
+
+## Classes and Objects
+
+In Python, everything is an object, meaning everything we create in Python is associated with functions/methods or attributes, or both, attached to an object. This is because everything in Python stems from a class. A class serves as a blueprint for creating objects.
+
+### Creating a Class in Python
+
+Let's take the example of creating a blueprint for a car. A car has certain attributes (properties) and actions (methods).
+
+#### Attributes
+
+- Color
+- Fuel type
+
+#### Methods
+
+- Type of car
+- Capacity of car
+
+To define a class in Python, we use the keyword `class`:
+
+```python
+class Car:
+    
+    # Constructor method
+    def __init__(self, color, fuel):
+        self.color = color
+        self.fuel = fuel
+```
+
+A class essentially outlines how something should be defined. It doesn’t contain actual data. All class definitions start with the `class` keyword, followed by the name of the class and a colon. Any code indented below the class definition is considered part of the class’s body.
+
+> Python class names conventionally use CapitalizedWords: `MyClass` or `My_Class`.
+
+### Objects/Instances
+
+While a class is a blueprint, an instance is an object built from that blueprint, containing data. Once we create an instance of the `Car` class, it's no longer a blueprint:
+
+```python
+# Create an object of the class
+mike_car = Car("Red", "Petrol")
+# Accessing object attributes
+print(f"Color Type: {mike_car.color}")
+print(f"Fuel Type: {mike_car.fuel}")
+```
+
+```shell
+Color Type: Red
+Fuel Type: Petrol
+```
+
+### Instance Methods
+
+Instance methods are functions defined inside a class, callable only from an instance of that class. The first parameter of an instance method is always `self`.
+
+```python
+class Car:
+    
+    # Constructor method
+    def __init__(self, color, fuel):
+        self.color = color
+        self.fuel = fuel
+
+    # Instance method
+    def type(self):
+        description = f"Car has {self.color} color and fuel type is {self.fuel}."
+        return description 
+
+# Create an object of the class
+mike_car = Car("Red", "Petrol")
+# Call instance method
+print(mike_car.type())
+```
+
+```shell
+Car has Red color and fuel type is Petrol.
+```
+
+Let's add more methods:
+
+```python
+# Define a class named Car
+class Car:
+    
+    # Constructor method to initialize object attributes
+    def __init__(self, color, fuel):
+        self.color = color  # Set the color attribute
+        self.fuel = fuel    # Set the fuel attribute
+
+    # Method to describe the type of car
+    def type(self):
+        description = f"Car has {self.color} color and fuel type is {self.fuel}."
+        return description 
+
+# Create an object (instance) of the Car class
+mike_car = Car("Red", "Petrol")
+
+# Call the type() method to describe the car
+print(mike_car.type())
+
+# Define the Car class with more methods
+class Car:
+    
+    # Constructor method to initialize object attributes
+    def __init__(self, color, fuel):
+        self.color = color  # Set the color attribute
+        self.fuel = fuel    # Set the fuel attribute
+
+    # Method to set the owner of the car
+    def owner(self, name):
+        self.name = name    # Set the name attribute
+        return f"Car owner name is {self.name}"
+    
+    # Method to describe the type of car
+    def type(self):
+        description = f"and has {self.color} color, fuel type is {self.fuel}"
+        return description
+
+    # Method to describe the capacity of the car
+    def capacity(self, num):
+        self.num = num      # Set the num attribute
+        return f"and capacity is: {self.num}"
+
+# Create an object (instance) of the Car class
+mike = Car("Red", "Petrol")
+
+# Call various methods to describe the car
+car_owner = mike.owner("'Mike'")
+car_type = mike.type()
+car_cap = mike.capacity(3)
+
+# Construct the complete description of the car
+car_description = f"{car_owner} {car_type} {car_cap}"
+print(car_description)
+```
+
+```shell
+Car owner name is 'Mike' and has Red color, fuel type is Petrol and capacity is: 3
+```
+
+The topic of Object Oriented Programming is vast, and there's much more to Python objects and OOP than we have cover here.

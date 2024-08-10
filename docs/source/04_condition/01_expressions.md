@@ -1,120 +1,206 @@
-# Boolean expressions
+## Understanding Booleans
 
-Boolean expressions are expressions in Python programming language that produces a boolean value when evaluated. The value can either be `True` or `False`. In Python, `False` maps to `0` (zero) and `True` maps to `1` (one). Boolean operations are used to control the flow of a program and make a comparison. Python also provides the `bool()` function, which allows you to cast other types to `True` or `False`.
+Booleans in Python are a fundamental data type that represents two values: `True` and `False`. Booleans are case-sensitive in Python, so `True` and `False` must be written with an uppercase initial letter. Using lowercase such as `true`, or `false`, will result in a NameError.
 
-This can be shown in the expressions below:
+You can use the `type()` function to check the data type of a variable, including Boolean variables. For example, if you want to check if a variable is a Boolean, you can do the following:
 
-```py
-one = 1
-two = 2
-print(one == two)
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_variable = True
+>>> type(my_variable)
+<class 'bool'>
 ```
 
-```console
+This code will correctly identify `my_variable` as a boolean and print `<class 'bool'>`.
+
+## Boolean Logic in Python
+
+Boolean logic plays a crucial role in programming, enabling us to make decisions and control the flow of our code based on conditions. In Python, we have three fundamental Boolean operators: `and`, `or`, and `not`. Let's explore these concepts and see how they are used.
+
+### What is Boolean Logic?
+
+At its core, Boolean logic is all about making decisions. It involves expressions that evaluate to either `True` or `False`. These expressions are combined using Boolean operators to determine the overall truth value of a statement.
+
+### Operation of `and` Logic
+
+The `and` operator combines two conditions and returns `True` only if both conditions are `True`. Otherwise, it returns `False`.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = True
+>>> y = False
+>>> result = x and y
+>>> print(result)
 False
 ```
 
-When you want to compare two values in Python, you need to use comparisons operator `==` instead of a single `=`. A single `=` is known as the assignment operator, as was mentioned in previous chapters. It assigns the value on the right to the variable on the left.
+In this example, `result` is `False` because both `x` and `y` need to be `True` for the `and` condition to be satisfied.
 
-## What is False and True?
+### Operation of `or` Logic
 
-Almost any value is evaluated to `True` if it has:
+The `or` operator combines two conditions and returns `True` if at least one of the conditions is `True`. It returns `False` only if both conditions are `False`.
 
-- Any string is `True`, except empty strings.
-- Any number is `True`, except `0`.
-- Any `list`, `tuple`, `set`, and `dictionary` are `True`, except empty ones.
-
-The following values are `False`:
-
-- `0` (integer, float or complex)
-- Empty collections: `“ ”`, `()`, `[]`, `{}`
-- `None` type
-
-## Comparisons Operator
-
-In Python programming, the comparison operator is used to compare two values and evaluate them down to a single value that can either be `one` or `zero` or rather `True` or `False`. Boolean is a subclass of the `int` class. There are several boolean operators that can be used to evaluate an expression as either `True` or `False`.
-
-These expressions include:
-
-- Equals:                   `==`
-- Not Equals:               `!=`
-- Less than:                `<`
-- Less than or equal to:    `<=`
-- Greater than:             `>`
-- Greater than or equal to: `>=`
-
-```py
-x = 5
-y = 10
-
-print(x == y)  # Is 5 equal to 10?
-print(x != y)  # Is 5 not equal to 10?
-```
-
-```console
-False
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = True
+>>> b = False
+>>> result = a or b
+>>> print(result)  
 True
 ```
 
-## Logical operator
+Here, `result` is `True` because at least one of the conditions (`a`) is `True`.
 
-Logical operators are operators that are used to compare two values and the final expression is evaluated down to a boolean value `True` or `False`. These logical operations are given in the table below:
+### Operation of `not` Logic
 
-- `and`
-- `not`
-- `or`
+The `not` operator negates a condition. It returns the opposite of the given condition.
 
-```py
-print((10 > 5) and (2 < 4))
-print((3 > 5) and (2 < 4))  
-```
-
-```console
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> z = False
+>>> result = not z
+>>> print(result)
 True
-False
 ```
 
-For `AND` operator, both expressions must evaluate to `True` for the final boolean expression to be `True` else the final boolean value will be `False`.
+In this case, `result` is `True` because `not` inverts the value of `z`.
 
-```{epigraph} **Logic AND Truth Table**
-| Expressions      | Result |
-| ---------------- | -----  |
-| True and True    | True   |
-| True and False   | False  |
-| False and True   | False  |
-| False and False  | False  | 
+### Booleans in Conditional Statements
+
+Booleans are frequently used in conditional statements like `if`, `elif`, and `else`. These statements allow your code to execute different blocks based on the truth values of conditions.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> value = 42
+>>> if value > 50:
+...     print("Value is greater than 50")
+... elif value == 50:
+...     print("Value is exactly 50")
+... else:
+...     print("Value is less than 50")
+... 
+Value is less than 50
 ```
 
-For the `OR` operator, at least one of the two operators must evaluate to `True` for the final boolean expression to evaluate to `True`.
+In this example, the code checks the value of `value` and prints different messages depending on the outcome.
 
-```py
-print((10 > 5) or (2 < 4))
-print((2 > 5) or (5 < 4)) 
+Boolean logic is fundamental in programming, empowering us to create dynamic and responsive code. By mastering these operators and their use in conditional statements, you'll be able to build more sophisticated and intelligent applications.
+
+## Truthy and Falseness in Python
+
+In Python, values can be categorized as either "truthy" or "falsy." Understanding truthy and falsy values is essential when working with conditional statements, as it allows you to determine the validity or success of conditions. Let's delve into the concepts of truthy and falsy values.
+
+### Truthy Values in Python
+
+Truthy values are those that are considered as equivalent to `True` when evaluated in a boolean context. In Python, the following are examples of truthy values:
+
+**Non-zero Numbers:** Any non-zero numerical value, whether it's an integer or a floating-point number, is considered truthy.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 42
+>>> if x:
+...     print("x is truthy")
+... 
+x is truthy
 ```
 
-```console
-True
-False
+**Non-empty Sequences:** Sequences like lists, tuples, and strings are truthy if they contain elements. An empty sequence is considered falsy.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 42
+>>> if x:
+...     print("x is truthy")
+... 
+x is truthy
 ```
 
-```{epigraph} **Logic OR Truth Table**
-| Expressions     | Result |
-| --------------- | -----  |
-| True or True    | True   |
-| True or False   | True   |
-| False or True   | True   |
-| False or False  | False  | 
+**Non-empty Containers:** Dictionaries, sets, and other container types are truthy when they contain at least one element.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_dict = {'key': 'value'}
+>>> if my_dict:
+...     print("my_dict is truthy")
+... 
+my_dict is truthy
 ```
 
-`OR` operation can evaluate to `False` only, if both operations evaluate to `False`.
+### Falseness of Values in Python
 
-Lastly, `NOT` is the opposite of `False` and `True` which means, its inner expression is `True` for the new expression to evaluate to `False` else it will evaluate to `True`.
+Falsy values are those that are considered equivalent to `False` when evaluated in a boolean context. In Python, the following are examples of falsy values:
 
-```{epigraph} **Logic NOT Truth Table**
-| Expressions | Result |
-| ----------- | ----- |
-| not True    | False |
-| not False   | True |
+**Zero:** The integer `0` and the floating-point number `0.0` are considered falsy.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> y = 0
+>>> if not y:
+...     print("y is falsy")
+... 
+y is falsy
 ```
 
-Expressions consist of values and operators, and they can always evaluate (that is, reduce) down to a single value.
+**Empty Sequences:** As mentioned earlier, empty sequences like empty lists, tuples, and strings are falsy.
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> empty_string = ""
+>>> if not empty_string:
+...     print("empty_string is falsy")
+... 
+empty_string is falsy
+```
+
+Understanding truthy and falsy values allows you to write more expressive and concise code by simplifying conditional statements. By leveraging these concepts, you can make your code more robust and adaptable to various data scenarios.
+
+## None in Python
+
+In Python, `None` is a special and unique value that serves several important purposes in programming. It represents the absence of a value and often plays a role in signaling that a variable or function has no meaningful data to return. Let's explore the significance of `None` in Python.
+
+### No Value in Python
+
+`None` is used to denote the absence of a value or the absence of meaningful data. It is particularly handy when you want to initialize a variable but don't have an initial value to assign to it. For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_variable = None
+>>> print(my_variable)
+None
+```
+
+In this case, `my_variable` exists, but it doesn't have any specific data associated with it. It's like having an empty container waiting to be filled with content.
+
+### None Value is False
+
+In a boolean context, `None` is considered falsy. This means that when used in conditional statements, `None` evaluates to `False`. Let's see this in action:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> value = None
+>>> if value:
+...     print("This will not be printed")
+... else:
+...     print("The condition is not met because value is None")
+... 
+The condition is not met because value is None
+```
+
+In this code, the second `print` statement is executed because the condition `if value` is not met due to the falseness of `None`. This behavior is particularly useful when you want to check if a variable has been assigned a meaningful value. If it's `None`, you can interpret it as an absence of data or an unset state.
+
+`None` is often used as a sentinel value to represent missing or undefined data. Functions that don't explicitly return a value implicitly return `None`. It's an essential part of Python's design for handling missing data or signaling that no specific result is available.
+
+In conclusion, `None` is a valuable element in Python for denoting the absence of value and facilitating conditional checks. Understanding its role can help you write more robust and expressive code, especially when dealing with variables and functions that might lack meaningful data.

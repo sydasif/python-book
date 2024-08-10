@@ -7,7 +7,7 @@ These conditions can be used in several ways, most commonly in `if` statements a
 The actions are performed if the final computation of the Boolean condition evaluates to true and fails to act if the final computation of the Boolean program evaluates to false.
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 
 01_expressions
 02_if-else

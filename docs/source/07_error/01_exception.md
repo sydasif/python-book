@@ -1,4 +1,4 @@
-# Exceptions in Python
+## Exceptions in Python
 
 An exception is usually an event, that may not be an error that occurs during the code execution and stop the normal flow of that program. Python as a programming language raises an exception if the Python scripts met such a situation.
 
