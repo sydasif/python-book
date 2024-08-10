@@ -24,7 +24,7 @@ Python Variables can store data of different types, and different types can do d
 - None
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 
 01_variable
 02_string

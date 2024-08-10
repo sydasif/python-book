@@ -1,4 +1,4 @@
-# Built in Function
+## Built in Function
 
 Python has several functions that are readily available for use. These functions are called built-in functions.
 

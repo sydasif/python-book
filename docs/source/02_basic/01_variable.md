@@ -1,4 +1,4 @@
-# Variable in Python
+## Variable in Python
 
 Python variable is a storage container or to reserve a memory location with a name to store a value or data temporally and then used to refer to that value in your code. Variables are fundamental to any programming language.
 
@@ -124,6 +124,7 @@ MyVariableName = "Alex"
 # Snake Case - An underscore character separates each word.
 my_variable_name = "Alex"
 ```
+
 You may also want to consider using all-caps naming convention for variables that represent constants or configuration values that should not be modified during runtime. For example:
 
 ```py

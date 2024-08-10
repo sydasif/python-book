@@ -1,159 +1,279 @@
-# Numbers in Python
+## Understanding Python Numbers
 
-Python has only three built-in numeric types; these include integer, float and complex. These types are known by the value assigned to the variable.
+Numbers in Python are a fundamental data type used for various mathematical operations and calculations. There are primarily two numeric data types in Python: integers (int) and floating-point numbers (float).
 
-## Integers
+1. *Integers Numbers (int):* Integers are typically used when working with discrete values or countable objects. They can be positive, negative, or zero. For example, 5, -10, and 0 are all integers in Python. Integers are typically used when you need to work with discrete values or countable objects.
 
-An integer is a whole number and not a fraction. You can create an integer in two ways in Python, the most common way is to assign an integer to a variable:
+2. *Floating-Point Numbers (float):* Floating-point numbers, or floats, are numbers that include a decimal point or use scientific notation, such as 3.14 or 2.5e-3. Floats are used when you need to work with real numbers, including fractional values and approximate calculations.
 
-```py
-num_one = 1
-print(num_one)
-```
+These two numeric data types are essential for handling a wide range of mathematical and numerical operations in Python, making it a versatile language for tasks involving arithmetic and mathematical computations.
 
-```console
-1
-```
+## Integers in Python
 
-The other way to create an integer is to use the `int()` callable, like this:
+Python provides a versatile set of tools for working with integers, a fundamental data type, including creating, type checking, and standard mathematical operations. Here's how you can use these features:
 
-```py
-num_two = int(3)
-print(num_two)
-```
+### Creating an integer
 
-```console
-3
-```
+To create an integer variable, simply assign a whole number to it. For instance:
 
-You can do simple math with variables:
-
-```py
-1 + 2
-1 - 2
-```
-
-```console
-3
-1
-```
-
-You won’t use `int()` to create an integer, usually `int()` is used for converting string or other types to an integer or called {ref}`Type Casting in Python`.
-
-## Float
-
-A float is refers to a number that has a decimal point in it. For example, `2.0` is a float while `2` is an integer. The most common way is to assign a float to a variable, and the other way to create a float is to use the `float()`.
-
-```py
-num_one = 1.5 
-print(num_one)
-```
-
-```console
-1.5
-```
-
-You can do simple math with variables:
-
-```py
-1.0 + 2.0
-```
-
-```console
-3.0
-```
-
-```{Note}
-Note that the arithmetic operation of the integer and floats will convert the result to float.
-```
-
-## Complex Number
-
-A complex number has a real and an imaginary part, which is each a floating-point number. We can also use the `complex()` built-in function to create a complex number.
-
-```py
-z = 1j 
-print(z)
-```
-
-```console
-1j
-```
-
-## Boolean Values
-
-In Python programming, you may need to know if an expression is `True` or `False`. You can evaluate any expression in Python, and get one of two answers. When comparing two values, the expression is evaluated and Python returns the Boolean value.
-
-Booleans represent one of two values:
-
-- True or
-- False
-
-```shell
-[$] <> python3
-Python 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0] on linux
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> 10 < 12
-True
+>>> my_var = 22
+>>> print(my_var)
+22
 ```
 
-The `bool()` built-in function creates a Boolean value and allows the program/code to evaluate any logic (expression), and give a Boolean value in return. This is because in Boolean logic all values are reduced to either `True` or `False`.
+In this example, we assigned the integer value 22 to the variable `my_var`.
 
-```{Note}
-- Boolean valuse is a subclass of integer.
-- It is case-sensitve, if you write `true` (instead of `True`), it will not work.
+### Type checking of integer
+
+You can check the data type of a variable using the `type()` function. For instance:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_var = 22
+>>> print(type(my_var))
+<class 'int'>
 ```
 
-## None Type
+This indicates that `my_var` is of integer type.
 
-The `None` keyword is used to define a null value or no value at all. `None` is not the same as `0`, `False`, or an empty string. `None` is a data type of its own (None Type) and only None can be None.
+## Math Operations with Integers
 
-## Increment/Decrement a Number
+Python allows you to perform standard mathematical operations on integers:
 
-Python numbers are immutable, we can use them in arithmetic and assign their value back with ease:
+- *Addition:* You can add two integers using the `+` operator:
 
-```py
-x = 5
-x = x + 1
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 17 + 22
+>>> print(result)
+39
 ```
 
-```console
-6
+The result variable now holds the value `39`.
+
+- *Subtraction:* Subtraction is done using the `-` operator:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 22 - 7
+>>> print(result)
+15
 ```
 
-Here, we have defined a variable, `x`. In the next line, we take `x` and add `1` to it. Then, we store the result back into `x`, as a result `x` stores `6`.
+The `result` variable now contains the value `15`.
 
-Likewise, direct assignment also work just for decrement:
+- *Multiplication:* Multiplication is performed with the `*` operator:
 
-```py
-x = 5
-x = x - 1
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 3 * 4
+>>> print(result)
+12
 ```
 
-```console
-4
+The `result` variable now contains the value `12`.
+
+- *Division:* Division is carried out with the `/` operator. For instance:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 4 / 7
+>>> print(result)
+0.5714285714285714
 ```
 
-## Increment/Decrement with Assignment Operators
+The `result` variable now contains the float value `0.5714285714285714`.
 
-Like most programming languages, Python has a way to increment a number. That said, increment operator `+=`. 
+These basic operations are essential for manipulating integer values, making Python a powerful language for various mathematical computations and data manipulation tasks.
 
-```py
-x = 5
-x += 1
+## Floats in Python
+
+In Python, working with floating-point numbers (floats) is just as straightforward as working with integers. Here's how you can create, check the data type, and perform standard mathematical operations with floats:
+
+### Creating a float
+
+To create a float variable, assign a number with a decimal point to it. For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_var = 3.3
+>>> print(my_var)
+3.3
 ```
 
-```console
-6
+In this case, we've assigned the float value `3.3` to the variable `my_var`.
+
+### Type checking of float
+
+You can verify the data type of a variable using the `type()` function. For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_var = 3.3
+>>> print(type(my_var))
+<class 'float'>
 ```
 
-Without introducing any additional syntax, we can decrement a number with ease:
+When you run this code, it will produce the output; `<class 'float'>` this confirms that `my_var` is a float.
 
-```py
-x = 10
-x += -1
+## Math Operations with Floats
+
+Python allows you to perform standard mathematical operations on float values:
+
+- *Addition:* You can add two float numbers using the `+` operator:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 3.3 + 2.2
+>>> print(result)
+5.5
 ```
 
-```console
+he result variable now holds the value `5.5`, the sum of the two floats.
+
+- *Division:* Division is performed with the `/` operator:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 7 / 2
+>>> print(result)
+3.5
+```
+
+The `result` variable now contains the float value `3.5`, which is the result of dividing `7` by `2`.
+
+- *Multiplication:* Multiplication is carried out with the `*` operator:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 3.1 * 2.5
+>>> print(result)
+7.75
+```
+
+The `result` variable now contains the value `7.75`, which is the product of `3.1` and `2.5`.
+
+### Rounding numbers
+
+You can round float numbers using the `round()` function. For instance, to round the result of `4` divided by `3` to the nearest integer:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = round(4 / 3)
+>>> print(result)
+1
+```
+
+The result variable now holds the integer value `1`, which is the result of rounding `4/3`.
+
+Floats are essential for handling real numbers and approximate calculations, making Python a versatile language for various mathematical computations and scientific applications.
+
+## Numbers - Other Operators
+
+In addition to basic arithmetic operations, Python provides other operators for working with numbers. Here are two commonly used number operators:
+
+### Modulo operator (%)
+
+The modulo operator, represented by `%`, calculates the remainder when one number is divided by another. For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 9 % 2
+>>> print(result)
+1
+```
+
+The result variable will hold the value `1` because `9` divided by `2` leaves a remainder of `1`.
+
+### Power operator (**)
+
+The power operator, represented by `**`, raises a number to a specified exponent. For instance:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> result = 2 ** 3
+>>> print(result)
+8
+```
+
+The result variable will hold the value `8` because `2` raised to the power of `3` is `8`.
+
+These operators expand the range of mathematical operations you can perform in Python, allowing for tasks like finding remainders and calculating exponents in your numerical computations.
+
+## Incrementing Counters
+
+When working with counters in Python, you can increment or decrement their values in various ways. Here are some common methods to do so:
+
+### Using assignment operator
+
+You can initialize a counter with an initial value, and then increment it using the assignment operator. For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> i = 0   # Initialize i to 0
+>>> i = i + 1   # Increment i by 1
+>>> print(i)
+1
+```
+
+After these operations, the variable `i` hold the value `1`.
+
+### Using augmented assignment
+
+A more concise and common way to increment a counter is to use the augmented assignment operator (`+=`). For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> i = 0   # Initialize i to 0
+>>> i += 1  # Increment i by 1
+>>> print(i)
+1
+```
+
+This code achieves the same result as the previous example, with the variable `i` also holding the value `1`.
+
+## Decrementing a Counter
+
+The process of decrementing a counter is similar to incrementing, but you subtract a value instead. For example:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> i = 10   # Initialize i to 10
+>>> i = i - 1   # Decrement i by 1
+>>> print(i)
 9
 ```
+
+After these operations, the variable `i` hold the value `9`. You can achieve the same result using the augmented assignment operator for decrement:
+
+```python
+Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> i = 10   # Initialize i to 10
+>>> i -= 1   # Decrement i by 1
+>>> print(i)
+9
+```
+
+In this case, the variable `i` also ends up with the value `9`.
+
+These techniques are commonly used for maintaining and updating counters in loops, tracking progress, and controlling the flow of your code when you need to count or iterate through a series of values.
