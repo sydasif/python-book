@@ -1,62 +1,105 @@
-# Python and Automation
+# Computer Programming - An Introduction
 
-Python language was developed by Guido van Rossum. Python has become a scripting language choice for network engineers to automate their tasks. Python is an easy-to-learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
+Inside every computer, there’s a special set of instructions that makes a computer to work, is called a computer program. It’s the essential life force that transforms computer hardware into a functional device. To help you understand this concept, think of a computer as a piano, an instrument that remains silent without a skilled musician.
 
-Python’s neat syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and application development in many areas on most platforms.
+However, computers, by their nature, are exceptionally proficient at executing some basic operations, such as addition and division, etc. A computer is performing these operations at lightning speed and with flawless accuracy.
 
-## Why learn Programming?
+Now, taking into a practical scenario. Imagine you’re on a long road trip, and you want to calculate your average speed. The distance you’ve traveled and the time it took to reach your destination, but here’s the problem, that  computers don’t intuitively understand these concepts as a human you do. Therefore, you need to provide precise instructions to the computer, as instructing it to:
 
-Network engineering is changing, as a network engineer, there has never been a better time for you to learn programming to automate networks and write code. In the late 90’s – 2010, a network engineer typed in the same CLI commands hundreds/thousands, of times to configure and troubleshoot network devices.
+- Accept a numerical value representing the distance.
+- Accept a numerical value representing the travel time.
+- Divide the distance by the time and store the result in memory.
+- Display the result (average speed) in a human-readable format.
 
-We have seen improvements from network vendors, but also in the open source tooling that is available to use for automating the network. For example, there are now network devices APIs and community-supported Python libraries, and freely available open-source tools that give you and every other network engineer access to a growing environment to startup your network automation journey.
+When combined, all these four apparently simple actions make a computer program. Even though these actions are different from that of what a computer naturally understands, they can be translated into a language that the computer can understand.
 
-This means that you have to write less code than you would have in the past, and less code means faster development and fewer bugs, so networkers think learning the basics of any programming language is valuable.
+## Natural Languages vs. Programming Languages
 
-Some key skills to why learn to program?
+Human language serve as tools for expressing intentions and transferring knowledge. Even though some languages require no spoken or written words, as they rely on gestures or body language, while others, like our mother tongue, enable us to convey our thoughts and reflect reality. Computers have their own language, known as machine language, which is complex and challenging for humans to understand fully.
 
-- An essential ability to improve proficiencies.
-- Programming to simplify or automate tasks.
-- Knowing a programming language can come in handy.
-- Manages network more efficiently.
-- Software defines networking
-- Vendors heading towards software-based operations
+It’s important to note that even the most advanced computers lack true intelligence, because they responded solely to a predefined set of known commands, often very basic ones. Think of it as computers following orders like “take this number, divide it by another, and save the result.” This set of known commands is referred to as an instruction list or `IL`.
 
-## What is Scripting?
+> *Note*: machine languages are also created by humans.
 
-Any programming language that supports a script is known as a scripting language. It helps programmers to write programs for a distinct environment to automate the execution of several tasks which could otherwise be executed manually by a human operator, one by one.
+### The anatomy of a language
 
-## Scripting Examples
+Every language, whether natural or machine-based, comprises the following key elements:
 
-As scripting is a useful tool for network automation, typical manual tasks can be automated.
+- ***Alphabet:*** A set of symbols used to construct words within the language.
+- ***Lexis (Dictionary):*** A collection of words and their meanings within the language.
+- ***Syntax:*** A set of rules governing the structure of sentences and phrases.
+- ***Semantics:*** A set of rules determining the meaning of a given phrase or sentence.
 
-- Configuring switches
-- Configuring routers
-- Configuration changes
-- Configuration management
-- Troubleshooting
+In the case of machine language, the `IL` serves as the alphabet (`zeroes` and `ones`). However, humans require a more expressive language to write programs—one that computers can execute. These languages, often known as high-level programming languages, share similarities with natural languages. They have symbols, words, and conventions that humans can understand, high-level languages empower humans to issue commands to computers.
 
-You need automation in networking to create a more efficient networking environment, improve network uptime and prevent mistakes.
+A program written in a high-level programming language is referred to as `source code`, and the file containing this source code is known as a `source file`.
 
-## Automation and Orchestration
+### Compilation vs. interpretation
 
-### Automation
+Computer programming involves composing elements of a selected programming language in a manner that achieves the desired outcome. This outcome has depending on the programmer’s imagination, knowledge, and experience.
 
-- Well-specified task run on its own
+There are two primary methods for translating a program from a high-level programming language into machine language:
 
-### Orchestration
+1. ***Compilation:*** The source program is translated once to create a file containing machine code. This resulting file can be distributed globally, and the program responsible for this translation is known as a `compiler`.
 
-- Automating a lot of things at once
-- Multiple tasks to execute a workflow
-- Automation is the first step towards orchestration
+2. ***Interpretation:*** The source program is translated each time it needs to run. The program performing this kind of transformation is an `interpreter`, as it interprets the code every time it’s executed. This also implies that you can’t distribute the source code as-is; the end-user also requires the interpreter to execute it.
 
-## Automation Tools
+#### Compilation — advantages and disadvantages
 
-Python is used for network automation, but it’s frequently used with other network automation tools for automating network monitoring, configurations and maintenance activities. Some such tools are Ansible, Puppet, Chef and SatlStack which are discussed below:
+- **Advantages**:
+  - Executed code is typically faster.
+  - Only the user needs the compiler; the end-user can use the code without it.
+  - The translated code is stored in machine language, keeping it secure.
 
-- Ansible is open-source software that helps to automate software configuration, management and application deployment. It can configure routers, switches and different types of servers.
+- **Disadvantages**:
+  - Compilation is a time-consuming process; you can’t run your code immediately after making changes.
+  - You require a compiler for each hardware platform you want your code to run on.
 
-- Similarly, the open-source software, Puppet, is a good tool for configuration management. It runs on Microsoft Windows, and numerous Unix-like systems, and has its declarative language too for system configuration description.
+#### Interpretation — advantages and disadvantages
 
-- Chef is another tool for configuration management, written in Ruby and Erlang. It's built on a DevOps model and can help in building reliable scalable systems.
+- **Advantages**:
+  - You can run the code as soon as you finish writing it; no need for additional translation phases.
+  - The code is stored in a programming language, not machine language. It can run on computers with different architectures without separate compilation.
 
-- A Python-based open-source configuration management software, SatlStack, serves as a remote execution engine. As it uses the "Infrastructure as Code" methodology for deployment and cloud management, it is a competitive tool and can be used in the replacement of Puppet, Ansible, and Chef.
+- **Disadvantages**:
+  - Interpretation doesn’t result in high-speed execution; your code shares resources with the interpreter.
+  - Both you and the end-user require the interpreter to run your code.
+
+Python falls into the category of interpreted languages. To program in Python, you’ll need a Python interpreter. Without it, you won’t be able to execute your code. The best part is that Python is free, making it one of its most significant advantages. Languages designed for interpretation are often referred to as scripting languages, and the source programs written in them are called scripts.
+
+## Understanding Python Language
+
+Python is a widely-used, interpreted, object-oriented, high-level programming language with dynamic semantics. It’s employed for general-purpose programming and is known for its versatility. The name “Python” comes from an old BBC television comedy sketch series called Monty Python’s Flying Circus.
+
+Python’s creation is credited to *Guido van Rossum*, born in `1956` in Haarlem, the Netherlands. While Python’s popularity has grown worldwide, it’s essential to acknowledge that it all started with Guido’s vision.
+
+In `1999`, *Guido van Rossum* outlined his goals for Python:
+
+- Create an easy, intuitive, and powerful language.
+- Keep it open source.
+- Make it understandable, like plain English.
+- Ensure it’s suitable for everyday tasks, allowing for short development times.
+- Python has matured and gained trust in the programming world. It’s not just a flash in the pan but a bright star in the programming firmament.
+
+### What sets Python apart?
+
+There are numerous reasons why Python stands out, as we’ve mentioned earlier. Let’s summarize them practically:
+
+- Easy to Learn: Learning Python takes less time compared to many other languages, allowing you to start programming quickly.
+- Easy to Teach: Teaching Python is more straightforward, focusing on programming techniques rather than complex language intricacies.
+- Easy to Use: Python often lets you write code faster when creating new software.
+- Easy to Understand: Python code is generally easier to comprehend, making it simpler to read and maintain.
+- Easy to Obtain, Install, and Deploy: Python is free, open-source, and cross-platform, making it accessible to all.
+
+It’s worth noting that Python is not the only solution in the programming landscape.
+
+### Python’s competitors
+
+Python has two direct competitors that share similar properties and capabilities:
+
+- Perl: A scripting language.
+- Ruby: Another scripting language.
+
+Perl leans towards tradition and convention and has similarities with older languages derived from classic C programming. On the other hand, Ruby is more progressive and filled with fresh ideas. Python finds its place somewhere between these two options.
+
+Python’s growth is evident as more development tools are implemented in Python. Many everyday use applications are being written in Python, and numerous scientists have abandoned expensive proprietary tools in favor of Python.

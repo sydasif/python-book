@@ -18,8 +18,6 @@ Overall, network automation is a powerful tool that can help organizations manag
 
 01_intro
 02_install
-03_syntax
-04_introspection
-05_pip
-06_venv
+03_pip
+04_venv
 ```
