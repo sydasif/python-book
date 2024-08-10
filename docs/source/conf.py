@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Python for Network Engineer\'s'
-copyright = '2022, Syed Asif'
-author = 'Syed Asif'
+project = "Python for Network Engineer's"
+copyright = "2024, Syed Asif"
+author = "Syed Asif"
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = "1.0"
 
 
 # -- General configuration ---------------------------------------------------
@@ -32,12 +32,12 @@ release = '1.0'
 # ones.
 extensions = [
     "myst_parser",
-    #"myst_nb",
-    "sphinx.ext.autosectionlabel"
+    # "myst_nb",
+    "sphinx.ext.autosectionlabel",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -60,4 +60,4 @@ html_title = "Python for Network Engineer"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
