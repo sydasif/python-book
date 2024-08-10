@@ -1,4 +1,4 @@
-# Collections in Python
+## Collections in Python
 
 Collections can be described as bags/boxes of values or containers while sequences are data structures, especially associated with storage and groupings that can be accessed easily, most of the sequences are a member of collections.
 

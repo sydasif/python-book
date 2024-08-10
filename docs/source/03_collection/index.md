@@ -14,12 +14,12 @@ Python collection, unlike a sequence, does not have an order. In a collection, w
 - Set
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 
 01_collection
 02_list
 03_tuple
-04_string
+04_set
 05_dict
-06_set
+06_mutable
 ```
