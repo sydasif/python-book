@@ -1,4 +1,4 @@
-# Computer Programming - An Introduction
+## Computer Programming - An Introduction
 
 Inside every computer, there’s a special set of instructions that makes a computer to work, is called a computer program. It’s the essential life force that transforms computer hardware into a functional device. To help you understand this concept, think of a computer as a piano, an instrument that remains silent without a skilled musician.
 

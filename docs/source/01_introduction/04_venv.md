@@ -1,4 +1,4 @@
-# Python Virtual Environments
+## Python Virtual Environments
 
 A Python virtual environment is a setting where you can install 3rd party packages for testing without affecting the system Python installation. There are several different ways to create Python virtual environments. We will focus on the following two methods:
 

@@ -1,4 +1,4 @@
-# Introduction
+# Python for Network Automation
 
 Learn network programmability with Python, GNS3, and Cisco devices.
 
@@ -31,7 +31,7 @@ This book is under development.
 
 ```{toctree}
 :caption: 'Table of Contents:'
-:maxdepth: 2
+:maxdepth: 3
 
 01_introduction/index
 02_basic/index
