@@ -1,63 +1,67 @@
-## [What is a Python pip?](https://pypi.org/project/pip/)
+## What is Python pip?
 
-`pip` is the package installer for Python. You can use `pip` to install packages from the Python Package Index and other indexes/libraries.
+`pip` is the package installer for Python. You can use `pip` to install packages from the Python Package Index and other repositories.
 
-## [Installation](https://pip.pypa.io/en/stable/installation/)
+## Installation
 
 Usually, `pip` is automatically installed if you are:
 
-- working in a virtual environment
-- using Python downloaded from python.org
-- using Python that has not been modified by a redistributor to remove `ensurepip`
+- Working in a virtual environment
+- Using Python downloaded from python.org
+- Using Python that has not been modified by a redistributor to remove `ensurepip`
 
-### Supported methods
+### Supported Methods
 
-If your Python environment does not have `pip` installed, there are '2' mechanisms to install `pip` supported directly by pip’s maintainers:
+If your Python environment does not have `pip` installed, there are two mechanisms supported directly by pip’s maintainers:
 
-- ensurepip
-- get-pip.py
+- **ensurepip**: Python comes with an `ensurepip` module that can install `pip` in a Python environment.
+- **get-pip.py**: This is a Python script that uses some bootstrapping logic to install `pip`. You can download the script from the [official site](https://bootstrap.pypa.io/get-pip.py) and run it.
 
-### Alternative methods
+### Alternative Methods
 
-Depending on how you installed Python, there might be other mechanisms available to you for installing `pip` such as using [Linux package managers](https://packaging.python.org/en/latest/guides/installing-using-linux-tools/#installing-pip-setuptools-wheel-with-linux-package-managers).
+Depending on how you installed Python, there might be other mechanisms available for installing `pip`, such as using [Linux package managers](https://packaging.python.org/en/latest/guides/installing-using-linux-tools/#installing-pip-setuptools-wheel-with-linux-package-managers).
 
-#### [Debian/Ubuntu](https://packaging.python.org/en/latest/guides/installing-using-linux-tools/#id7)
+#### Debian/Ubuntu
 
-On Ubuntu its come pre-installed if not, install it with the below command:
-
-```shell
-<> sudo apt update
-<> sudo apt install python3-venv python3-pip
-```
-
-To check to install modules via `pip` use `pip list` and to check `pip` version use `pip --version` commands.
-
-## [Installing Modules with pip](https://docs.python.org/3.8/installing/index.html)
-
-As a popular open-source development project, Python has an active supporting community of contributors and users that also make their software available for other Python developers to use under open-source license terms. `pip` is the preferred installer program. Starting with Python 3.4 is included by default with the Python binary installers.
-
-### Basic usage
-
-The following command will install the latest version of a module and its dependencies from the Python Packaging Index.
+On Ubuntu, `pip` often comes pre-installed. If not, you can install it with the following commands:
 
 ```shell
-<> python3 -m pip install netmiko
+sudo apt update
+sudo apt install python3-venv python3-pip
 ```
 
-It is also possible to specify an exact or minimum version directly on the command line, the package name and the version.
+To check installed modules via `pip`, use `pip list`, and to check the `pip` version, use `pip --version`.
+
+## Installing Modules with pip
+
+Python has an active community of contributors and users who make their software available for others to use under open-source license terms. `pip` is the preferred installer program and is included by default with Python binary installers starting from Python 3.4.
+
+### Basic Usage
+
+The following command will install the latest version of a module and its dependencies from the Python Packaging Index:
 
 ```shell
-<> python -m pip install SomePackage==1.0.4    # specific version
+python3 -m pip install netmiko
 ```
 
-Upgrading existing modules
+You can also specify an exact or minimum version directly on the command line:
 
 ```shell
-<> python3 -m pip install --upgrade netmiko
+python -m pip install SomePackage==1.0.4    # specific version
 ```
 
-or `pip` must be requested explicitly to upgrade.
+### Upgrading Existing Modules
+
+To upgrade existing modules, use:
 
 ```shell
-<> python3 -m pip install -U pip
+python3 -m pip install --upgrade netmiko
 ```
+
+To upgrade `pip` itself, use:
+
+```shell
+python3 -m pip install -U pip
+```
+
+These steps should help you get started with `pip` and managing Python packages effectively.
