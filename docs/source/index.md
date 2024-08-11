@@ -1,13 +1,13 @@
 # Python for Network Automation
 
-Learn network programmability with Python, GNS3, and Cisco devices.
+Learn Network Programmability with Python, GNS3, and Cisco devices.
 
 - ***What you’ll learn***
   1. Python fundamentals
-  2. Network automation with Python
+  2. Network Automation with Python
 
 - ***About the author***
-  - I am an Associate Engineer (DAE in Electronics) exploring network automation as a hobby after  working in computer networks for 25 years. My skills as an Associate Engineer include:
+  - I am an Associate Engineer (DAE in Electronics) exploring network automation as a hobby after working in computer networks for 25 years. My skills as an Associate Engineer include:
   - Routing and Switching
   - OFC/LAN Networking
   - IP Addressing and Sub-netting
@@ -28,7 +28,7 @@ This book is under development.
 
 ```{toctree}
 :caption: 'Table of Contents:'
-:maxdepth: 3
+:maxdepth: 2
 
 01_introduction/index
 02_basic/index
