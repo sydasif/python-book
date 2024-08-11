@@ -1,4 +1,4 @@
-## Computer Programming - An Introduction
+## Computer Programming - Introduction
 
 Inside every computer, there’s a special set of instructions that makes a computer to work, is called a computer program. It’s the essential life force that transforms computer hardware into a functional device. To help you understand this concept, think of a computer as a piano, an instrument that remains silent without a skilled musician.
 
@@ -13,7 +13,7 @@ Now, taking into a practical scenario. Imagine you’re on a long road trip, and
 
 When combined, all these four apparently simple actions make a computer program. Even though these actions are different from that of what a computer naturally understands, they can be translated into a language that the computer can understand.
 
-## Natural Languages vs. Programming Languages
+### Natural Languages vs. Programming Languages
 
 Human language serve as tools for expressing intentions and transferring knowledge. Even though some languages require no spoken or written words, as they rely on gestures or body language, while others, like our mother tongue, enable us to convey our thoughts and reflect reality. Computers have their own language, known as machine language, which is complex and challenging for humans to understand fully.
 

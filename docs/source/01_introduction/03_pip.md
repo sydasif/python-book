@@ -1,4 +1,4 @@
-## [What is a pip?](https://pypi.org/project/pip/)
+## [What is a Python pip?](https://pypi.org/project/pip/)
 
 `pip` is the package installer for Python. You can use `pip` to install packages from the Python Package Index and other indexes/libraries.
 
@@ -26,8 +26,8 @@ Depending on how you installed Python, there might be other mechanisms available
 On Ubuntu its come pre-installed if not, install it with the below command:
 
 ```shell
-[$] <> sudo apt update
-$ sudo apt install python3-venv python3-pip
+<> sudo apt update
+<> sudo apt install python3-venv python3-pip
 ```
 
 To check to install modules via `pip` use `pip list` and to check `pip` version use `pip --version` commands.
@@ -41,23 +41,23 @@ As a popular open-source development project, Python has an active supporting co
 The following command will install the latest version of a module and its dependencies from the Python Packaging Index.
 
 ```shell
-[$] <> python3 -m pip install netmiko
+<> python3 -m pip install netmiko
 ```
 
 It is also possible to specify an exact or minimum version directly on the command line, the package name and the version.
 
 ```shell
-[$] <> python -m pip install SomePackage==1.0.4    # specific version
+<> python -m pip install SomePackage==1.0.4    # specific version
 ```
 
 Upgrading existing modules
 
 ```shell
-[$] <> python3 -m pip install --upgrade netmiko
+<> python3 -m pip install --upgrade netmiko
 ```
 
 or `pip` must be requested explicitly to upgrade.
 
 ```shell
-[$] <> python3 -m pip install -U pip
+<> python3 -m pip install -U pip
 ```

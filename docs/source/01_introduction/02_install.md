@@ -14,7 +14,7 @@ Python, a versatile and powerful programming language, has become a must-have to
 
 In summary, Python empowers network engineers to streamline operations, improve network efficiency, and enhance security. Whether you're managing a small network or a large infrastructure, Python equips you to handle network automation tasks with greater efficiency and effectiveness.
 
-## Python Installation
+## Installation of Python
 
 Before you begin using Python for network automation, it's important to understand how to set up Python on your specific operating system. Let's go through this initial step.
 
@@ -22,14 +22,14 @@ Before you begin using Python for network automation, it's important to understa
 
 While Python may not be pre-installed on Windows, the installation process is simple:
 
-1. Visit the official Python [website](https://www.python.org/downloads/windows/) and download the Windows installer for your desired Python version.
+1. Visit the official Python ***[website](https://www.python.org/downloads/windows/)*** and download the Windows installer for your desired Python version.
 2. Run the installer and follow the installation wizard's instructions. Make sure to select the option to "Add Python to PATH" during installation.
 
 ### On MacOS
 
 Python is often pre-installed on MacOS, but you may prefer to manage your Python installation:
 
-1. Download the Python installer for MacOS from the official [website](https://www.python.org/downloads/mac-osx/).
+1. Download the Python installer for MacOS from the official ***[website](https://www.python.org/downloads/mac-osx/)***.
 2. Run the installer and follow the installation instructions.
 3. Although MacOS typically comes with Python 2.7, it's advisable to install the latest Python 3 version for compatibility with newer Python packages.
 
@@ -40,15 +40,15 @@ Linux distributions typically include Python, but specific packages may need to 
 - For Debian/Ubuntu-based systems, you can use `apt` to install Python:
 
 ```bash
-$ sudo apt update
-$ sudo apt install python3
+<> sudo apt update
+<> sudo apt install python3
 ```
 
 - For Red Hat/Fedora-based systems, you can use `dnf` or `yum`:
 
 ```bash
-$ sudo dnf install python3
-$ sudo yum install python3
+<> sudo dnf install python3
+<> sudo yum install python3
 ```
 
 For other Linux distributions, consult your system's package manager for the appropriate commands.
@@ -65,8 +65,8 @@ Now, you can enter Python code directly, and the interpreter will execute it. Fo
 ```python
 Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> print("Hello, Python!")
-Hello, Python!
+>>> print("Hello, Python")
+Hello, Python
 ```
 
 The Python interpreter is an excellent way to test small pieces of code, experiment with Python features, and quickly see the results. Let’s start by simply creating a variable called `hostname` and assigning it a value:
@@ -91,7 +91,7 @@ router
 
 Once a variable is assigned, we can easily print it using the `print()` command. However, while in the Python shell, you can also print `hostname` value or any other variable by just typing in the name of the variable and pressing `Enter` key. It's particularly helpful when you're learning Python or troubleshooting issues in your scripts.
 
-## Assignment Operator and Variable
+### Assignment Operator and Variable
 
 Python uses a straightforward syntax for variable assignment. Here are some examples:
 
@@ -160,8 +160,8 @@ The `print()` function is a fundamental tool for displaying output in Python. It
 ```python
 Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> print("Hello, Python!")
-Hello, Python!
+>>> print("Hello, Python")
+Hello, Python
 ```
 
 Here, the text enclosed in double quotes is the message you want to display. You can print variables, numbers, or any other data type using the `print()` function.
@@ -209,7 +209,7 @@ This line tells the system to use the Python interpreter located at `/usr/bin/en
 - If needed, adjust the script's permissions to make it executable. You can use the `chmod` command on Unix-based systems:
 
 ```bash
-$ chmod +x my_code.py
+<> chmod +x my_code.py
 ```
 
 This command makes the script executable.
@@ -217,13 +217,13 @@ This command makes the script executable.
 - On Windows, run the script using the following command:
 
 ```bash
-$ python my_code.py
+<> python my_code.py
 ```
 
 Alternatively, you can use the Python launcher with the `py` command:
 
 ```bash
-$ py my_code.py
+<> py my_code.py
 ```
 
 Here's an example script:
@@ -252,7 +252,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 For multi-line comments, Python allows the use of triple-quotes (`'''`) or (`"""`) at the beginning and end of the comment block.
 
-## `dir` and `help` Function
+## `dir()` and `help()`
 
 Python equips you with useful tools, such as the `dir()` function and the `help()` function. These tools are invaluable for exploring and comprehending Python libraries and modules as you apply them to your network engineering tasks.
 
@@ -262,7 +262,7 @@ The `dir()` function lists the attributes and methods of objects, providing insi
 Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import os
->>> dir(os)   
+>>> dir(os)
 # Output is omitted
 ['readlink', 'remove', ..... 'walk', 'write']
 ```
