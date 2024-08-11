@@ -43,6 +43,6 @@ This book is under development.
 11_paramiko/index
 12_netmiko/index
 13_napalm/index
-14_nornir
+14_nornir/index
 appendix/index
 ```
