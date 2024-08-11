@@ -40,5 +40,9 @@ This book is under development.
 08_oop/index
 09_lab/index
 10_telnet/index
-netmiko/index
+11_paramiko/index
+12_netmiko/index
+13_napalm/index
+14_nornir
+appendix/index
 ```
