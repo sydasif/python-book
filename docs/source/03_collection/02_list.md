@@ -2,7 +2,7 @@
 
 A list in Python is a fundamental data structure that allows you to store a collection of items. Lists are versatile and can hold various types of data, including strings, integers, booleans, other lists, and more. In this blog, we'll dive into the world of Python lists and cover everything you need to know.
 
-## List Basics
+### List Basics
 
 A list in Python is a collection of items. Here are some key characteristics of lists:
 

@@ -22,4 +22,6 @@ Python collection, unlike a sequence, does not have an order. In a collection, w
 04_set
 05_dict
 06_mutable
+07_list_comp
+08_set_comp
 ```

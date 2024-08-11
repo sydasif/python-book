@@ -2,9 +2,9 @@
 
 Collections can be described as bags/boxes of values or containers while sequences are data structures, especially associated with storage and groupings that can be accessed easily, most of the sequences are a member of collections.
 
-## Types of Collections
+### Types of Collections
 
-There are several different types of collections in Python. The collection data structure allows storing several objects with or without any certain order. You can add and remove stuff from a collection, and you can iterate over a collection. It's a storage construct that allows you to collect things and perform operations on them. 
+There are several different types of collections in Python. The collection data structure allows storing several objects with or without any certain order. You can add and remove stuff from a collection, and you can iterate over a collection. It's a storage construct that allows you to collect things and perform operations on them.
 
 Collections in Python are grouped into two types:
 
