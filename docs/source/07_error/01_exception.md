@@ -6,7 +6,7 @@ To make the script better, your code needs to keep working even when the unexpec
 
 Another common issue is what to do if the user enters invalid input or tries to open a file that is not present or deleted.
 
-## Exceptons Handling
+### Exceptons Handling
 
 Python comes with a special syntax that you can use to catch an exception. It is known as the `try/except` statement.
 
@@ -44,7 +44,7 @@ except:
 Something wrong
 ```
 
-## finally Statement
+### finally Statement
 
 There is more to the `try/except` statement than just `try` and `except`. You can add a `finally` statement to it as well. The `finally` statement is a block of code that will always get run even if there is an exception raised inside of the `try` portion. You can use the `finally` statement for cleanup.To do that, you can wrap the code in a try/except/finally statement.
 
@@ -66,7 +66,7 @@ try/except block end.
 You can also skip the `except` statement entirely and create a try/finally
 ```
 
-## else Statement
+### else Statement
 
 There is one other statement that you can use with Python’s exception handling and that is the `else` statement. You can use the `else` statement to execute code when there are no exceptions.
 
