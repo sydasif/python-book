@@ -11,7 +11,7 @@ Python divides the operators into the following groups:
 - Identity operators
 - Membership operators
 
-## Arithmetic Operators
+### Arithmetic Operators
 
 Arithmetic operators are used with numeric values to perform common mathematical operations.
 
@@ -25,7 +25,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 | **      | Exponentiation | 8 ** 3 |
 | //      | Floor division | 3 // 8 |
 
-## Assignment Operators
+### Assignment Operators
 
 Assignment operators are used to assigning values to variables.
 
@@ -40,7 +40,7 @@ Assignment operators are used to assigning values to variables.
 | //=         | x //= 3    | x = x // 3 |
 | **=         | x **= 3    | x = x ** 3 |
 
-## Comparison operators
+### Comparison operators
 
 Comparison operators are used to compare two or more variables. There are `7` main comparison operators in Python. These operators include:
 
@@ -53,7 +53,7 @@ Comparison operators are used to compare two or more variables. There are `7` ma
 | >=          | Greater than or equal to | x >= y |
 | <=          | Less than or equal to | x <= y |
 
-## Logical operators
+### Logical operators
 
 Python has `3` main logical operators. These include:
 
@@ -68,16 +68,16 @@ To understand logical Operators how logical operators work, let’s evaluate log
 | or          | Returns True if one of the statements is true | x < 5 or x < 4 |
 | not         | Reverse the result | not(x < 5 and x < 10) |
 
-## Identity Operators
+### Identity Operators
 
 Identity operators are used to compare the objects, not if they are equal, but if they are the same object, with the same memory location.
 
 | Syntax      | Description | Example |
 | ----------- | ----------- | ------- |
-| is          | Returns True if both variables are the same object     | x is y     |
+| is          | Returns True if both variables are the same object | x is y |
 | is not      | Returns True if both variables are not the same object | x is not y |
 
-## Membership Operators
+### Membership Operators
 
 Membership operators are used to testing if a sequence is presented in an object.
 

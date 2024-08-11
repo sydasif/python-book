@@ -15,7 +15,7 @@ Python Variables can store data of different types, and different types can do d
   4. Range - `rang()`
 - Mapping
   1. Dictionary - `dict()`
-- Set & frozenset - `set()`
+- Set - `set()`
 - Numbers
   1. Integer - `int()`
      - Boolean Value - `bool()`

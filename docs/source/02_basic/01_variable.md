@@ -1,4 +1,4 @@
-## Variable in Python
+## Variables in Python
 
 Python variable is a storage container or to reserve a memory location with a name to store a value or data temporally and then used to refer to that value in your code. Variables are fundamental to any programming language.
 
@@ -7,7 +7,7 @@ Python variable is a storage container or to reserve a memory location with a na
 - Variables make change easy
 - Variables have data types
 
-## Variable Declaration
+### Variable Declaration
 
 Python is a dynamically typed language, a variable is created when you first assign a value to it. Variables do not need to be declared with any particular type, and can even be changed after they have been set.
 
@@ -106,7 +106,7 @@ print(hostName)
 R-01
 ```
 
-## Variable Naming Convention
+### Variable Naming Convention
 
 Variable names can be as long or as short as you like, but there are a few rules to follow.
 

@@ -1,20 +1,6 @@
-## Built in Function
-
-Python has several functions that are readily available for use. These functions are called built-in functions.
-
 ## Useful Built in Functions
 
-### print() function
-
-A `print()` statement can take any number of arguments and output them separated with a space to the console.
-
-```py
-print("Hello", 10, 3.5)
-```
-
-```console
-Hello 10 3.5
-```
+Python has several functions that are readily available for use. These functions are called built-in functions.
 
 ### len() function
 
@@ -26,24 +12,6 @@ len('hello')
 
 ```console
 5
-```
-
-### input() function
-
-If you need to interact with user, either to get data input or to provide some sort of result. Asking the user to provide some type of input, Python provides us with built-in `input()` functions to take the input from the keyboard.
-
-This function first takes the input from the user, converts it into a string and stores it in a variable. It does not evaluate the expression; it just returns the complete statement as string. When the `input()` function is called it stops the program and waits for the user’s input. When the user presses `enter`, the program resumes and returns what the user has typed.
-
-You can prompt the user to input a string and assign it to a variable.
-
-```py
-user = input("What is your name? ")
-print(user)
-```
-
-```console
->>> What is your name? Ali
-Ali
 ```
 
 ### bin() function

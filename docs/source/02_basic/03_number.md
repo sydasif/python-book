@@ -8,11 +8,11 @@ Numbers in Python are a fundamental data type used for various mathematical oper
 
 These two numeric data types are essential for handling a wide range of mathematical and numerical operations in Python, making it a versatile language for tasks involving arithmetic and mathematical computations.
 
-## Integers in Python
+### Integers in Python
 
 Python provides a versatile set of tools for working with integers, a fundamental data type, including creating, type checking, and standard mathematical operations. Here's how you can use these features:
 
-### Creating an integer
+#### Creating an integer
 
 To create an integer variable, simply assign a whole number to it. For instance:
 
@@ -26,7 +26,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 In this example, we assigned the integer value 22 to the variable `my_var`.
 
-### Type checking of integer
+#### Type checking of integer
 
 You can check the data type of a variable using the `type()` function. For instance:
 
@@ -40,7 +40,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 This indicates that `my_var` is of integer type.
 
-## Math Operations with Integers
+#### Math Operations with Integers
 
 Python allows you to perform standard mathematical operations on integers:
 
@@ -94,11 +94,11 @@ The `result` variable now contains the float value `0.5714285714285714`.
 
 These basic operations are essential for manipulating integer values, making Python a powerful language for various mathematical computations and data manipulation tasks.
 
-## Floats in Python
+### Floats in Python
 
 In Python, working with floating-point numbers (floats) is just as straightforward as working with integers. Here's how you can create, check the data type, and perform standard mathematical operations with floats:
 
-### Creating a float
+#### Creating a float
 
 To create a float variable, assign a number with a decimal point to it. For example:
 
@@ -112,7 +112,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 In this case, we've assigned the float value `3.3` to the variable `my_var`.
 
-### Type checking of float
+#### Type checking of float
 
 You can verify the data type of a variable using the `type()` function. For example:
 
@@ -126,7 +126,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 When you run this code, it will produce the output; `<class 'float'>` this confirms that `my_var` is a float.
 
-## Math Operations with Floats
+### Math Operations with Floats
 
 Python allows you to perform standard mathematical operations on float values:
 
@@ -182,11 +182,11 @@ The result variable now holds the integer value `1`, which is the result of roun
 
 Floats are essential for handling real numbers and approximate calculations, making Python a versatile language for various mathematical computations and scientific applications.
 
-## Numbers - Other Operators
+### Numbers - Other Operators
 
 In addition to basic arithmetic operations, Python provides other operators for working with numbers. Here are two commonly used number operators:
 
-### Modulo operator (%)
+#### Modulo operator (%)
 
 The modulo operator, represented by `%`, calculates the remainder when one number is divided by another. For example:
 
@@ -200,7 +200,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 The result variable will hold the value `1` because `9` divided by `2` leaves a remainder of `1`.
 
-### Power operator (**)
+#### Power operator (**)
 
 The power operator, represented by `**`, raises a number to a specified exponent. For instance:
 
@@ -216,11 +216,11 @@ The result variable will hold the value `8` because `2` raised to the power of `
 
 These operators expand the range of mathematical operations you can perform in Python, allowing for tasks like finding remainders and calculating exponents in your numerical computations.
 
-## Incrementing Counters
+### Incrementing Counters
 
 When working with counters in Python, you can increment or decrement their values in various ways. Here are some common methods to do so:
 
-### Using assignment operator
+#### Using assignment operator
 
 You can initialize a counter with an initial value, and then increment it using the assignment operator. For example:
 
@@ -235,7 +235,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 After these operations, the variable `i` hold the value `1`.
 
-### Using augmented assignment
+#### Using augmented assignment
 
 A more concise and common way to increment a counter is to use the augmented assignment operator (`+=`). For example:
 
@@ -250,7 +250,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 This code achieves the same result as the previous example, with the variable `i` also holding the value `1`.
 
-## Decrementing a Counter
+### Decrementing a Counter
 
 The process of decrementing a counter is similar to incrementing, but you subtract a value instead. For example:
 

@@ -4,7 +4,7 @@ Python is a versatile programming language, offers a wide range of data types, i
 
 A string in Python is a sequence of characters, such as letters, numbers, and symbols, enclosed within single or double quotation marks. It allows you to work with textual data, making it an essential component for tasks like text processing, data manipulation, and user interactions. Strings can be combined, sliced, modified, and processed in numerous ways, making them a crucial element in any Python program.
 
-## Creating String
+### Creating String
 
 In Python, strings are a fundamental data type used to work with textual information. You can create strings using both single and double quotes. For example, you can define a string like this:
 
@@ -54,7 +54,7 @@ This is the second line.
 
 However, it's important to note that if you begin a string with a single quote and conclude it with a double quote, Python will raise an error. This is because Python requires consistency in the choice of quotation marks for starting and ending a string. Mixing single and double quotes in this manner would result in a syntax error.
 
-## String Methods
+### String Methods
 
 In Python, a method is a function associated with an object, enabling you to perform specific actions or operations on that object. For strings, numerous methods are available to manipulate and work with text data.
 
@@ -73,7 +73,7 @@ SOME STRING
 
 In this code, the `upper()` method is used to create a new string with all uppercase characters, and this new string is then assigned back to `my_var`. The original value of `my_var` remains unaltered, demonstrating how string methods generate new strings while leaving the original intact.
 
-### split() method
+#### split() method
 
 The `.split()` method in Python is a powerful tool for breaking down strings into smaller components. By default, it divides the string at consecutive white spaces, effectively splitting a sentence into individual words and returning them as a list. For example:
 
@@ -112,7 +112,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 This functionality proves invaluable when dealing with multi-line text, such as reading content from files or processing structured data.
 
-### `.join()` method
+#### `.join()` method
 
 The `.join()` method in Python serves as the inverse of the `.split()` method, allowing you to merge a list of strings into a single, cohesive string. It's particularly useful for constructing strings with custom delimiters or formatting. For instance, you can take a list of strings, like `['172', '31', '21', '15']`, and use the `.join()` method to connect them with periods to create an IP address:
 
@@ -138,7 +138,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Whether you're working with IP addresses, custom data structures, or any other situation that requires combining strings, the `.join()` method proves to be a powerful and practical tool in your Python programming toolkit.
 
-### `.strip()` method
+#### `.strip()` method
 
 Python provides useful methods for cleaning up leading and trailing whitespace in strings. The `.strip()` method is the most comprehensive, removing both leading and trailing spaces, tabs, and newline characters. For example:
 
@@ -157,7 +157,7 @@ The result is a string with the extraneous spaces removed:
 
 Importantly, these string methods don't modify the original string; instead, they create a cleaned version, which you can save by reassigning it to a variable. Additionally, Python offers `.rstrip()` and `.lstrip()` methods, which specifically remove trailing or leading whitespace, respectively, if your needs are more specific. These tools are valuable for data cleaning, input validation, and text normalization in Python applications.
 
-### Searching substrings
+#### Searching substrings
 
 Searching for specific keywords or patterns in configuration files is essential. The find() method allows you to locate substrings within a string and determine their positions.
 
@@ -172,7 +172,7 @@ print(position)
 
 String methods empower various string operations in network scripting.Commonly used string methods include `upper()`, `split()`, and `find()`.
 
-### `startswith()` and `endswith()` methods
+#### `startswith()` and `endswith()` methods
 
 `startswith()` is used to verify a string starts with a certain characters, and `endswith()` is used to verify a string ends with a certain characters:
 
@@ -188,7 +188,7 @@ True
 
 The both method returns `True` if the characters being passed in matches the respective starting or ending of the object, otherwise, it returns `False`.
 
-### Chaining methods
+#### Chaining methods
 
 In Python, it's possible to chain string methods together, allowing for a more concise and efficient way of manipulating strings. Chaining methods involves applying multiple methods sequentially to a string. For instance, in the example provided:
 
@@ -203,11 +203,11 @@ some string
 
 The `.lower()` method is first applied to convert the string to lowercase, and then `.strip()` is used to remove leading and trailing whitespace. This results in a cleaned and transformed string, all in one line of code. Chaining string methods not only makes your code more readable but also streamlines the process of string manipulation, enhancing your Python programming experience.
 
-## String Formatting
+### String Formatting
 
 Python offers various techniques for formatting strings, each with its own advantages. In this section, we'll explore the older method that employs the `%` operator to format strings.
 
-### Basic formatting
+#### Basic formatting
 
 The `%` operator can be used to insert values into a string by specifying placeholders. For example:
 
@@ -220,7 +220,7 @@ My name is: John
 
 Here, `%s` serves as a placeholder for a string, and `"John"` is inserted in its place.
 
-### Using tuples
+#### Using tuples
 
 The `%` operator also works with tuples, making it possible to insert multiple values into a formatted string:
 
@@ -239,7 +239,7 @@ While this method is functional, it is considered older and less flexible compar
 
 Python offers multiple methods for formatting strings. In this section, we'll explore two more modern approaches: the `.format()` method and f-strings, introduced in Python 3.6.
 
-### The `.format()` method
+#### The `.format()` method
 
 The `.format()` method allows for more structured and versatile string formatting by replacing placeholders with values enclosed in `{}`. For instance:
 
@@ -254,7 +254,7 @@ My name is John and I'm 25 years old.
 
 With `.format()`, you can insert values in any order, repeat them, or even format them in various ways within the placeholders.
 
-### String literals (f-strings)
+#### String literals (f-strings)
 
 Introduced in Python 3.6, f-strings provide an even more concise and readable way to format strings. They involve placing an `f` or `F` prefix before the string and embedding expressions directly within curly braces `{}`:
 
@@ -351,11 +351,11 @@ Date: October 22, 2023
 
 These additional aspects of f-strings enhance their utility, enabling precise control over string formatting, alignment, and more, making them a valuable tool in various Python programming scenarios.
 
-## Other Characteristics of Strings
+### Other Characteristics of Strings
 
 Strings in Python exhibit several essential characteristics and behaviors that make them a versatile and fundamental data type. Let's explore some of these characteristics:
 
-### Checking string membership
+#### Checking string membership
 
 You can check if a specific substring exists within a string using the `in` operator:
 
@@ -368,7 +368,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Found 'sample' in the text.
 ```
 
-### Raw strings
+#### Raw strings
 
 Python allows you to create raw strings using the `r` or `R` prefix, which treats backslashes as literal characters rather than escape characters. This is particularly useful when working with regular expressions and file paths:
 
@@ -380,7 +380,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 C:\Users\Username\Documents
 ```
 
-### String concatenation
+#### String concatenation
 
 You can combine strings using the `+` operator, which is called string concatenation:
 
@@ -394,11 +394,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 John Doe
 ```
 
-### Strings as sequences
+#### Strings as sequences
 
 Strings are sequences of characters, meaning they have a defined order, and you can access their elements by index.
 
-### Indexing from left
+#### Indexing from left
 
 In Python, strings are indexed from left to right, starting at 0 for the first character:
 
@@ -411,7 +411,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 H
 ```
 
-### String length and loop
+#### String length and loop
 
 You can find the length of a string using the `len()` function and loop over the characters of a string with a `for` loop:
 
