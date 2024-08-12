@@ -1,27 +1,29 @@
 # Basic Data Types
 
-This chapter focuses on the fundamentals of the Python programming language that are needed to write a program or a script. Python has different data types, sets, strings, lists and dictionaries that are important in programming. Python also has several data types including numeric data types and a set of characters called strings that are contained in Python.
+This chapter covers the basics of Python, which are essential for writing programs or scripts. Python has various data types like sets, strings, lists, and dictionaries that are important for programming. It also includes numeric data types and strings, which are sequences of characters.
 
-Lists in Python are sequences of ordered elements that are mutable. Sets, on the other hand, are Python collections of unordered elements that are immutable. Tuples are also Python elements that describe immutable objects but use parenthesis.
+- **Lists**: Ordered sequences of elements that can be changed (mutable).
+- **Sets**: Collections of unordered elements that cannot be changed (immutable).
+- **Tuples**: Similar to sets but use parentheses and are also immutable.
 
-All these elements of Python programming work together in meeting the needs of different programmers in the programming work. These elements help in creating effective Python programs used in several applications.
+These elements help programmers create effective Python programs for various applications.
 
-Python Variables can store data of different types, and different types can do different things and have the following data types built-in by default, in these categories:
+Python variables can store different types of data, and each type can perform different functions. Here are the built-in data types in Python:
 
-- Sequences
-  1. String - `str()`
-  2. List - `list()`
-  3. Tuple - `tuple()`
-  4. Range - `rang()`
-- Mapping
-  1. Dictionary - `dict()`
-- Set - `set()`
-- Numbers
-  1. Integer - `int()`
-     - Boolean Value - `bool()`
-  2. Float - `float()`
-  3. Complex
-- None
+- **Sequences**:
+  1. **String**: `str()`
+  2. **List**: `list()`
+  3. **Tuple**: `tuple()`
+  4. **Range**: `range()`
+- **Mapping**:
+  1. **Dictionary**: `dict()`
+- **Set**: `set()`
+- **Numbers**:
+  1. **Integer**: `int()`
+     - **Boolean Value**: `bool()`
+  2. **Float**: `float()`
+  3. **Complex**: Complex numbers
+- **None**: Represents the absence of a value
 
 ```{toctree}
 :maxdepth: 2
