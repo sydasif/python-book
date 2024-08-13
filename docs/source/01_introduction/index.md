@@ -14,7 +14,7 @@ Here are some common examples of network automation:
 In summary, network automation is a powerful tool that helps organizations manage complex network environments more efficiently and effectively.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_intro
 02_install

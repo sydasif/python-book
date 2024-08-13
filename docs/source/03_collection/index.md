@@ -22,7 +22,7 @@ Sequences are a type of collection that maintains a specific order of items. The
 Understanding these concepts will help you effectively manage and manipulate data in your Python programs. Whether you need to store items in a specific order or just group unique elements together, Python's collections and sequences provide the tools you need.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_list
 02_tuple

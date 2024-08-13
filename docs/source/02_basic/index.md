@@ -26,7 +26,7 @@ Python variables can store different types of data, and each type can perform di
 - **None**: Represents the absence of a value
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_variable
 02_string

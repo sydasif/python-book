@@ -7,7 +7,7 @@ You can use these conditions in various ways, especially in `if` statements and 
 If the condition is `True`, the specified actions are performed. If the condition is `False`, the actions are not performed.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_expressions
 02_if-else

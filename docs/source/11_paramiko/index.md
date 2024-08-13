@@ -11,7 +11,7 @@ Paramiko offers a range of capabilities essential for building robust and secure
 - Handling SSH negotiation, key exchange, and encryption algorithms
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_intro
 ```

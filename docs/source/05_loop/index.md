@@ -7,7 +7,7 @@ statement that are executed and repeated, until a certain condition is meet. Pyt
 - While loop
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_for
 02_while

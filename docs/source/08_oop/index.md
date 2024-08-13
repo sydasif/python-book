@@ -21,7 +21,7 @@ class UserProfile:
 ```
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 01_function
 ```
