@@ -31,6 +31,6 @@ Python variables can store different types of data, and each type can perform di
 01_variable
 02_string
 03_number
-04_operator
-05_conversion
+04_conversion
+05_operator
 ```

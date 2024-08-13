@@ -1,10 +1,6 @@
-## Type Casting and Useful Built-in Functions in Python
-
-### Type Casting
+## Type Casting in Python
 
 Type casting is a method used to change the data type of a variable to match the operation you want to perform. In Python, you can use built-in functions like `int()`, `str()`, `float()`, etc., to achieve this.
-
-#### Example 1: Integer to Float
 
 Convert an integer to a float using the `float()` function.
 
@@ -22,8 +18,6 @@ Output:
 <class 'float'>
 ```
 
-#### Example 2: Float to Integer
-
 Convert a float to an integer using the `int()` function.
 
 ```python
@@ -39,8 +33,6 @@ Output:
 99
 <class 'int'>
 ```
-
-#### Example 3: String to Integer and Float
 
 Convert a string literal to an integer and a float using `int()` and `float()`.
 
@@ -65,7 +57,7 @@ Output:
 <class 'float'>
 ```
 
-#### Note on Converting Strings with Decimals
+### Note on Converting Strings with Decimals
 
 If your string contains a decimal point, you can't directly convert it to an integer. First, convert the string to a float and then to an integer.
 
@@ -76,11 +68,11 @@ print(n)
 print(type(n))
 ```
 
-### Useful Built-in Functions
+## Useful Built-in Functions
 
 Python comes with several built-in functions that you can use right away. Here are some of the most useful ones:
 
-#### `len()` Function
+### `len()` Function
 
 The `len()` function returns the number of characters in a string.
 
@@ -94,7 +86,7 @@ Output:
 5
 ```
 
-#### `bin()` Function
+### `bin()` Function
 
 The `bin()` function converts an integer to its binary representation.
 
@@ -111,7 +103,7 @@ Output:
 
 Note: The prefix `0b` indicates that the result is a binary string.
 
-#### `oct()` Function
+### `oct()` Function
 
 The `oct()` function converts an integer to its octal representation.
 
@@ -126,7 +118,7 @@ Output:
 0o144
 ```
 
-#### `hex()` Function
+### `hex()` Function
 
 The `hex()` function converts an integer to its hexadecimal representation.
 
@@ -143,7 +135,7 @@ Output:
 
 Note: The prefix `0x` indicates that the result is a hexadecimal string.
 
-#### `round()` Function
+### `round()` Function
 
 The `round()` function returns a floating-point number rounded to a specified number of decimal places.
 
@@ -158,7 +150,7 @@ Output:
 5.12
 ```
 
-#### `id()` Function
+### `id()` Function
 
 The `id()` function returns a unique identifier for an object, which is its memory address.
 
