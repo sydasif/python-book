@@ -1,10 +1,10 @@
-# Conditional Statements
+# Conditional Statements**
 
-This chapter discusses the conditional statements which have prevalent use in programming. Conditional Statements in Python perform different computations or actions depending on whether a specific Boolean value evaluates to `True` or `False`. In this same chapter, we discuss Boolean expressions.
+This chapter covers conditional statements, which are widely used in programming. In Python, conditional statements execute different actions based on whether a condition is `True` or `False`. We'll also look at Boolean expressions in this chapter.
 
-These conditions can be used in several ways, most commonly in `if` statements and loops. In the programming language conditional statements, perform different computations or actions based on the final evaluation of the Boolean condition specified by the programmer.
+You can use these conditions in various ways, especially in `if` statements and loops. Conditional statements in programming decide what actions to perform based on the result of a Boolean condition set by the programmer.
 
-The actions are performed if the final computation of the Boolean condition evaluates to true and fails to act if the final computation of the Boolean program evaluates to false.
+If the condition is `True`, the specified actions are performed. If the condition is `False`, the actions are not performed.
 
 ```{toctree}
 :maxdepth: 2
