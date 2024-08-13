@@ -13,7 +13,7 @@ Sequences are a type of collection that maintains a specific order of items. The
 - **Lists**: Mutable sequences that can store a collection of items.
 - **Tuples**: Immutable sequences that can store a collection of items.
 
-## Key Differences
+**Key Differences**
 
 - **Order**: Sequences maintain a specific order, while collections like sets do not.
 - **Indexing**: You can access items in sequences by their position using an index. Collections like sets and dictionaries do not support indexing.
