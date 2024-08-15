@@ -1,10 +1,9 @@
 # Loops in Python
 
-Loops are essential programming technics that are found in all programming languages, a loop is a set of instructions or
-statement that are executed and repeated, until a certain condition is meet. Python programming language provides the following types of loops to handle this requirements. Python provides two ways for executing the loops.
+Loops are a basic part of all programming languages. They let you run a set of instructions over and over until a certain condition is met. In Python, there are two main types of loops:
 
-- For loop
-- While loop
+- **For loop**
+- **While loop**
 
 ```{toctree}
 :maxdepth: 1

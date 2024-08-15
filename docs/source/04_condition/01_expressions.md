@@ -5,18 +5,16 @@ Booleans in Python are a basic data type that can be either `True` or `False`. T
 To check if a variable is a Boolean, you can use the `type()` function. For example:
 
 ```python
->>> my_variable = True
->>> type(my_variable)
+>>> is_true = True
+>>> type(is_true)
 <class 'bool'>
 ```
 
-This code will show that `my_variable` is a Boolean.
+This code will show that `is_true` is a Boolean.
 
 ## Boolean Logic in Python
 
 Boolean logic is essential in programming because it helps us make decisions and control the flow of our code. Python has three main Boolean operators: `and`, `or`, and `not`. Let's see how they work.
-
-### What is Boolean Logic?
 
 Boolean logic is about making decisions based on expressions that are either `True` or `False`. These expressions can be combined using Boolean operators to determine the overall truth of a statement.
 
