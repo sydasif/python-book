@@ -73,7 +73,7 @@ The Python interpreter allows you to run Python scripts and execute code interac
 Now, you can enter Python code directly, and the interpreter will execute it. For example, try entering `print("Hello, Python!")`, and you'll see the output immediately.
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello, Python!")
 Hello, Python!
@@ -199,7 +199,7 @@ Python provides useful tools like the `dir()` and `help()` functions, which are 
 The `dir()` function lists the attributes and methods of objects, giving you insights into what an object or module can do. For example, to explore the functionality of the `os` module, you can use `dir(os)`:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
+Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import os
 >>> dir(os)
