@@ -2,71 +2,72 @@
 
 Type casting is a method used to change the data type of a variable to match the operation you want to perform. In Python, you can use built-in functions like `int()`, `str()`, `float()`, etc., to achieve this.
 
-Convert an integer to a float using the `float()` function.
+### Convert an Integer to a Float
+
+You can convert an integer to a float using the `float()` function.
 
 ```python
-num = 100  # integer
-num = float(num)  # convert to float
-print(num)
-print(type(num))
-```
-
-Output:
-
-```console
+Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> num = 100  # integer
+>>> num = float(num)  # convert to float
+>>> print(num)
 100.0
+>>> print(type(num))
 <class 'float'>
 ```
 
-Convert a float to an integer using the `int()` function.
+Here, the integer `100` is converted to a float `100.0`.
+
+### Convert a Float to an Integer
+
+You can convert a float to an integer using the `int()` function.
 
 ```python
-num = 99.9  # float
-num = int(num)  # convert to integer
-print(num)
-print(type(num))
-```
-
-Output:
-
-```console
+>>> num = 99.9  # float
+>>> num = int(num)  # convert to integer
+>>> print(num)
 99
+>>> print(type(num))
 <class 'int'>
 ```
 
-Convert a string literal to an integer and a float using `int()` and `float()`.
+In this example, the float `99.9` is converted to the integer `99`.
+
+### Convert a String Literal to an Integer and a Float
+
+You can convert a string literal to an integer and a float using `int()` and `float()`.
 
 ```python
-s = '132'  # string
-
-n = int(s)  # convert to integer
-print(n)
-print(type(n))
-
-f = float(s)  # convert to float
-print(f)
-print(type(f))
-```
-
-Output:
-
-```console
+>>> s = '132'  # string
+>>> n = int(s)  # convert to integer
+>>> print(n)
 132
+>>> print(type(n))
 <class 'int'>
+>>> f = float(s)  # convert to float
+>>> print(f)
 132.0
+>>> print(type(f))
 <class 'float'>
 ```
+
+Here, the string `'132'` is converted to the integer `132` and the float `132.0`.
 
 ### Note on Converting Strings with Decimals
 
 If your string contains a decimal point, you can't directly convert it to an integer. First, convert the string to a float and then to an integer.
 
 ```python
-s = '132.564'  # string
-n = int(float(s))  # convert to integer
-print(n)
-print(type(n))
+>>> s = '132.564'  # string
+>>> n = int(float(s))  # convert to integer
+>>> print(n)
+132
+>>> print(type(n))
+<class 'int'>
 ```
+
+In this case, the string `'132.564'` is first converted to the float `132.564` and then to the integer `132`.
 
 ## Useful Built-in Functions
 
@@ -77,92 +78,70 @@ Python comes with several built-in functions that you can use right away. Here a
 The `len()` function returns the number of characters in a string.
 
 ```python
-print(len('hello'))
-```
-
-Output:
-
-```console
+>>> print(len('hello'))
 5
 ```
+
+This function counts the number of characters in the string `'hello'`, which is `5`.
 
 ### `bin()` Function
 
 The `bin()` function converts an integer to its binary representation.
 
 ```python
-num = 100
-print(bin(num))  # print binary number
-```
-
-Output:
-
-```console
+>>> num = 100
+>>> print(bin(num))  # print binary number
 0b1100100
 ```
 
-Note: The prefix `0b` indicates that the result is a binary string.
+The integer `100` is converted to its binary representation `0b1100100`.
 
 ### `oct()` Function
 
 The `oct()` function converts an integer to its octal representation.
 
 ```python
-num = 100
-print(oct(num))  # print octal number
-```
-
-Output:
-
-```console
+>>> num = 100
+>>> print(oct(num))  # print octal number
 0o144
 ```
+
+The integer `100` is converted to its octal representation `0o144`.
 
 ### `hex()` Function
 
 The `hex()` function converts an integer to its hexadecimal representation.
 
 ```python
-num = 100
-print(hex(num))  # print hex number
-```
-
-Output:
-
-```console
+>>> num = 100
+>>> print(hex(num))  # print hex number
 0x64
 ```
 
-Note: The prefix `0x` indicates that the result is a hexadecimal string.
+The integer `100` is converted to its hexadecimal representation `0x64`.
 
 ### `round()` Function
 
 The `round()` function returns a floating-point number rounded to a specified number of decimal places.
 
 ```python
-num = round(5.12345, 2)
-print(num)
-```
-
-Output:
-
-```console
+>>> num = round(5.12345, 2)
+>>> print(num)
 5.12
 ```
+
+Here, the number `5.12345` is rounded to `5.12`.
 
 ### `id()` Function
 
 The `id()` function returns a unique identifier for an object, which is its memory address.
 
 ```python
-num = 5.12
-print(id(num))
+>>> num = 5.12
+>>> print(id(num))
+1562211743472
 ```
 
-Output:
+The `id()` function returns the memory address of the object `num`.
 
-```console
-1707832475504
-```
-
-Note: The id is the object's memory address and will be different each time you run the program, except for some objects like integers from `-5` to `256`.
+These examples demonstrate how you can use type casting and built-in functions to manipulate and format data in Python.
