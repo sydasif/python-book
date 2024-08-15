@@ -1,8 +1,6 @@
 # What is Network Automation?
 
-Network automation involves using technology and software to handle the configuration, management, and monitoring of computer networks automatically. This means writing scripts or programs that can perform network-related tasks without needing human intervention.
-
-By automating these tasks, network engineers can save time and effort, manage complex networks more efficiently, and reduce the risk of errors or misconfigurations. Automation also makes it easier for organizations to scale their network infrastructure, as new devices can be provisioned and configured quickly and consistently.
+Network automation involves using technology and software to handle the configuration, management, and monitoring of computer networks automatically. By automating these tasks, network engineers can save time and effort, manage complex networks more efficiently, and reduce the risk of errors or misconfigurations. Automation also makes it easier for organizations to scale their network infrastructure, as new devices can be provisioned and configured quickly and consistently.
 
 Here are some common examples of network automation:
 

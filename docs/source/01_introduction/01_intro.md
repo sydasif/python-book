@@ -1,4 +1,4 @@
-## Introduction to Computer Programming
+## What is Computer Programming?
 
 Every computer operates based on a set of instructions known as a computer program. These programs are essential as they transform computer hardware into a functional device. Think of a computer as a piano; without a skilled musician, it remains silent.
 
@@ -11,13 +11,11 @@ Computers excel at performing basic operations like addition and division at inc
 
 These steps, though simple, form a computer program. While these actions differ from what a computer naturally understands, they can be translated into a language that the computer can process.
 
-### Natural Languages vs. Programming Languages
+### Natural Languages and Programming Languages
 
 Human languages help us express our thoughts and share knowledge. Some languages use gestures or body language, while others, like our native languages, use words to convey our ideas. Computers have their own language called machine language, which is very complex and hard for humans to understand.
 
 Even the most advanced computers aren't truly intelligent. They only follow a set of basic commands, like "take this number, divide it by another, and save the result." This set of commands is called an instruction list (IL).
-
-> *Note*: Machine languages are also created by humans.
 
 ### The Anatomy of a Language
 
@@ -30,7 +28,7 @@ Every language, whether it's a natural language or a machine language, has the f
 
 In machine language, the IL serves as the alphabet (using zeros and ones). However, humans need a more expressive language to write programs that computers can execute. These high-level programming languages are similar to natural languages. They have symbols, words, and rules that humans can understand, allowing us to give commands to computers.
 
-A program written in a high-level programming language is called source code, and the file containing this source code is known as a source file.
+A program written in a high-level programming language is called `source code`, and the file containing this source code is known as a `source file`.
 
 ### Compilation vs. Interpretation
 

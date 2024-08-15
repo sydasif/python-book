@@ -79,110 +79,40 @@ Type "help", "copyright", "credits" or "license" for more information.
 Hello, Python!
 ```
 
-The Python interpreter is excellent for testing small pieces of code, experimenting with Python features, and quickly seeing the results. Let's start by creating a variable called `hostname` and assigning it a value:
+The Python interpreter is excellent for testing small pieces of code, experimenting with Python features, and quickly seeing the results. Let's start by creating a variable called `host_name` and assigning it a value:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> hostname = 'router'
+>>> host_name = 'router'
 ```
 
 As you can see, there's no need to declare the variable type first. This is why Python is called a dynamic language, unlike some programming languages like C and Java. Now, you can print the variable:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> hostname = 'router'
->>> print(hostname)
+>>> host_name = 'router'
+>>> print(host_name)
 router
->>> hostname
+>>> host_name
 'router'
 ```
 
 Once a variable is assigned, you can easily print it using the `print()` command. In the Python shell, you can also print the value of `hostname` or any other variable by just typing the variable name and pressing Enter. This is particularly helpful when you're learning Python or troubleshooting your scripts.
 
-### Assignment Operator and Variables
-
-Python uses a simple syntax for assigning values to variables. Here are some examples:
-
-```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> test = 'test'
->>> ip_addr = '192.168.1.1'
-```
-
-Variable assignment in Python is flexible and forgiving, allowing for creativity. However, it's important to follow best practices to write clean and maintainable code.
-
-### Use Descriptive Names
-
-Choose variable names that are descriptive and convey their purpose. Avoid generic names like `temp` or `data`. Instead, use names like `ip_address` or `server_name` to make your code more readable.
-
-### Use Underscores
-
-For multi-word variable names, use underscores to separate words, following the snake_case convention. For example, `device_name` is more readable than `deviceName`.
-
-### Avoid Reserved Words
-
-Be careful not to use Python's reserved words as variable names. For example, naming a variable `print` or `for` can lead to unexpected behavior.
-
-### Consistency
-
-Maintain consistency in your variable naming. If you use `ip_address` in one part of your code, don't switch to `ip_addr` elsewhere. Consistency simplifies code comprehension.
-
-## Python Naming Conventions
-
-Following naming conventions is essential for writing clean and maintainable Python code. Here are some common conventions:
-
-- **snake_case_lower** for variables and functions.
-- **PascalCase** for class names.
-- **SNAKE_CASE_UPPER** for constants.
-
-Let's dive deeper into these conventions:
-
-### Variable Names
-
-- Start variable names with a lowercase letter or underscore.
-- Use clear and descriptive names that convey the variable's purpose.
-- For multi-word variable names, use underscores for separation (e.g., `user_id`).
-
-### Function Names
-
-- Begin function names with a lowercase letter or underscore.
-- Use descriptive names that hint at the function's action or purpose.
-- For multi-word function names, use underscores (e.g., `calculate_speed`).
-
-### Class Names
-
-- Start class names with an uppercase letter.
-- Use CamelCase, where each word in the name begins with an uppercase letter and has no underscores (e.g., `NetworkDevice`).
-
-### Constant Names
-
-- Constant variables should be in uppercase with words separated by underscores (e.g., `MAX_CONNECTIONS`).
-
-By following these naming conventions, you'll make your Python code more accessible and comprehensible to yourself and others who collaborate on your projects.
-
-## Print Function
+### Print Function
 
 The `print()` function is a fundamental tool for displaying output in Python. It allows you to communicate information to users, debug your code, and provide feedback. To use the `print()` function, follow this format:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello, Python!")
 Hello, Python!
 ```
 
 Here, the text enclosed in double quotes is the message you want to display. You can print variables, numbers, or any other data type using the `print()` function.
 
-## Input Function
+### Input Function
 
 The `input()` function is equally important. It enables your Python programs to interact with users by accepting input from them. The `input()` function presents a prompt to the user, and the user's input is returned as a string. Here's an example of using the `input()` function:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
 >>> user_input = input("Please enter your name: ")
 Please enter your name: John
 >>> print("Hello, " + user_input + "!")
@@ -251,8 +181,6 @@ By following these steps, you can create, execute, and manage Python scripts eff
 Comments play a pivotal role in documenting your code and assisting both yourself and others in understanding the purpose of different parts of your script. Python supports single-line comments that begin with the `#` symbol. You can also include inline comments for additional context:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
 >>> # This is a comment
 >>> ip_addr = "10.1.1.1"
 >>> # This line prints the IP address
@@ -286,8 +214,6 @@ The `help()` function provides detailed information about specific functions or 
 To learn how to use a method listed by `dir()`, you can use the `help()` function. Here's an example of using `help()` to understand the `upper` method:
 
 ```python
-Python 3.10.7 ............. [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
 >>> dir(hostname)
 # Output is omitted
 ['partition', .... 'upper', 'zfill']
