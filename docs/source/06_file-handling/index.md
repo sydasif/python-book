@@ -1,6 +1,6 @@
 # File Handling in Python
 
-Python supports file handling and allows users, to handle read and write files. The concept of file handling, like other concepts of Python, this concept is also easy and short. File handling is an important part of network automation, we can read configuration snippet or saving our configuration backup. Python has several functions for creating, reading, updating, and deleting files.
+Python makes it easy to work with files. You can read from and write to files without much hassle. This is especially useful in network automation, where you might need to read configuration snippets or save backups of your configurations. Python provides several functions to create, read, update, and delete files.
 
 ```{toctree}
 :maxdepth: 1
