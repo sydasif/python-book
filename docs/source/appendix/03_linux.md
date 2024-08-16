@@ -74,19 +74,7 @@ netstat -a
 
 Lists all active connections and listening ports.
 
-### 7. **hostname**
-
-The `hostname` command displays or sets the system's hostname. It helps identify the machine on a network.
-
-- **Example**:
-
-```bash
-hostname
-```
-
-Displays the current hostname of the system.
-
-### 8. **dig**
+### 7. **dig**
 
 The `dig` command queries DNS servers for information about host addresses, mail exchanges, name servers, and related information.
 
@@ -98,7 +86,7 @@ dig google.com
 
 Performs a DNS lookup for `google.com`.
 
-### 9. **nslookup**
+### 8. **nslookup**
 
 The `nslookup` command queries DNS to obtain domain name or IP address mappings and other DNS records.
 
@@ -110,19 +98,7 @@ nslookup google.com
 
 Performs a DNS lookup for `google.com`.
 
-### 10. **iptables**
-
-The `iptables` command configures the IP packet filter rules of the Linux kernel firewall. It helps secure the network by defining rules for incoming and outgoing traffic.
-
-- **Example**:
-
-```bash
-sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-```
-
-Allows incoming SSH connections on port 22.
-
-### 11. **tcpdump**
+### 9. **tcpdump**
 
 The `tcpdump` command captures and displays network packets. It is used for network troubleshooting and security analysis.
 
@@ -134,7 +110,7 @@ sudo tcpdump -i eth0
 
 Captures packets on the `eth0` interface.
 
-### 12. **ssh and sshd**
+### 10. **ssh and sshd**
 
 The `ssh` command provides secure remote login and command execution. The `sshd` command starts the SSH daemon, which listens for incoming SSH connections.
 
@@ -146,7 +122,7 @@ ssh user@remotehost
 
 Connects to the remote host `remotehost` as the user `user`.
 
-### 13. **telnet**
+### 11. **telnet**
 
 The `telnet` command establishes text-based connections to remote systems. It is used for remote login and communication but is less secure than SSH.
 
@@ -158,7 +134,7 @@ telnet example.com 80
 
 Connects to the remote host `example.com` on port 80.
 
-### 14. **scp**
+### 12. **scp**
 
 The `scp` command securely transfers files between hosts over a network using SSH.
 
@@ -170,51 +146,7 @@ scp file.txt user@remotehost:/remote/directory/
 
 Copies `file.txt` from the local machine to the remote host.
 
-### 15. **wget and curl**
-
-The `wget` command downloads files from the web, while the `curl` command transfers data to and from a server, supporting various protocols.
-
-- **Example (wget)**:
-
-```bash
-wget https://example.com/file.zip
-```
-
-Downloads `file.zip` from the specified URL.
-
-- **Example (curl)**:
-
-```bash
-curl -O https://example.com/file.zip
-```
-
-Downloads `file.zip` from the specified URL.
-
-### 16. **iptraf**
-
-The `iptraf` command provides real-time network traffic monitoring, displaying detailed statistics on network interfaces.
-
-- **Example**:
-
-```bash
-sudo iptraf -i eth0
-```
-
-Monitors IP traffic on the `eth0` interface.
-
-### 17. **iftop**
-
-The `iftop` command monitors network bandwidth usage in real-time, showing a list of network connections and their bandwidth usage.
-
-- **Example**:
-
-```bash
-sudo iftop -i eth0
-```
-
-Displays bandwidth usage on the `eth0` interface.
-
-### 18. **nmap**
+### 13. **nmap**
 
 The `nmap` command scans networks for hosts, open ports, and services, and detects vulnerabilities.
 
@@ -226,7 +158,7 @@ nmap 192.168.1.1
 
 Scans the host with the IP address `192.168.1.1`.
 
-### 19. **arp**
+### 14. **arp**
 
 The `arp` command manipulates the ARP cache, mapping IP addresses to MAC addresses.
 
@@ -238,7 +170,7 @@ arp -a
 
 Displays all the entries in the ARP cache.
 
-### 20. **resolvconf**
+### 15. **resolvconf**
 
 The `resolvconf` command manages DNS server information in the `/etc/resolv.conf` file.
 
@@ -250,7 +182,7 @@ sudo resolvconf -u
 
 Updates the nameserver information.
 
-### 21. **nmcli**
+### 16. **nmcli**
 
 The `nmcli` command controls NetworkManager, allowing you to manage network connections and devices from the command line.
 
@@ -262,7 +194,7 @@ nmcli connection show
 
 Lists all network connections.
 
-### 22. **nmtui**
+### 17. **nmtui**
 
 The `nmtui` command provides a text user interface for NetworkManager, making it easier to configure network settings interactively.
 
